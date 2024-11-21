@@ -1,0 +1,358 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "deps/geometry-central",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.geometry-central-Debug-4a652b6a2b99fcfccd9e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "deps/geometry-central"
+				},
+				{
+					"build" : "deps/geometry-central/deps",
+					"jsonFile" : "directory-deps.geometry-central.deps-Debug-f6a82b5aaa5ffd4ab728.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/geometry-central/deps"
+				},
+				{
+					"build" : "deps/geometry-central/src",
+					"jsonFile" : "directory-deps.geometry-central.src-Debug-ca754c76a64d7abcd8ef.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "deps/geometry-central/src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "deps/polyscope",
+					"childIndexes" : 
+					[
+						5,
+						12
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.polyscope-Debug-e0fb7a7d96a497698d97.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "deps/polyscope"
+				},
+				{
+					"build" : "deps/polyscope/deps",
+					"childIndexes" : 
+					[
+						6,
+						8,
+						10,
+						11
+					],
+					"jsonFile" : "directory-deps.polyscope.deps-Debug-85cf5cdee18775c74fba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 2,
+					"source" : "deps/polyscope/deps"
+				},
+				{
+					"build" : "deps/polyscope/deps/glad",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-deps.polyscope.deps.glad-Debug-c8fe23270fb5c2925ca6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "deps/polyscope/deps/glad"
+				},
+				{
+					"build" : "deps/polyscope/deps/glad/src",
+					"jsonFile" : "directory-deps.polyscope.deps.glad.src-Debug-896d4a167df9b7882403.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 2,
+					"source" : "deps/polyscope/deps/glad/src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "deps/polyscope/deps/glfw",
+					"childIndexes" : 
+					[
+						9
+					],
+					"jsonFile" : "directory-deps.polyscope.deps.glfw-Debug-96749ddc7f1c3ffe39b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 3,
+					"source" : "deps/polyscope/deps/glfw"
+				},
+				{
+					"build" : "deps/polyscope/deps/glfw/src",
+					"jsonFile" : "directory-deps.polyscope.deps.glfw.src-Debug-8eaf267210b92aa4dfc3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 3,
+					"source" : "deps/polyscope/deps/glfw/src",
+					"targetIndexes" : 
+					[
+						3,
+						7
+					]
+				},
+				{
+					"build" : "deps/polyscope/deps/imgui",
+					"jsonFile" : "directory-deps.polyscope.deps.imgui-Debug-03b92c40b672d0d94301.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "deps/polyscope/deps/imgui",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "deps/polyscope/deps/stb",
+					"jsonFile" : "directory-deps.polyscope.deps.stb-Debug-4d54ff9a99cd0d83d720.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "deps/polyscope/deps/stb",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "deps/polyscope/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-deps.polyscope.src-Debug-75baefed3944c13cdc6b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 2,
+					"source" : "deps/polyscope/src",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gc_polyscope_example",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "geometry-central",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						10,
+						11,
+						12
+					],
+					"name" : "polyscope",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8,
+						9
+					],
+					"name" : "GLFW",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						3,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gc_project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gc_project-Debug-438df985b04ffc6a5e3b.json",
+					"name" : "gc_project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "geometry-central::@5bfc76e8dce0c2f29eb7",
+					"jsonFile" : "target-geometry-central-Debug-035f73bc4d59c801c2b0.json",
+					"name" : "geometry-central",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glad::@98233e3db7e177071371",
+					"jsonFile" : "target-glad-Debug-800309197a854539d393.json",
+					"name" : "glad",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "glfw::@10d7cd74cb252634c37e",
+					"jsonFile" : "target-glfw-Debug-cc72b22b1bc844c58b20.json",
+					"name" : "glfw",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "imgui::@79a1569c4ce229380b97",
+					"jsonFile" : "target-imgui-Debug-31ac3fcaa7b3346f628d.json",
+					"name" : "imgui",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "polyscope::@d17fc2d76cb0cf7d3ca6",
+					"jsonFile" : "target-polyscope-Debug-365a69a9e1bb68eb4aaa.json",
+					"name" : "polyscope",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "stb::@a816bd2f7ea2b896107d",
+					"jsonFile" : "target-stb-Debug-91bd5780b90d66db43d8.json",
+					"name" : "stb",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "update_mappings::@10d7cd74cb252634c37e",
+					"jsonFile" : "target-update_mappings-Debug-3d61a4a788006b1cda77.json",
+					"name" : "update_mappings",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/noahbarnes/Documents/Documents - Noah\u2019s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build",
+		"source" : "/Users/noahbarnes/Documents/Documents - Noah\u2019s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
