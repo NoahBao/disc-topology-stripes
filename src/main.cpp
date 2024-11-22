@@ -1,4 +1,4 @@
-#include "geometrycentral/surface/manifold_surface_mesh.h"
+#include <geometrycentral/surface/manifold_surface_mesh.h>
 #include "geometrycentral/surface/meshio.h"
 #include "geometrycentral/surface/vertex_position_geometry.h"
 #include "geometrycentral/surface/direction_fields.h"
@@ -15,6 +15,8 @@
 #include "args/args.hxx"
 #include "imgui.h"
 
+// #include "include/main.h"
+
 using namespace geometrycentral;
 using namespace geometrycentral::surface;
 using T = Eigen::Triplet<double>;
@@ -26,21 +28,44 @@ std::unique_ptr<VertexPositionGeometry> geometry;
 // Polyscope visualization handle, to quickly add data to the surface
 polyscope::SurfaceMesh *psMesh;
 
-// Some algorithm parameters
-float param1 = 42.0;
+// =============FUNCTION HEADERS=============
 
-// Example computation function -- this one computes and registers a scalar
-// quantity
-void doWork()
+VertexData<double> constructHFunction(std::vector<int> &startVertices, std::vector<int> &endVertices);
+
+void selectWholeBoundary(int rootIndex, int boundaryId);
+
+// ==========================================
+
+// =============GLOBAL VARIABLES=============
+
+// boundaryVertices[i] = list of vertices for boundary i
+// analogous for boundaryPoints
+std::vector<std::vector<int>> boundaryVertices = {{}, {}};
+std::vector<std::vector<Vector3>> boundaryPoints = {{}, {}};
+
+// ==========================================
+
+// =============DEPRECATED VARIABLES/FUNCTIONS=============
+
+enum MeshShape
 {
-  // polyscope::warning("Computing Gaussian curvature.\nalso, parameter value = " +
-  //                    std::to_string(param1));
+  SQUARE,
+  ANNULUS_CUT
+};
+MeshShape inputMeshShape = SQUARE;
 
-  // geometry->requireVertexGaussianCurvatures();
-  // psMesh->addVertexScalarQuantity("curvature",
-  //                                 geometry->vertexGaussianCurvatures,
-  //                                 polyscope::DataType::SYMMETRIC);
+std::vector<std::vector<int>> determineFixedVertices();
+std::vector<std::vector<int>> determineFixedVerticesSquare();
+std::vector<std::vector<int>> determineFixedVerticesAnnulusCut();
+int findSharedVertexId(Edge e1, Edge e2);
+
+// ===========================================================
+
+// generates stripes using Geometry Central's stripe methods
+void generateStripes()
+{
   // Generate a guiding field
+  // TODO: use our own guide field based on the user's start and end boundaries
   VertexData<Vector2> guideField =
       geometrycentral::surface::computeSmoothestVertexDirectionField(*geometry, 2);
 
@@ -62,18 +87,139 @@ void doWork()
   polyscope::registerCurveNetwork("Curve edges", isolineVerts, isolineEdges);
 }
 
-std::vector<int> determineFixedVertices()
+// DEPRECATED - DO NOT USE
+// determines the vertices to fix based on the input mesh's shape
+std::vector<std::vector<int>> determineFixedVertices()
 {
-  for (Vertex v : mesh->vertices())
+  switch (inputMeshShape)
   {
-    if (!v.isBoundary())
+  case SQUARE:
+    return determineFixedVerticesSquare();
+  case ANNULUS_CUT:
+    return determineFixedVerticesAnnulusCut();
+  }
+  return {};
+}
+
+// DEPRECATED - DO NOT USE
+// determines the vertices to fix for square meshes
+std::vector<std::vector<int>> determineFixedVerticesSquare()
+{
+  geometry->requireVertexPositions();
+  std::vector<int> fixedVertexIDs = {};
+  double minY = 0.;
+  double maxY = 0.;
+  for (Vertex v_i : mesh->vertices())
+  {
+    // only consider boundary vertices
+    if (!v_i.isBoundary())
     {
       continue;
     }
+    bool isOnStartOrEnd = false;
+    for (Halfedge he : v_i.incomingHalfedges())
+    {
+      // only consider boundary edges
+      if (!he.edge().isBoundary())
+      {
+        continue;
+      }
+      Vertex v_j = he.tailVertex();
+      Vector3 dispVector = geometry->vertexPositions[v_j] - geometry->vertexPositions[v_i];
+      // if edge is flat
+      if (dispVector.y == 0)
+      {
+        isOnStartOrEnd = true;
+      }
+    }
+    if (isOnStartOrEnd)
+    {
+      fixedVertexIDs.push_back(v_i.getIndex());
+      // std::cout << v_i.getIndex() << "\n";
+      minY = std::min(minY, geometry->vertexPositions[v_i].y);
+      maxY = std::max(maxY, geometry->vertexPositions[v_i].y);
+    }
+  }
+
+  std::vector<int> bottomFixedVertexIds = {};
+  std::vector<int> topFixedVertexIds = {};
+  for (int id : fixedVertexIDs)
+  {
+    if (geometry->vertexPositions[id].y == minY)
+    {
+      bottomFixedVertexIds.push_back(id);
+    }
+    else
+    {
+      topFixedVertexIds.push_back(id);
+    }
+  }
+  return {bottomFixedVertexIds, topFixedVertexIds};
+}
+
+// DEPRECATED - DO NOT USE
+// determines the vertices to fix for annulus meshes
+std::vector<std::vector<int>> determineFixedVerticesAnnulusCut()
+{
+  geometry->requireVertexPositions();
+  std::vector<int> fixedVertexIDs = {};
+  Edge prevEdge;
+  bool isFirstEdge = true;
+  Edge firstEdge;
+  int loopNum = 0;
+  for (Edge e : mesh->boundaryLoop(0).adjacentEdges())
+  {
+    if (isFirstEdge)
+    {
+      firstEdge = e;
+      isFirstEdge = false;
+    }
+    else
+    {
+      Vertex v1 = mesh->vertex(findSharedVertexId(prevEdge, e));
+      Vertex v0 = prevEdge.otherVertex(v1);
+      Vertex v2 = e.otherVertex(v1);
+      Vector3 prevEdgeVector = geometry->vertexPositions[v1] - geometry->vertexPositions[v0];
+      Vector3 currEdgeVector = geometry->vertexPositions[v2] - geometry->vertexPositions[v1];
+      if (std::abs(dot(prevEdgeVector.normalize(), currEdgeVector.normalize())) == 1.)
+      {
+        fixedVertexIDs.push_back(v1.getIndex());
+        std::cout << v1.getIndex() << "\n";
+      }
+    }
+    prevEdge = e;
+  }
+
+  std::vector<int> bottomFixedVertexIds = {};
+  std::vector<int> topFixedVertexIds = {};
+  for (int id : fixedVertexIDs)
+  {
+    bottomFixedVertexIds.push_back(id);
+    topFixedVertexIds.push_back(id);
+  }
+  return {bottomFixedVertexIds, topFixedVertexIds};
+}
+
+// finds the ID of the vertex shared by the two edges
+// returns -1 if they don't share a vertex
+int findSharedVertexId(Edge e1, Edge e2)
+{
+  if (e1.firstVertex() == e2.firstVertex() || e1.firstVertex() == e2.secondVertex())
+  {
+    return e1.firstVertex().getIndex();
+  }
+  else if (e1.secondVertex() == e2.firstVertex() || e1.secondVertex() == e2.secondVertex())
+  {
+    return e1.secondVertex().getIndex();
+  }
+  else
+  {
+    return -1;
   }
 }
 
-VertexData<double> constructHFunction(std::vector<int> &fixedVertices)
+// uses Laplacian smoothing to construct H function based on start and stop boundaries
+VertexData<double> constructHFunction(std::vector<int> &startVertices, std::vector<int> &endVertices)
 {
   // SparseMatrix<double> laplacianMatrix = SparseMatrix<double>(mesh->nVertices(), mesh->nVertices());
   // std::vector<Eigen::Triplet<double>> lMatTriplets = {};
@@ -86,6 +232,10 @@ VertexData<double> constructHFunction(std::vector<int> &fixedVertices)
   bool useCotanWeights = true;
   bool includeDMatrix = true;
   bool doSquareLaplace = true;
+  geometry->requireVertexPositions();
+  geometry->requireEdgeCotanWeights();
+  geometry->requireVertexDualAreas();
+  geometry->requireVertexIndices();
 
   // =====================CONSTRUCT LAPLACE MATRIX=====================
 
@@ -124,7 +274,14 @@ VertexData<double> constructHFunction(std::vector<int> &fixedVertices)
   // update rows for all fixed-value vertices
   // first, transpose once to edit rows as columns
   A_mat = A_mat.transpose();
-  for (int i : fixedVertices)
+  for (int i : startVertices)
+  {
+    SparseMatrix<double> constrained_col = SparseMatrix<double>(mesh->nVertices(), 1);
+    std::vector<T> triplets = {T({i, 0, 1})};
+    constrained_col.setFromTriplets(triplets.begin(), triplets.end());
+    A_mat.col(i) = constrained_col;
+  }
+  for (int i : endVertices)
   {
     SparseMatrix<double> constrained_col = SparseMatrix<double>(mesh->nVertices(), 1);
     std::vector<T> triplets = {T({i, 0, 1})};
@@ -139,7 +296,7 @@ VertexData<double> constructHFunction(std::vector<int> &fixedVertices)
   // all zero except for displaced_verts
   // those should have displacement of displacement_vector
   std::vector<T> b_triplets = {};
-  for (int i : fixedVertices)
+  for (int i : endVertices)
   {
     b_triplets.push_back(T({i, 0, 1.}));
   }
@@ -165,18 +322,115 @@ VertexData<double> constructHFunction(std::vector<int> &fixedVertices)
   return hFunction;
 }
 
+// selects all boundary vertices that are similarly aligned to the user's selected vertex
+void selectWholeBoundary(int rootIndex, int boundaryId)
+{
+  geometry->requireVertexPositions();
+  Vector3 boundarySlope;
+  for (Halfedge he : mesh->vertex(rootIndex).incomingHalfedges())
+  {
+    Vertex v_j = he.tailVertex();
+    if (v_j.isBoundary())
+    {
+      boundarySlope = geometry->vertexPositions[v_j] - geometry->vertexPositions[rootIndex];
+      break;
+    }
+  }
+  boundarySlope = boundarySlope.normalize();
+  // intitialize BFS
+  std::map<int, bool> isVertexVisited;
+  for (Vertex vertex : mesh->vertices())
+  {
+    isVertexVisited[vertex.getIndex()] = false;
+  }
+  std::queue<int> vertices;
+  vertices.push(rootIndex);
+  isVertexVisited[rootIndex] = true;
+  // run BFS
+  while (!vertices.empty())
+  {
+    Vertex v_i = mesh->vertex(vertices.front());
+    vertices.pop();
+
+    boundaryVertices[boundaryId].push_back(v_i.getIndex());
+    boundaryPoints[boundaryId].push_back(geometry->vertexPositions[v_i]);
+
+    for (Halfedge he : v_i.incomingHalfedges())
+    {
+      Vertex v_j = he.tailVertex();
+      Vector3 slope = geometry->vertexPositions[v_j] - geometry->vertexPositions[v_i];
+      slope = slope.normalize();
+      if (v_j.isBoundary() && std::abs(dot(slope, boundarySlope)) >= 1 - 1e-6 && !isVertexVisited[v_j.getIndex()])
+      {
+        isVertexVisited[v_j.getIndex()] = true;
+        vertices.push(v_j.getIndex());
+      }
+    }
+  }
+}
+
 // A user-defined callback, for creating control panels (etc)
 // Use ImGUI commands to build whatever you want here, see
 // https://github.com/ocornut/imgui/blob/master/imgui.h
 void myCallback()
 {
-
-  if (ImGui::Button("do work"))
+  if (ImGui::Button("Pick start boundary (h=0)"))
   {
-    doWork();
+    int selected = psMesh->selectVertex();
+    boundaryVertices[0] = {};
+    boundaryPoints[0] = {};
+    selectWholeBoundary(selected, 0);
+    auto pc = polyscope::registerPointCloud("Start points (h=0)", boundaryPoints[0]);
+    pc->setPointColor({1., 0.1, 1.});
+  }
+  if (ImGui::Button("Pick end boundary (h=1)"))
+  {
+    int selected = psMesh->selectVertex();
+    boundaryVertices[1] = {};
+    boundaryPoints[1] = {};
+    selectWholeBoundary(selected, 1);
+    auto pc = polyscope::registerPointCloud("End points (h=1)", boundaryPoints[1]);
+    pc->setPointColor({1., 1., 0.1});
+  }
+  if (ImGui::Button("Clear boundaries"))
+  {
+    for (int i = 0; i < boundaryVertices.size(); ++i)
+    {
+      boundaryVertices[i] = {};
+      boundaryPoints[i] = {};
+    }
+    polyscope::removePointCloud("Start points (h=0)");
+    polyscope::removePointCloud("End points (h=1)");
   }
 
-  ImGui::SliderFloat("param", &param1, 0., 100.);
+  if (ImGui::Button("Generate H Function"))
+  {
+    if (boundaryVertices[0].size() == 0 || boundaryVertices[1].size() == 0)
+    {
+      polyscope::warning("Please select start and end boundaries first.");
+    }
+    else
+    {
+      VertexData<double> hFunction = constructHFunction(boundaryVertices[0], boundaryVertices[1]);
+      auto hFunctionDisplay = psMesh->addVertexScalarQuantity("H Function", hFunction);
+      hFunctionDisplay->setEnabled(true);
+    }
+  }
+
+  if (ImGui::Button("Construct Gradient"))
+  {
+    polyscope::warning("Unimplemented");
+  }
+
+  if (ImGui::Button("Construct Tangent Vectors"))
+  {
+    polyscope::warning("Unimplemented");
+  }
+
+  if (ImGui::Button("Generate Curves"))
+  {
+    generateStripes();
+  }
 }
 
 int main(int argc, char **argv)
