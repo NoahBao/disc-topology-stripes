@@ -30,9 +30,15 @@ polyscope::SurfaceMesh *psMesh;
 
 // =============FUNCTION HEADERS=============
 
-VertexData<double> constructHFunction(std::vector<int> &startVertices, std::vector<int> &endVertices);
+void selectBoundary(int boundaryIndex);
+void selectBoundaryPoints(int endPointIndex1, int endPointIndex2, int innerPointIndex, int boundaryId);
 
-void selectWholeBoundary(int rootIndex, int boundaryId);
+void constructHFunction(std::vector<int> &startVertices, std::vector<int> &endVertices);
+
+void constructFaceGradient();
+void constructVertexGradient();
+
+void constructTangentVectors();
 
 // ==========================================
 
@@ -43,21 +49,10 @@ void selectWholeBoundary(int rootIndex, int boundaryId);
 std::vector<std::vector<int>> boundaryVertices = {{}, {}};
 std::vector<std::vector<Vector3>> boundaryPoints = {{}, {}};
 
-// ==========================================
-
-// =============DEPRECATED VARIABLES/FUNCTIONS=============
-
-enum MeshShape
-{
-  SQUARE,
-  ANNULUS_CUT
-};
-MeshShape inputMeshShape = SQUARE;
-
-std::vector<std::vector<int>> determineFixedVertices();
-std::vector<std::vector<int>> determineFixedVerticesSquare();
-std::vector<std::vector<int>> determineFixedVerticesAnnulusCut();
-int findSharedVertexId(Edge e1, Edge e2);
+VertexData<double> hFunction;
+FaceData<Vector3> faceGradient;
+VertexData<Vector3> vertexGradient;
+VertexData<Vector3> tangentVectors;
 
 // ===========================================================
 
@@ -68,6 +63,11 @@ void generateStripes()
   // TODO: use our own guide field based on the user's start and end boundaries
   VertexData<Vector2> guideField =
       geometrycentral::surface::computeSmoothestVertexDirectionField(*geometry, 2);
+
+  for (Vertex v : mesh->vertices())
+  {
+    guideField[v] = {tangentVectors[v].x, tangentVectors[v].y};
+  }
 
   // Compute the stripe pattern
   double constantFreq = 40.;
@@ -87,147 +87,85 @@ void generateStripes()
   polyscope::registerCurveNetwork("Curve edges", isolineVerts, isolineEdges);
 }
 
-// DEPRECATED - DO NOT USE
-// determines the vertices to fix based on the input mesh's shape
-std::vector<std::vector<int>> determineFixedVertices()
+// select a particular boundary (start or end)
+void selectBoundary(int boundaryIndex)
 {
-  switch (inputMeshShape)
-  {
-  case SQUARE:
-    return determineFixedVerticesSquare();
-  case ANNULUS_CUT:
-    return determineFixedVerticesAnnulusCut();
-  }
-  return {};
-}
-
-// DEPRECATED - DO NOT USE
-// determines the vertices to fix for square meshes
-std::vector<std::vector<int>> determineFixedVerticesSquare()
-{
+  // initialize variables
   geometry->requireVertexPositions();
-  std::vector<int> fixedVertexIDs = {};
-  double minY = 0.;
-  double maxY = 0.;
-  for (Vertex v_i : mesh->vertices())
-  {
-    // only consider boundary vertices
-    if (!v_i.isBoundary())
-    {
-      continue;
-    }
-    bool isOnStartOrEnd = false;
-    for (Halfedge he : v_i.incomingHalfedges())
-    {
-      // only consider boundary edges
-      if (!he.edge().isBoundary())
-      {
-        continue;
-      }
-      Vertex v_j = he.tailVertex();
-      Vector3 dispVector = geometry->vertexPositions[v_j] - geometry->vertexPositions[v_i];
-      // if edge is flat
-      if (dispVector.y == 0)
-      {
-        isOnStartOrEnd = true;
-      }
-    }
-    if (isOnStartOrEnd)
-    {
-      fixedVertexIDs.push_back(v_i.getIndex());
-      // std::cout << v_i.getIndex() << "\n";
-      minY = std::min(minY, geometry->vertexPositions[v_i].y);
-      maxY = std::max(maxY, geometry->vertexPositions[v_i].y);
-    }
-  }
+  glm::vec3 pointCloudColor = boundaryIndex == 0 ? glm::vec3({1., 0.1, 1.}) : glm::vec3({1., 1., 0.1});
+  std::string pointCloudName = "Start points (h=" + std::to_string(boundaryIndex) + ")";
+  auto pc = polyscope::registerPointCloud(pointCloudName, boundaryPoints[boundaryIndex]);
+  polyscope::warning("Pick two endpoints first, then choose a point to define the \"insideness\" of your selection.");
 
-  std::vector<int> bottomFixedVertexIds = {};
-  std::vector<int> topFixedVertexIds = {};
-  for (int id : fixedVertexIDs)
-  {
-    if (geometry->vertexPositions[id].y == minY)
-    {
-      bottomFixedVertexIds.push_back(id);
-    }
-    else
-    {
-      topFixedVertexIds.push_back(id);
-    }
-  }
-  return {bottomFixedVertexIds, topFixedVertexIds};
-}
+  // pick endpoint 1 and add preview for it
+  int endPoint1 = psMesh->selectVertex();
+  boundaryPoints[boundaryIndex].push_back(geometry->vertexPositions[endPoint1]);
+  pc = polyscope::registerPointCloud(pointCloudName, boundaryPoints[boundaryIndex]);
 
-// DEPRECATED - DO NOT USE
-// determines the vertices to fix for annulus meshes
-std::vector<std::vector<int>> determineFixedVerticesAnnulusCut()
-{
-  geometry->requireVertexPositions();
-  std::vector<int> fixedVertexIDs = {};
-  Edge prevEdge;
-  bool isFirstEdge = true;
-  Edge firstEdge;
-  int loopNum = 0;
-  for (Edge e : mesh->boundaryLoop(0).adjacentEdges())
-  {
-    if (isFirstEdge)
-    {
-      firstEdge = e;
-      isFirstEdge = false;
-    }
-    else
-    {
-      Vertex v1 = mesh->vertex(findSharedVertexId(prevEdge, e));
-      Vertex v0 = prevEdge.otherVertex(v1);
-      Vertex v2 = e.otherVertex(v1);
-      Vector3 prevEdgeVector = geometry->vertexPositions[v1] - geometry->vertexPositions[v0];
-      Vector3 currEdgeVector = geometry->vertexPositions[v2] - geometry->vertexPositions[v1];
-      if (std::abs(dot(prevEdgeVector.normalize(), currEdgeVector.normalize())) == 1.)
-      {
-        fixedVertexIDs.push_back(v1.getIndex());
-        std::cout << v1.getIndex() << "\n";
-      }
-    }
-    prevEdge = e;
-  }
+  // same thing for endpoint 2
+  int endPoint2 = psMesh->selectVertex();
+  boundaryPoints[boundaryIndex].push_back(geometry->vertexPositions[endPoint2]);
+  pc = polyscope::registerPointCloud(pointCloudName, boundaryPoints[boundaryIndex]);
 
-  std::vector<int> bottomFixedVertexIds = {};
-  std::vector<int> topFixedVertexIds = {};
-  for (int id : fixedVertexIDs)
+  // pick inner point and begin search
+  int innerPoint = psMesh->selectVertex();
+  boundaryVertices[boundaryIndex] = {};
+  boundaryPoints[boundaryIndex] = {};
+  // points must be on boundary
+  if (!mesh->vertex(endPoint1).isBoundary() || !mesh->vertex(endPoint2).isBoundary() || !mesh->vertex(innerPoint).isBoundary())
   {
-    bottomFixedVertexIds.push_back(id);
-    topFixedVertexIds.push_back(id);
-  }
-  return {bottomFixedVertexIds, topFixedVertexIds};
-}
-
-// finds the ID of the vertex shared by the two edges
-// returns -1 if they don't share a vertex
-int findSharedVertexId(Edge e1, Edge e2)
-{
-  if (e1.firstVertex() == e2.firstVertex() || e1.firstVertex() == e2.secondVertex())
-  {
-    return e1.firstVertex().getIndex();
-  }
-  else if (e1.secondVertex() == e2.firstVertex() || e1.secondVertex() == e2.secondVertex())
-  {
-    return e1.secondVertex().getIndex();
+    polyscope::warning("Please select boundary vertices only.");
   }
   else
   {
-    return -1;
+    selectBoundaryPoints(endPoint1, endPoint2, innerPoint, boundaryIndex);
+    pc = polyscope::registerPointCloud(pointCloudName, boundaryPoints[boundaryIndex]);
+    pc->setPointColor(pointCloudColor);
+  }
+}
+
+// selects all boundary vertices that are between endpoints 1 and 2 ("in between" defined by inner point)
+void selectBoundaryPoints(int endPointIndex1, int endPointIndex2, int innerPointIndex, int boundaryId)
+{
+  // intitialize BFS
+  std::map<int, bool> isVertexVisited;
+  for (Vertex vertex : mesh->vertices())
+  {
+    isVertexVisited[vertex.getIndex()] = false;
+  }
+  std::queue<int> vertices;
+  vertices.push(innerPointIndex);
+  isVertexVisited[innerPointIndex] = true;
+  // run BFS from inner point, stop at endpoints 1 and 2
+  while (!vertices.empty())
+  {
+    Vertex v_i = mesh->vertex(vertices.front());
+    vertices.pop();
+
+    boundaryVertices[boundaryId].push_back(v_i.getIndex());
+    boundaryPoints[boundaryId].push_back(geometry->vertexPositions[v_i]);
+
+    if (v_i.getIndex() == endPointIndex1 || v_i.getIndex() == endPointIndex2)
+    {
+      // stop exploring once we reach endpoints
+      continue;
+    }
+
+    for (Halfedge he : v_i.incomingHalfedges())
+    {
+      Vertex v_j = he.tailVertex();
+      if (v_j.isBoundary() && !isVertexVisited[v_j.getIndex()])
+      {
+        isVertexVisited[v_j.getIndex()] = true;
+        vertices.push(v_j.getIndex());
+      }
+    }
   }
 }
 
 // uses Laplacian smoothing to construct H function based on start and stop boundaries
-VertexData<double> constructHFunction(std::vector<int> &startVertices, std::vector<int> &endVertices)
+void constructHFunction(std::vector<int> &startVertices, std::vector<int> &endVertices)
 {
-  // SparseMatrix<double> laplacianMatrix = SparseMatrix<double>(mesh->nVertices(), mesh->nVertices());
-  // std::vector<Eigen::Triplet<double>> lMatTriplets = {};
-  // for(Vertex v_i : mesh->vertices()) {
-  //   for(Halfedge he : v_i.incomingHalfedges()) {
-  //     Vertex v_j = he.tailVertex();
-  //   }
-  // }
   bool debug = false;
   bool useCotanWeights = true;
   bool includeDMatrix = true;
@@ -314,58 +252,70 @@ VertexData<double> constructHFunction(std::vector<int> &startVertices, std::vect
 
   // ========================STORE VERTEX DATA=======================
 
-  geometrycentral::surface::VertexData<double> hFunction(*mesh);
+  hFunction = VertexData<double>(*mesh);
   for (int i = 0; i < x.rows(); ++i)
   {
     hFunction[i] = x(i, 0);
   }
-  return hFunction;
 }
 
-// selects all boundary vertices that are similarly aligned to the user's selected vertex
-void selectWholeBoundary(int rootIndex, int boundaryId)
+// calculates the NORMALIZED gradient of the provided H function for each face of the mesh
+void constructFaceGradient()
 {
-  geometry->requireVertexPositions();
-  Vector3 boundarySlope;
-  for (Halfedge he : mesh->vertex(rootIndex).incomingHalfedges())
+  geometry->requireFaceNormals();
+  geometry->requireFaceAreas();
+  faceGradient = FaceData<Vector3>(*mesh);
+  for (Face face : mesh->faces())
   {
-    Vertex v_j = he.tailVertex();
-    if (v_j.isBoundary())
+    Vector3 gradientVector = {0., 0., 0.};
+    Vector3 faceNormal = geometry->faceNormals[face];
+    double faceArea = geometry->faceAreas[face];
+    // only need to look at first 2 halfedges
+    int hesProcessed = 0;
+    Halfedge he = *face.adjacentHalfedges().begin();
+    while (hesProcessed < 2)
     {
-      boundarySlope = geometry->vertexPositions[v_j] - geometry->vertexPositions[rootIndex];
-      break;
+      Vertex tip = he.tipVertex();
+      Vertex tail = he.tailVertex();
+      Vertex other = he.next().tipVertex();
+      Vector3 edgeVector = geometry->vertexPositions[tip] - geometry->vertexPositions[tail];
+      Vector3 edgePerpVector = cross(faceNormal, edgeVector);
+      double functionDiff = hesProcessed == 0 ? hFunction[other] - hFunction[tip] : hFunction[other] - hFunction[tail];
+      gradientVector += functionDiff * edgePerpVector / (2. * faceArea);
+      hesProcessed++;
+      he = he.next();
     }
+    faceGradient[face] = gradientVector.normalize();
   }
-  boundarySlope = boundarySlope.normalize();
-  // intitialize BFS
-  std::map<int, bool> isVertexVisited;
-  for (Vertex vertex : mesh->vertices())
-  {
-    isVertexVisited[vertex.getIndex()] = false;
-  }
-  std::queue<int> vertices;
-  vertices.push(rootIndex);
-  isVertexVisited[rootIndex] = true;
-  // run BFS
-  while (!vertices.empty())
-  {
-    Vertex v_i = mesh->vertex(vertices.front());
-    vertices.pop();
+}
 
-    boundaryVertices[boundaryId].push_back(v_i.getIndex());
-    boundaryPoints[boundaryId].push_back(geometry->vertexPositions[v_i]);
-
-    for (Halfedge he : v_i.incomingHalfedges())
+// calculates the gradient of the provided H function for each vertex of the mesh
+// as the uniform average of the adjacent face gradients
+void constructVertexGradient()
+{
+  vertexGradient = VertexData<Vector3>(*mesh);
+  for (Vertex v : mesh->vertices())
+  {
+    Vector3 gradientVector = {0., 0., 0.};
+    int numAdjFaces = 0;
+    for (Face f : v.adjacentFaces())
     {
-      Vertex v_j = he.tailVertex();
-      Vector3 slope = geometry->vertexPositions[v_j] - geometry->vertexPositions[v_i];
-      slope = slope.normalize();
-      if (v_j.isBoundary() && std::abs(dot(slope, boundarySlope)) >= 1 - 1e-6 && !isVertexVisited[v_j.getIndex()])
-      {
-        isVertexVisited[v_j.getIndex()] = true;
-        vertices.push(v_j.getIndex());
-      }
+      gradientVector += faceGradient[f];
+      numAdjFaces++;
     }
+    gradientVector /= numAdjFaces;
+    vertexGradient[v] = gradientVector;
+  }
+}
+
+// constructs the tangent vector for each vertex based on the vertex gradient
+void constructTangentVectors()
+{
+  geometry->requireVertexNormals();
+  tangentVectors = VertexData<Vector3>(*mesh);
+  for (Vertex v : mesh->vertices())
+  {
+    tangentVectors[v] = cross(vertexGradient[v], geometry->vertexNormals[v]);
   }
 }
 
@@ -376,21 +326,11 @@ void myCallback()
 {
   if (ImGui::Button("Pick start boundary (h=0)"))
   {
-    int selected = psMesh->selectVertex();
-    boundaryVertices[0] = {};
-    boundaryPoints[0] = {};
-    selectWholeBoundary(selected, 0);
-    auto pc = polyscope::registerPointCloud("Start points (h=0)", boundaryPoints[0]);
-    pc->setPointColor({1., 0.1, 1.});
+    selectBoundary(0);
   }
   if (ImGui::Button("Pick end boundary (h=1)"))
   {
-    int selected = psMesh->selectVertex();
-    boundaryVertices[1] = {};
-    boundaryPoints[1] = {};
-    selectWholeBoundary(selected, 1);
-    auto pc = polyscope::registerPointCloud("End points (h=1)", boundaryPoints[1]);
-    pc->setPointColor({1., 1., 0.1});
+    selectBoundary(1);
   }
   if (ImGui::Button("Clear boundaries"))
   {
@@ -411,7 +351,7 @@ void myCallback()
     }
     else
     {
-      VertexData<double> hFunction = constructHFunction(boundaryVertices[0], boundaryVertices[1]);
+      constructHFunction(boundaryVertices[0], boundaryVertices[1]);
       auto hFunctionDisplay = psMesh->addVertexScalarQuantity("H Function", hFunction);
       hFunctionDisplay->setEnabled(true);
     }
@@ -419,12 +359,17 @@ void myCallback()
 
   if (ImGui::Button("Construct Gradient"))
   {
-    polyscope::warning("Unimplemented");
+    constructFaceGradient();
+    constructVertexGradient();
+    auto gradientDisplay = psMesh->addVertexVectorQuantity("Vertex Gradient", vertexGradient);
+    gradientDisplay->setEnabled(true);
   }
 
   if (ImGui::Button("Construct Tangent Vectors"))
   {
-    polyscope::warning("Unimplemented");
+    constructTangentVectors();
+    auto tangentDisplay = psMesh->addVertexVectorQuantity("Vertex Gradient Tangents", tangentVectors);
+    tangentDisplay->setEnabled(true);
   }
 
   if (ImGui::Button("Generate Curves"))
