@@ -39,6 +39,7 @@ void constructFaceGradient();
 void constructVertexGradient();
 
 void constructTangentVectors();
+Vector2 projectOntoTangentPlane(Vector3 vec, Vector3 norm, Vector3 he);
 
 // ==========================================
 
@@ -52,7 +53,7 @@ std::vector<std::vector<Vector3>> boundaryPoints = {{}, {}};
 VertexData<double> hFunction;
 FaceData<Vector3> faceGradient;
 VertexData<Vector3> vertexGradient;
-VertexData<Vector3> tangentVectors;
+VertexData<Vector2> tangentVectors;
 
 // ===========================================================
 
@@ -64,10 +65,8 @@ void generateStripes()
   VertexData<Vector2> guideField =
       geometrycentral::surface::computeSmoothestVertexDirectionField(*geometry, 2);
 
-  for (Vertex v : mesh->vertices())
-  {
-    guideField[v] = {tangentVectors[v].x, tangentVectors[v].y};
-  }
+  // use tangent vectors instead of smoothest direction field
+  guideField = tangentVectors;
 
   // Compute the stripe pattern
   double constantFreq = 40.;
@@ -312,11 +311,31 @@ void constructVertexGradient()
 void constructTangentVectors()
 {
   geometry->requireVertexNormals();
-  tangentVectors = VertexData<Vector3>(*mesh);
+  tangentVectors = VertexData<Vector2>(*mesh);
+  int numProcessed = 0;
   for (Vertex v : mesh->vertices())
   {
-    tangentVectors[v] = cross(vertexGradient[v], geometry->vertexNormals[v]);
+    Vector3 normalVec = geometry->vertexNormals[v];
+    Halfedge he;
+    for (Halfedge he_placeholder : v.outgoingHalfedges())
+    {
+      he = he_placeholder;
+      break;
+    }
+    Vector3 heVec = geometry->vertexPositions[he.tipVertex()] - geometry->vertexPositions[he.tailVertex()];
+    Vector2 u = projectOntoTangentPlane(vertexGradient[v], normalVec, heVec);
+    double angleA = std::atan2(u.y, u.x) + M_PI / 2.0;
+    std::complex<double> complexDirectionField(std::complex<double>(cos(2.0 * angleA), sin(2.0 * angleA)));
+    tangentVectors[v] = Vector2::fromComplex(complexDirectionField).normalize();
+    numProcessed++;
   }
+}
+
+Vector2 projectOntoTangentPlane(Vector3 vec, Vector3 normal, Vector3 he)
+{
+  Vector3 eY = cross(normal, he).normalize();
+  Vector3 eX = cross(eY, normal).normalize();
+  return {dot(eX, vec), dot(eY, vec)};
 }
 
 // A user-defined callback, for creating control panels (etc)
@@ -368,8 +387,6 @@ void myCallback()
   if (ImGui::Button("Construct Tangent Vectors"))
   {
     constructTangentVectors();
-    auto tangentDisplay = psMesh->addVertexVectorQuantity("Vertex Gradient Tangents", tangentVectors);
-    tangentDisplay->setEnabled(true);
   }
 
   if (ImGui::Button("Generate Curves"))
