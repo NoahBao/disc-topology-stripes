@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template"
+CMAKE_SOURCE_DIR = /Users/feng/Documents/disc-topology-stripes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build"
+CMAKE_BINARY_DIR = /Users/feng/Documents/disc-topology-stripes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src//CMakeFiles/progress.marks"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" 0
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/feng/Documents/disc-topology-stripes/build/CMakeFiles /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src//CMakeFiles/progress.marks
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/feng/Documents/disc-topology-stripes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/clean
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/preinstall
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/preinstall
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/rule:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/rule
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/rule
 .PHONY : deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ glad: deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/rule
 
 # fast build rule for target.
 glad/fast:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
 glad.o: glad.c.o
@@ -180,7 +180,7 @@ glad.o: glad.c.o
 
 # target to build an object file
 glad.c.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o
 .PHONY : glad.c.o
 
 glad.i: glad.c.i
@@ -188,7 +188,7 @@ glad.i: glad.c.i
 
 # target to preprocess a source file
 glad.c.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.i
 .PHONY : glad.c.i
 
 glad.s: glad.c.s
@@ -196,7 +196,7 @@ glad.s: glad.c.s
 
 # target to generate assembly for a file
 glad.c.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.s
 .PHONY : glad.c.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,86 +1,86 @@
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles/gc_project.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/deps/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/deps/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/deps/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/deps/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/deps/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/deps/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src/CMakeFiles/geometry-central.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src/CMakeFiles/glad.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/glfw.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/imgui/CMakeFiles/imgui.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/imgui/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/imgui/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/imgui/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/imgui/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/imgui/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/imgui/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb/CMakeFiles/stb.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb/CMakeFiles/install/strip.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/src/CMakeFiles/polyscope.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/src/CMakeFiles/edit_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/src/CMakeFiles/rebuild_cache.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/src/CMakeFiles/list_install_components.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/src/CMakeFiles/install.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/src/CMakeFiles/install/local.dir
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/src/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles/gc_project.dir
+/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/deps/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/deps/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/deps/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/deps/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/deps/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/deps/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src/CMakeFiles/geometry-central.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src/CMakeFiles/glad.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/glfw.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/imgui/CMakeFiles/imgui.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/imgui/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/imgui/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/imgui/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/imgui/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/imgui/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/imgui/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb/CMakeFiles/stb.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb/CMakeFiles/install/strip.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/src/CMakeFiles/polyscope.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/src/CMakeFiles/edit_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/src/CMakeFiles/rebuild_cache.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/src/CMakeFiles/list_install_components.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/src/CMakeFiles/install.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/src/CMakeFiles/install/local.dir
+/Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/src/CMakeFiles/install/strip.dir

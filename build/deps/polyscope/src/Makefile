@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template"
+CMAKE_SOURCE_DIR = /Users/feng/Documents/disc-topology-stripes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build"
+CMAKE_BINARY_DIR = /Users/feng/Documents/disc-topology-stripes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/src//CMakeFiles/progress.marks"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" 0
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/feng/Documents/disc-topology-stripes/build/CMakeFiles /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/src//CMakeFiles/progress.marks
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/feng/Documents/disc-topology-stripes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/clean
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/preinstall
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/preinstall
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 deps/polyscope/src/CMakeFiles/polyscope.dir/rule:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/CMakeFiles/polyscope.dir/rule
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/src/CMakeFiles/polyscope.dir/rule
 .PHONY : deps/polyscope/src/CMakeFiles/polyscope.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ polyscope: deps/polyscope/src/CMakeFiles/polyscope.dir/rule
 
 # fast build rule for target.
 polyscope/fast:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/build
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/build
 .PHONY : polyscope/fast
 
 camera_parameters.o: camera_parameters.cpp.o
@@ -180,7 +180,7 @@ camera_parameters.o: camera_parameters.cpp.o
 
 # target to build an object file
 camera_parameters.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_parameters.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_parameters.cpp.o
 .PHONY : camera_parameters.cpp.o
 
 camera_parameters.i: camera_parameters.cpp.i
@@ -188,7 +188,7 @@ camera_parameters.i: camera_parameters.cpp.i
 
 # target to preprocess a source file
 camera_parameters.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_parameters.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_parameters.cpp.i
 .PHONY : camera_parameters.cpp.i
 
 camera_parameters.s: camera_parameters.cpp.s
@@ -196,7 +196,7 @@ camera_parameters.s: camera_parameters.cpp.s
 
 # target to generate assembly for a file
 camera_parameters.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_parameters.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_parameters.cpp.s
 .PHONY : camera_parameters.cpp.s
 
 camera_view.o: camera_view.cpp.o
@@ -204,7 +204,7 @@ camera_view.o: camera_view.cpp.o
 
 # target to build an object file
 camera_view.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_view.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_view.cpp.o
 .PHONY : camera_view.cpp.o
 
 camera_view.i: camera_view.cpp.i
@@ -212,7 +212,7 @@ camera_view.i: camera_view.cpp.i
 
 # target to preprocess a source file
 camera_view.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_view.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_view.cpp.i
 .PHONY : camera_view.cpp.i
 
 camera_view.s: camera_view.cpp.s
@@ -220,7 +220,7 @@ camera_view.s: camera_view.cpp.s
 
 # target to generate assembly for a file
 camera_view.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_view.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/camera_view.cpp.s
 .PHONY : camera_view.cpp.s
 
 color_image_quantity.o: color_image_quantity.cpp.o
@@ -228,7 +228,7 @@ color_image_quantity.o: color_image_quantity.cpp.o
 
 # target to build an object file
 color_image_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_image_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_image_quantity.cpp.o
 .PHONY : color_image_quantity.cpp.o
 
 color_image_quantity.i: color_image_quantity.cpp.i
@@ -236,7 +236,7 @@ color_image_quantity.i: color_image_quantity.cpp.i
 
 # target to preprocess a source file
 color_image_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_image_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_image_quantity.cpp.i
 .PHONY : color_image_quantity.cpp.i
 
 color_image_quantity.s: color_image_quantity.cpp.s
@@ -244,7 +244,7 @@ color_image_quantity.s: color_image_quantity.cpp.s
 
 # target to generate assembly for a file
 color_image_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_image_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_image_quantity.cpp.s
 .PHONY : color_image_quantity.cpp.s
 
 color_management.o: color_management.cpp.o
@@ -252,7 +252,7 @@ color_management.o: color_management.cpp.o
 
 # target to build an object file
 color_management.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_management.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_management.cpp.o
 .PHONY : color_management.cpp.o
 
 color_management.i: color_management.cpp.i
@@ -260,7 +260,7 @@ color_management.i: color_management.cpp.i
 
 # target to preprocess a source file
 color_management.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_management.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_management.cpp.i
 .PHONY : color_management.cpp.i
 
 color_management.s: color_management.cpp.s
@@ -268,7 +268,7 @@ color_management.s: color_management.cpp.s
 
 # target to generate assembly for a file
 color_management.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_management.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_management.cpp.s
 .PHONY : color_management.cpp.s
 
 color_render_image_quantity.o: color_render_image_quantity.cpp.o
@@ -276,7 +276,7 @@ color_render_image_quantity.o: color_render_image_quantity.cpp.o
 
 # target to build an object file
 color_render_image_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_render_image_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_render_image_quantity.cpp.o
 .PHONY : color_render_image_quantity.cpp.o
 
 color_render_image_quantity.i: color_render_image_quantity.cpp.i
@@ -284,7 +284,7 @@ color_render_image_quantity.i: color_render_image_quantity.cpp.i
 
 # target to preprocess a source file
 color_render_image_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_render_image_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_render_image_quantity.cpp.i
 .PHONY : color_render_image_quantity.cpp.i
 
 color_render_image_quantity.s: color_render_image_quantity.cpp.s
@@ -292,7 +292,7 @@ color_render_image_quantity.s: color_render_image_quantity.cpp.s
 
 # target to generate assembly for a file
 color_render_image_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_render_image_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/color_render_image_quantity.cpp.s
 .PHONY : color_render_image_quantity.cpp.s
 
 curve_network.o: curve_network.cpp.o
@@ -300,7 +300,7 @@ curve_network.o: curve_network.cpp.o
 
 # target to build an object file
 curve_network.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network.cpp.o
 .PHONY : curve_network.cpp.o
 
 curve_network.i: curve_network.cpp.i
@@ -308,7 +308,7 @@ curve_network.i: curve_network.cpp.i
 
 # target to preprocess a source file
 curve_network.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network.cpp.i
 .PHONY : curve_network.cpp.i
 
 curve_network.s: curve_network.cpp.s
@@ -316,7 +316,7 @@ curve_network.s: curve_network.cpp.s
 
 # target to generate assembly for a file
 curve_network.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network.cpp.s
 .PHONY : curve_network.cpp.s
 
 curve_network_color_quantity.o: curve_network_color_quantity.cpp.o
@@ -324,7 +324,7 @@ curve_network_color_quantity.o: curve_network_color_quantity.cpp.o
 
 # target to build an object file
 curve_network_color_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_color_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_color_quantity.cpp.o
 .PHONY : curve_network_color_quantity.cpp.o
 
 curve_network_color_quantity.i: curve_network_color_quantity.cpp.i
@@ -332,7 +332,7 @@ curve_network_color_quantity.i: curve_network_color_quantity.cpp.i
 
 # target to preprocess a source file
 curve_network_color_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_color_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_color_quantity.cpp.i
 .PHONY : curve_network_color_quantity.cpp.i
 
 curve_network_color_quantity.s: curve_network_color_quantity.cpp.s
@@ -340,7 +340,7 @@ curve_network_color_quantity.s: curve_network_color_quantity.cpp.s
 
 # target to generate assembly for a file
 curve_network_color_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_color_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_color_quantity.cpp.s
 .PHONY : curve_network_color_quantity.cpp.s
 
 curve_network_scalar_quantity.o: curve_network_scalar_quantity.cpp.o
@@ -348,7 +348,7 @@ curve_network_scalar_quantity.o: curve_network_scalar_quantity.cpp.o
 
 # target to build an object file
 curve_network_scalar_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_scalar_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_scalar_quantity.cpp.o
 .PHONY : curve_network_scalar_quantity.cpp.o
 
 curve_network_scalar_quantity.i: curve_network_scalar_quantity.cpp.i
@@ -356,7 +356,7 @@ curve_network_scalar_quantity.i: curve_network_scalar_quantity.cpp.i
 
 # target to preprocess a source file
 curve_network_scalar_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_scalar_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_scalar_quantity.cpp.i
 .PHONY : curve_network_scalar_quantity.cpp.i
 
 curve_network_scalar_quantity.s: curve_network_scalar_quantity.cpp.s
@@ -364,7 +364,7 @@ curve_network_scalar_quantity.s: curve_network_scalar_quantity.cpp.s
 
 # target to generate assembly for a file
 curve_network_scalar_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_scalar_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_scalar_quantity.cpp.s
 .PHONY : curve_network_scalar_quantity.cpp.s
 
 curve_network_vector_quantity.o: curve_network_vector_quantity.cpp.o
@@ -372,7 +372,7 @@ curve_network_vector_quantity.o: curve_network_vector_quantity.cpp.o
 
 # target to build an object file
 curve_network_vector_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_vector_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_vector_quantity.cpp.o
 .PHONY : curve_network_vector_quantity.cpp.o
 
 curve_network_vector_quantity.i: curve_network_vector_quantity.cpp.i
@@ -380,7 +380,7 @@ curve_network_vector_quantity.i: curve_network_vector_quantity.cpp.i
 
 # target to preprocess a source file
 curve_network_vector_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_vector_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_vector_quantity.cpp.i
 .PHONY : curve_network_vector_quantity.cpp.i
 
 curve_network_vector_quantity.s: curve_network_vector_quantity.cpp.s
@@ -388,7 +388,7 @@ curve_network_vector_quantity.s: curve_network_vector_quantity.cpp.s
 
 # target to generate assembly for a file
 curve_network_vector_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_vector_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/curve_network_vector_quantity.cpp.s
 .PHONY : curve_network_vector_quantity.cpp.s
 
 depth_render_image_quantity.o: depth_render_image_quantity.cpp.o
@@ -396,7 +396,7 @@ depth_render_image_quantity.o: depth_render_image_quantity.cpp.o
 
 # target to build an object file
 depth_render_image_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/depth_render_image_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/depth_render_image_quantity.cpp.o
 .PHONY : depth_render_image_quantity.cpp.o
 
 depth_render_image_quantity.i: depth_render_image_quantity.cpp.i
@@ -404,7 +404,7 @@ depth_render_image_quantity.i: depth_render_image_quantity.cpp.i
 
 # target to preprocess a source file
 depth_render_image_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/depth_render_image_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/depth_render_image_quantity.cpp.i
 .PHONY : depth_render_image_quantity.cpp.i
 
 depth_render_image_quantity.s: depth_render_image_quantity.cpp.s
@@ -412,7 +412,7 @@ depth_render_image_quantity.s: depth_render_image_quantity.cpp.s
 
 # target to generate assembly for a file
 depth_render_image_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/depth_render_image_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/depth_render_image_quantity.cpp.s
 .PHONY : depth_render_image_quantity.cpp.s
 
 disjoint_sets.o: disjoint_sets.cpp.o
@@ -420,7 +420,7 @@ disjoint_sets.o: disjoint_sets.cpp.o
 
 # target to build an object file
 disjoint_sets.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/disjoint_sets.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/disjoint_sets.cpp.o
 .PHONY : disjoint_sets.cpp.o
 
 disjoint_sets.i: disjoint_sets.cpp.i
@@ -428,7 +428,7 @@ disjoint_sets.i: disjoint_sets.cpp.i
 
 # target to preprocess a source file
 disjoint_sets.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/disjoint_sets.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/disjoint_sets.cpp.i
 .PHONY : disjoint_sets.cpp.i
 
 disjoint_sets.s: disjoint_sets.cpp.s
@@ -436,7 +436,7 @@ disjoint_sets.s: disjoint_sets.cpp.s
 
 # target to generate assembly for a file
 disjoint_sets.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/disjoint_sets.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/disjoint_sets.cpp.s
 .PHONY : disjoint_sets.cpp.s
 
 file_helpers.o: file_helpers.cpp.o
@@ -444,7 +444,7 @@ file_helpers.o: file_helpers.cpp.o
 
 # target to build an object file
 file_helpers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/file_helpers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/file_helpers.cpp.o
 .PHONY : file_helpers.cpp.o
 
 file_helpers.i: file_helpers.cpp.i
@@ -452,7 +452,7 @@ file_helpers.i: file_helpers.cpp.i
 
 # target to preprocess a source file
 file_helpers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/file_helpers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/file_helpers.cpp.i
 .PHONY : file_helpers.cpp.i
 
 file_helpers.s: file_helpers.cpp.s
@@ -460,7 +460,7 @@ file_helpers.s: file_helpers.cpp.s
 
 # target to generate assembly for a file
 file_helpers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/file_helpers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/file_helpers.cpp.s
 .PHONY : file_helpers.cpp.s
 
 floating_quantity.o: floating_quantity.cpp.o
@@ -468,7 +468,7 @@ floating_quantity.o: floating_quantity.cpp.o
 
 # target to build an object file
 floating_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity.cpp.o
 .PHONY : floating_quantity.cpp.o
 
 floating_quantity.i: floating_quantity.cpp.i
@@ -476,7 +476,7 @@ floating_quantity.i: floating_quantity.cpp.i
 
 # target to preprocess a source file
 floating_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity.cpp.i
 .PHONY : floating_quantity.cpp.i
 
 floating_quantity.s: floating_quantity.cpp.s
@@ -484,7 +484,7 @@ floating_quantity.s: floating_quantity.cpp.s
 
 # target to generate assembly for a file
 floating_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity.cpp.s
 .PHONY : floating_quantity.cpp.s
 
 floating_quantity_structure.o: floating_quantity_structure.cpp.o
@@ -492,7 +492,7 @@ floating_quantity_structure.o: floating_quantity_structure.cpp.o
 
 # target to build an object file
 floating_quantity_structure.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity_structure.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity_structure.cpp.o
 .PHONY : floating_quantity_structure.cpp.o
 
 floating_quantity_structure.i: floating_quantity_structure.cpp.i
@@ -500,7 +500,7 @@ floating_quantity_structure.i: floating_quantity_structure.cpp.i
 
 # target to preprocess a source file
 floating_quantity_structure.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity_structure.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity_structure.cpp.i
 .PHONY : floating_quantity_structure.cpp.i
 
 floating_quantity_structure.s: floating_quantity_structure.cpp.s
@@ -508,7 +508,7 @@ floating_quantity_structure.s: floating_quantity_structure.cpp.s
 
 # target to generate assembly for a file
 floating_quantity_structure.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity_structure.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/floating_quantity_structure.cpp.s
 .PHONY : floating_quantity_structure.cpp.s
 
 fullscreen_artist.o: fullscreen_artist.cpp.o
@@ -516,7 +516,7 @@ fullscreen_artist.o: fullscreen_artist.cpp.o
 
 # target to build an object file
 fullscreen_artist.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/fullscreen_artist.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/fullscreen_artist.cpp.o
 .PHONY : fullscreen_artist.cpp.o
 
 fullscreen_artist.i: fullscreen_artist.cpp.i
@@ -524,7 +524,7 @@ fullscreen_artist.i: fullscreen_artist.cpp.i
 
 # target to preprocess a source file
 fullscreen_artist.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/fullscreen_artist.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/fullscreen_artist.cpp.i
 .PHONY : fullscreen_artist.cpp.i
 
 fullscreen_artist.s: fullscreen_artist.cpp.s
@@ -532,7 +532,7 @@ fullscreen_artist.s: fullscreen_artist.cpp.s
 
 # target to generate assembly for a file
 fullscreen_artist.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/fullscreen_artist.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/fullscreen_artist.cpp.s
 .PHONY : fullscreen_artist.cpp.s
 
 group.o: group.cpp.o
@@ -540,7 +540,7 @@ group.o: group.cpp.o
 
 # target to build an object file
 group.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/group.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/group.cpp.o
 .PHONY : group.cpp.o
 
 group.i: group.cpp.i
@@ -548,7 +548,7 @@ group.i: group.cpp.i
 
 # target to preprocess a source file
 group.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/group.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/group.cpp.i
 .PHONY : group.cpp.i
 
 group.s: group.cpp.s
@@ -556,7 +556,7 @@ group.s: group.cpp.s
 
 # target to generate assembly for a file
 group.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/group.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/group.cpp.s
 .PHONY : group.cpp.s
 
 histogram.o: histogram.cpp.o
@@ -564,7 +564,7 @@ histogram.o: histogram.cpp.o
 
 # target to build an object file
 histogram.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/histogram.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/histogram.cpp.o
 .PHONY : histogram.cpp.o
 
 histogram.i: histogram.cpp.i
@@ -572,7 +572,7 @@ histogram.i: histogram.cpp.i
 
 # target to preprocess a source file
 histogram.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/histogram.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/histogram.cpp.i
 .PHONY : histogram.cpp.i
 
 histogram.s: histogram.cpp.s
@@ -580,7 +580,7 @@ histogram.s: histogram.cpp.s
 
 # target to generate assembly for a file
 histogram.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/histogram.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/histogram.cpp.s
 .PHONY : histogram.cpp.s
 
 image_quantity_base.o: image_quantity_base.cpp.o
@@ -588,7 +588,7 @@ image_quantity_base.o: image_quantity_base.cpp.o
 
 # target to build an object file
 image_quantity_base.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/image_quantity_base.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/image_quantity_base.cpp.o
 .PHONY : image_quantity_base.cpp.o
 
 image_quantity_base.i: image_quantity_base.cpp.i
@@ -596,7 +596,7 @@ image_quantity_base.i: image_quantity_base.cpp.i
 
 # target to preprocess a source file
 image_quantity_base.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/image_quantity_base.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/image_quantity_base.cpp.i
 .PHONY : image_quantity_base.cpp.i
 
 image_quantity_base.s: image_quantity_base.cpp.s
@@ -604,7 +604,7 @@ image_quantity_base.s: image_quantity_base.cpp.s
 
 # target to generate assembly for a file
 image_quantity_base.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/image_quantity_base.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/image_quantity_base.cpp.s
 .PHONY : image_quantity_base.cpp.s
 
 imgui_config.o: imgui_config.cpp.o
@@ -612,7 +612,7 @@ imgui_config.o: imgui_config.cpp.o
 
 # target to build an object file
 imgui_config.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/imgui_config.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/imgui_config.cpp.o
 .PHONY : imgui_config.cpp.o
 
 imgui_config.i: imgui_config.cpp.i
@@ -620,7 +620,7 @@ imgui_config.i: imgui_config.cpp.i
 
 # target to preprocess a source file
 imgui_config.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/imgui_config.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/imgui_config.cpp.i
 .PHONY : imgui_config.cpp.i
 
 imgui_config.s: imgui_config.cpp.s
@@ -628,7 +628,7 @@ imgui_config.s: imgui_config.cpp.s
 
 # target to generate assembly for a file
 imgui_config.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/imgui_config.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/imgui_config.cpp.s
 .PHONY : imgui_config.cpp.s
 
 internal.o: internal.cpp.o
@@ -636,7 +636,7 @@ internal.o: internal.cpp.o
 
 # target to build an object file
 internal.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/internal.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/internal.cpp.o
 .PHONY : internal.cpp.o
 
 internal.i: internal.cpp.i
@@ -644,7 +644,7 @@ internal.i: internal.cpp.i
 
 # target to preprocess a source file
 internal.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/internal.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/internal.cpp.i
 .PHONY : internal.cpp.i
 
 internal.s: internal.cpp.s
@@ -652,7 +652,7 @@ internal.s: internal.cpp.s
 
 # target to generate assembly for a file
 internal.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/internal.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/internal.cpp.s
 .PHONY : internal.cpp.s
 
 marching_cubes.o: marching_cubes.cpp.o
@@ -660,7 +660,7 @@ marching_cubes.o: marching_cubes.cpp.o
 
 # target to build an object file
 marching_cubes.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/marching_cubes.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/marching_cubes.cpp.o
 .PHONY : marching_cubes.cpp.o
 
 marching_cubes.i: marching_cubes.cpp.i
@@ -668,7 +668,7 @@ marching_cubes.i: marching_cubes.cpp.i
 
 # target to preprocess a source file
 marching_cubes.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/marching_cubes.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/marching_cubes.cpp.i
 .PHONY : marching_cubes.cpp.i
 
 marching_cubes.s: marching_cubes.cpp.s
@@ -676,7 +676,7 @@ marching_cubes.s: marching_cubes.cpp.s
 
 # target to generate assembly for a file
 marching_cubes.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/marching_cubes.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/marching_cubes.cpp.s
 .PHONY : marching_cubes.cpp.s
 
 messages.o: messages.cpp.o
@@ -684,7 +684,7 @@ messages.o: messages.cpp.o
 
 # target to build an object file
 messages.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/messages.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/messages.cpp.o
 .PHONY : messages.cpp.o
 
 messages.i: messages.cpp.i
@@ -692,7 +692,7 @@ messages.i: messages.cpp.i
 
 # target to preprocess a source file
 messages.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/messages.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/messages.cpp.i
 .PHONY : messages.cpp.i
 
 messages.s: messages.cpp.s
@@ -700,7 +700,7 @@ messages.s: messages.cpp.s
 
 # target to generate assembly for a file
 messages.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/messages.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/messages.cpp.s
 .PHONY : messages.cpp.s
 
 options.o: options.cpp.o
@@ -708,7 +708,7 @@ options.o: options.cpp.o
 
 # target to build an object file
 options.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/options.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/options.cpp.o
 .PHONY : options.cpp.o
 
 options.i: options.cpp.i
@@ -716,7 +716,7 @@ options.i: options.cpp.i
 
 # target to preprocess a source file
 options.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/options.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/options.cpp.i
 .PHONY : options.cpp.i
 
 options.s: options.cpp.s
@@ -724,7 +724,7 @@ options.s: options.cpp.s
 
 # target to generate assembly for a file
 options.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/options.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/options.cpp.s
 .PHONY : options.cpp.s
 
 persistent_value.o: persistent_value.cpp.o
@@ -732,7 +732,7 @@ persistent_value.o: persistent_value.cpp.o
 
 # target to build an object file
 persistent_value.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/persistent_value.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/persistent_value.cpp.o
 .PHONY : persistent_value.cpp.o
 
 persistent_value.i: persistent_value.cpp.i
@@ -740,7 +740,7 @@ persistent_value.i: persistent_value.cpp.i
 
 # target to preprocess a source file
 persistent_value.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/persistent_value.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/persistent_value.cpp.i
 .PHONY : persistent_value.cpp.i
 
 persistent_value.s: persistent_value.cpp.s
@@ -748,7 +748,7 @@ persistent_value.s: persistent_value.cpp.s
 
 # target to generate assembly for a file
 persistent_value.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/persistent_value.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/persistent_value.cpp.s
 .PHONY : persistent_value.cpp.s
 
 pick.o: pick.cpp.o
@@ -756,7 +756,7 @@ pick.o: pick.cpp.o
 
 # target to build an object file
 pick.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/pick.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/pick.cpp.o
 .PHONY : pick.cpp.o
 
 pick.i: pick.cpp.i
@@ -764,7 +764,7 @@ pick.i: pick.cpp.i
 
 # target to preprocess a source file
 pick.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/pick.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/pick.cpp.i
 .PHONY : pick.cpp.i
 
 pick.s: pick.cpp.s
@@ -772,7 +772,7 @@ pick.s: pick.cpp.s
 
 # target to generate assembly for a file
 pick.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/pick.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/pick.cpp.s
 .PHONY : pick.cpp.s
 
 point_cloud.o: point_cloud.cpp.o
@@ -780,7 +780,7 @@ point_cloud.o: point_cloud.cpp.o
 
 # target to build an object file
 point_cloud.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud.cpp.o
 .PHONY : point_cloud.cpp.o
 
 point_cloud.i: point_cloud.cpp.i
@@ -788,7 +788,7 @@ point_cloud.i: point_cloud.cpp.i
 
 # target to preprocess a source file
 point_cloud.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud.cpp.i
 .PHONY : point_cloud.cpp.i
 
 point_cloud.s: point_cloud.cpp.s
@@ -796,7 +796,7 @@ point_cloud.s: point_cloud.cpp.s
 
 # target to generate assembly for a file
 point_cloud.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud.cpp.s
 .PHONY : point_cloud.cpp.s
 
 point_cloud_color_quantity.o: point_cloud_color_quantity.cpp.o
@@ -804,7 +804,7 @@ point_cloud_color_quantity.o: point_cloud_color_quantity.cpp.o
 
 # target to build an object file
 point_cloud_color_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_color_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_color_quantity.cpp.o
 .PHONY : point_cloud_color_quantity.cpp.o
 
 point_cloud_color_quantity.i: point_cloud_color_quantity.cpp.i
@@ -812,7 +812,7 @@ point_cloud_color_quantity.i: point_cloud_color_quantity.cpp.i
 
 # target to preprocess a source file
 point_cloud_color_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_color_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_color_quantity.cpp.i
 .PHONY : point_cloud_color_quantity.cpp.i
 
 point_cloud_color_quantity.s: point_cloud_color_quantity.cpp.s
@@ -820,7 +820,7 @@ point_cloud_color_quantity.s: point_cloud_color_quantity.cpp.s
 
 # target to generate assembly for a file
 point_cloud_color_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_color_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_color_quantity.cpp.s
 .PHONY : point_cloud_color_quantity.cpp.s
 
 point_cloud_parameterization_quantity.o: point_cloud_parameterization_quantity.cpp.o
@@ -828,7 +828,7 @@ point_cloud_parameterization_quantity.o: point_cloud_parameterization_quantity.c
 
 # target to build an object file
 point_cloud_parameterization_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_parameterization_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_parameterization_quantity.cpp.o
 .PHONY : point_cloud_parameterization_quantity.cpp.o
 
 point_cloud_parameterization_quantity.i: point_cloud_parameterization_quantity.cpp.i
@@ -836,7 +836,7 @@ point_cloud_parameterization_quantity.i: point_cloud_parameterization_quantity.c
 
 # target to preprocess a source file
 point_cloud_parameterization_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_parameterization_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_parameterization_quantity.cpp.i
 .PHONY : point_cloud_parameterization_quantity.cpp.i
 
 point_cloud_parameterization_quantity.s: point_cloud_parameterization_quantity.cpp.s
@@ -844,7 +844,7 @@ point_cloud_parameterization_quantity.s: point_cloud_parameterization_quantity.c
 
 # target to generate assembly for a file
 point_cloud_parameterization_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_parameterization_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_parameterization_quantity.cpp.s
 .PHONY : point_cloud_parameterization_quantity.cpp.s
 
 point_cloud_scalar_quantity.o: point_cloud_scalar_quantity.cpp.o
@@ -852,7 +852,7 @@ point_cloud_scalar_quantity.o: point_cloud_scalar_quantity.cpp.o
 
 # target to build an object file
 point_cloud_scalar_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_scalar_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_scalar_quantity.cpp.o
 .PHONY : point_cloud_scalar_quantity.cpp.o
 
 point_cloud_scalar_quantity.i: point_cloud_scalar_quantity.cpp.i
@@ -860,7 +860,7 @@ point_cloud_scalar_quantity.i: point_cloud_scalar_quantity.cpp.i
 
 # target to preprocess a source file
 point_cloud_scalar_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_scalar_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_scalar_quantity.cpp.i
 .PHONY : point_cloud_scalar_quantity.cpp.i
 
 point_cloud_scalar_quantity.s: point_cloud_scalar_quantity.cpp.s
@@ -868,7 +868,7 @@ point_cloud_scalar_quantity.s: point_cloud_scalar_quantity.cpp.s
 
 # target to generate assembly for a file
 point_cloud_scalar_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_scalar_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_scalar_quantity.cpp.s
 .PHONY : point_cloud_scalar_quantity.cpp.s
 
 point_cloud_vector_quantity.o: point_cloud_vector_quantity.cpp.o
@@ -876,7 +876,7 @@ point_cloud_vector_quantity.o: point_cloud_vector_quantity.cpp.o
 
 # target to build an object file
 point_cloud_vector_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_vector_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_vector_quantity.cpp.o
 .PHONY : point_cloud_vector_quantity.cpp.o
 
 point_cloud_vector_quantity.i: point_cloud_vector_quantity.cpp.i
@@ -884,7 +884,7 @@ point_cloud_vector_quantity.i: point_cloud_vector_quantity.cpp.i
 
 # target to preprocess a source file
 point_cloud_vector_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_vector_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_vector_quantity.cpp.i
 .PHONY : point_cloud_vector_quantity.cpp.i
 
 point_cloud_vector_quantity.s: point_cloud_vector_quantity.cpp.s
@@ -892,7 +892,7 @@ point_cloud_vector_quantity.s: point_cloud_vector_quantity.cpp.s
 
 # target to generate assembly for a file
 point_cloud_vector_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_vector_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/point_cloud_vector_quantity.cpp.s
 .PHONY : point_cloud_vector_quantity.cpp.s
 
 polyscope.o: polyscope.cpp.o
@@ -900,7 +900,7 @@ polyscope.o: polyscope.cpp.o
 
 # target to build an object file
 polyscope.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/polyscope.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/polyscope.cpp.o
 .PHONY : polyscope.cpp.o
 
 polyscope.i: polyscope.cpp.i
@@ -908,7 +908,7 @@ polyscope.i: polyscope.cpp.i
 
 # target to preprocess a source file
 polyscope.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/polyscope.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/polyscope.cpp.i
 .PHONY : polyscope.cpp.i
 
 polyscope.s: polyscope.cpp.s
@@ -916,7 +916,7 @@ polyscope.s: polyscope.cpp.s
 
 # target to generate assembly for a file
 polyscope.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/polyscope.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/polyscope.cpp.s
 .PHONY : polyscope.cpp.s
 
 quantity.o: quantity.cpp.o
@@ -924,7 +924,7 @@ quantity.o: quantity.cpp.o
 
 # target to build an object file
 quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/quantity.cpp.o
 .PHONY : quantity.cpp.o
 
 quantity.i: quantity.cpp.i
@@ -932,7 +932,7 @@ quantity.i: quantity.cpp.i
 
 # target to preprocess a source file
 quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/quantity.cpp.i
 .PHONY : quantity.cpp.i
 
 quantity.s: quantity.cpp.s
@@ -940,7 +940,7 @@ quantity.s: quantity.cpp.s
 
 # target to generate assembly for a file
 quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/quantity.cpp.s
 .PHONY : quantity.cpp.s
 
 raw_color_alpha_render_image_quantity.o: raw_color_alpha_render_image_quantity.cpp.o
@@ -948,7 +948,7 @@ raw_color_alpha_render_image_quantity.o: raw_color_alpha_render_image_quantity.c
 
 # target to build an object file
 raw_color_alpha_render_image_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_alpha_render_image_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_alpha_render_image_quantity.cpp.o
 .PHONY : raw_color_alpha_render_image_quantity.cpp.o
 
 raw_color_alpha_render_image_quantity.i: raw_color_alpha_render_image_quantity.cpp.i
@@ -956,7 +956,7 @@ raw_color_alpha_render_image_quantity.i: raw_color_alpha_render_image_quantity.c
 
 # target to preprocess a source file
 raw_color_alpha_render_image_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_alpha_render_image_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_alpha_render_image_quantity.cpp.i
 .PHONY : raw_color_alpha_render_image_quantity.cpp.i
 
 raw_color_alpha_render_image_quantity.s: raw_color_alpha_render_image_quantity.cpp.s
@@ -964,7 +964,7 @@ raw_color_alpha_render_image_quantity.s: raw_color_alpha_render_image_quantity.c
 
 # target to generate assembly for a file
 raw_color_alpha_render_image_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_alpha_render_image_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_alpha_render_image_quantity.cpp.s
 .PHONY : raw_color_alpha_render_image_quantity.cpp.s
 
 raw_color_render_image_quantity.o: raw_color_render_image_quantity.cpp.o
@@ -972,7 +972,7 @@ raw_color_render_image_quantity.o: raw_color_render_image_quantity.cpp.o
 
 # target to build an object file
 raw_color_render_image_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_render_image_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_render_image_quantity.cpp.o
 .PHONY : raw_color_render_image_quantity.cpp.o
 
 raw_color_render_image_quantity.i: raw_color_render_image_quantity.cpp.i
@@ -980,7 +980,7 @@ raw_color_render_image_quantity.i: raw_color_render_image_quantity.cpp.i
 
 # target to preprocess a source file
 raw_color_render_image_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_render_image_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_render_image_quantity.cpp.i
 .PHONY : raw_color_render_image_quantity.cpp.i
 
 raw_color_render_image_quantity.s: raw_color_render_image_quantity.cpp.s
@@ -988,7 +988,7 @@ raw_color_render_image_quantity.s: raw_color_render_image_quantity.cpp.s
 
 # target to generate assembly for a file
 raw_color_render_image_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_render_image_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/raw_color_render_image_quantity.cpp.s
 .PHONY : raw_color_render_image_quantity.cpp.s
 
 render/bindata/bindata_candy.o: render/bindata/bindata_candy.cpp.o
@@ -996,7 +996,7 @@ render/bindata/bindata_candy.o: render/bindata/bindata_candy.cpp.o
 
 # target to build an object file
 render/bindata/bindata_candy.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_candy.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_candy.cpp.o
 .PHONY : render/bindata/bindata_candy.cpp.o
 
 render/bindata/bindata_candy.i: render/bindata/bindata_candy.cpp.i
@@ -1004,7 +1004,7 @@ render/bindata/bindata_candy.i: render/bindata/bindata_candy.cpp.i
 
 # target to preprocess a source file
 render/bindata/bindata_candy.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_candy.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_candy.cpp.i
 .PHONY : render/bindata/bindata_candy.cpp.i
 
 render/bindata/bindata_candy.s: render/bindata/bindata_candy.cpp.s
@@ -1012,7 +1012,7 @@ render/bindata/bindata_candy.s: render/bindata/bindata_candy.cpp.s
 
 # target to generate assembly for a file
 render/bindata/bindata_candy.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_candy.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_candy.cpp.s
 .PHONY : render/bindata/bindata_candy.cpp.s
 
 render/bindata/bindata_ceramic.o: render/bindata/bindata_ceramic.cpp.o
@@ -1020,7 +1020,7 @@ render/bindata/bindata_ceramic.o: render/bindata/bindata_ceramic.cpp.o
 
 # target to build an object file
 render/bindata/bindata_ceramic.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_ceramic.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_ceramic.cpp.o
 .PHONY : render/bindata/bindata_ceramic.cpp.o
 
 render/bindata/bindata_ceramic.i: render/bindata/bindata_ceramic.cpp.i
@@ -1028,7 +1028,7 @@ render/bindata/bindata_ceramic.i: render/bindata/bindata_ceramic.cpp.i
 
 # target to preprocess a source file
 render/bindata/bindata_ceramic.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_ceramic.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_ceramic.cpp.i
 .PHONY : render/bindata/bindata_ceramic.cpp.i
 
 render/bindata/bindata_ceramic.s: render/bindata/bindata_ceramic.cpp.s
@@ -1036,7 +1036,7 @@ render/bindata/bindata_ceramic.s: render/bindata/bindata_ceramic.cpp.s
 
 # target to generate assembly for a file
 render/bindata/bindata_ceramic.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_ceramic.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_ceramic.cpp.s
 .PHONY : render/bindata/bindata_ceramic.cpp.s
 
 render/bindata/bindata_clay.o: render/bindata/bindata_clay.cpp.o
@@ -1044,7 +1044,7 @@ render/bindata/bindata_clay.o: render/bindata/bindata_clay.cpp.o
 
 # target to build an object file
 render/bindata/bindata_clay.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_clay.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_clay.cpp.o
 .PHONY : render/bindata/bindata_clay.cpp.o
 
 render/bindata/bindata_clay.i: render/bindata/bindata_clay.cpp.i
@@ -1052,7 +1052,7 @@ render/bindata/bindata_clay.i: render/bindata/bindata_clay.cpp.i
 
 # target to preprocess a source file
 render/bindata/bindata_clay.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_clay.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_clay.cpp.i
 .PHONY : render/bindata/bindata_clay.cpp.i
 
 render/bindata/bindata_clay.s: render/bindata/bindata_clay.cpp.s
@@ -1060,7 +1060,7 @@ render/bindata/bindata_clay.s: render/bindata/bindata_clay.cpp.s
 
 # target to generate assembly for a file
 render/bindata/bindata_clay.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_clay.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_clay.cpp.s
 .PHONY : render/bindata/bindata_clay.cpp.s
 
 render/bindata/bindata_flat.o: render/bindata/bindata_flat.cpp.o
@@ -1068,7 +1068,7 @@ render/bindata/bindata_flat.o: render/bindata/bindata_flat.cpp.o
 
 # target to build an object file
 render/bindata/bindata_flat.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_flat.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_flat.cpp.o
 .PHONY : render/bindata/bindata_flat.cpp.o
 
 render/bindata/bindata_flat.i: render/bindata/bindata_flat.cpp.i
@@ -1076,7 +1076,7 @@ render/bindata/bindata_flat.i: render/bindata/bindata_flat.cpp.i
 
 # target to preprocess a source file
 render/bindata/bindata_flat.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_flat.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_flat.cpp.i
 .PHONY : render/bindata/bindata_flat.cpp.i
 
 render/bindata/bindata_flat.s: render/bindata/bindata_flat.cpp.s
@@ -1084,7 +1084,7 @@ render/bindata/bindata_flat.s: render/bindata/bindata_flat.cpp.s
 
 # target to generate assembly for a file
 render/bindata/bindata_flat.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_flat.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_flat.cpp.s
 .PHONY : render/bindata/bindata_flat.cpp.s
 
 render/bindata/bindata_font_cousine_regular.o: render/bindata/bindata_font_cousine_regular.cpp.o
@@ -1092,7 +1092,7 @@ render/bindata/bindata_font_cousine_regular.o: render/bindata/bindata_font_cousi
 
 # target to build an object file
 render/bindata/bindata_font_cousine_regular.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_cousine_regular.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_cousine_regular.cpp.o
 .PHONY : render/bindata/bindata_font_cousine_regular.cpp.o
 
 render/bindata/bindata_font_cousine_regular.i: render/bindata/bindata_font_cousine_regular.cpp.i
@@ -1100,7 +1100,7 @@ render/bindata/bindata_font_cousine_regular.i: render/bindata/bindata_font_cousi
 
 # target to preprocess a source file
 render/bindata/bindata_font_cousine_regular.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_cousine_regular.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_cousine_regular.cpp.i
 .PHONY : render/bindata/bindata_font_cousine_regular.cpp.i
 
 render/bindata/bindata_font_cousine_regular.s: render/bindata/bindata_font_cousine_regular.cpp.s
@@ -1108,7 +1108,7 @@ render/bindata/bindata_font_cousine_regular.s: render/bindata/bindata_font_cousi
 
 # target to generate assembly for a file
 render/bindata/bindata_font_cousine_regular.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_cousine_regular.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_cousine_regular.cpp.s
 .PHONY : render/bindata/bindata_font_cousine_regular.cpp.s
 
 render/bindata/bindata_font_lato_regular.o: render/bindata/bindata_font_lato_regular.cpp.o
@@ -1116,7 +1116,7 @@ render/bindata/bindata_font_lato_regular.o: render/bindata/bindata_font_lato_reg
 
 # target to build an object file
 render/bindata/bindata_font_lato_regular.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_lato_regular.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_lato_regular.cpp.o
 .PHONY : render/bindata/bindata_font_lato_regular.cpp.o
 
 render/bindata/bindata_font_lato_regular.i: render/bindata/bindata_font_lato_regular.cpp.i
@@ -1124,7 +1124,7 @@ render/bindata/bindata_font_lato_regular.i: render/bindata/bindata_font_lato_reg
 
 # target to preprocess a source file
 render/bindata/bindata_font_lato_regular.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_lato_regular.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_lato_regular.cpp.i
 .PHONY : render/bindata/bindata_font_lato_regular.cpp.i
 
 render/bindata/bindata_font_lato_regular.s: render/bindata/bindata_font_lato_regular.cpp.s
@@ -1132,7 +1132,7 @@ render/bindata/bindata_font_lato_regular.s: render/bindata/bindata_font_lato_reg
 
 # target to generate assembly for a file
 render/bindata/bindata_font_lato_regular.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_lato_regular.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_font_lato_regular.cpp.s
 .PHONY : render/bindata/bindata_font_lato_regular.cpp.s
 
 render/bindata/bindata_jade.o: render/bindata/bindata_jade.cpp.o
@@ -1140,7 +1140,7 @@ render/bindata/bindata_jade.o: render/bindata/bindata_jade.cpp.o
 
 # target to build an object file
 render/bindata/bindata_jade.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_jade.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_jade.cpp.o
 .PHONY : render/bindata/bindata_jade.cpp.o
 
 render/bindata/bindata_jade.i: render/bindata/bindata_jade.cpp.i
@@ -1148,7 +1148,7 @@ render/bindata/bindata_jade.i: render/bindata/bindata_jade.cpp.i
 
 # target to preprocess a source file
 render/bindata/bindata_jade.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_jade.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_jade.cpp.i
 .PHONY : render/bindata/bindata_jade.cpp.i
 
 render/bindata/bindata_jade.s: render/bindata/bindata_jade.cpp.s
@@ -1156,7 +1156,7 @@ render/bindata/bindata_jade.s: render/bindata/bindata_jade.cpp.s
 
 # target to generate assembly for a file
 render/bindata/bindata_jade.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_jade.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_jade.cpp.s
 .PHONY : render/bindata/bindata_jade.cpp.s
 
 render/bindata/bindata_mud.o: render/bindata/bindata_mud.cpp.o
@@ -1164,7 +1164,7 @@ render/bindata/bindata_mud.o: render/bindata/bindata_mud.cpp.o
 
 # target to build an object file
 render/bindata/bindata_mud.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_mud.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_mud.cpp.o
 .PHONY : render/bindata/bindata_mud.cpp.o
 
 render/bindata/bindata_mud.i: render/bindata/bindata_mud.cpp.i
@@ -1172,7 +1172,7 @@ render/bindata/bindata_mud.i: render/bindata/bindata_mud.cpp.i
 
 # target to preprocess a source file
 render/bindata/bindata_mud.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_mud.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_mud.cpp.i
 .PHONY : render/bindata/bindata_mud.cpp.i
 
 render/bindata/bindata_mud.s: render/bindata/bindata_mud.cpp.s
@@ -1180,7 +1180,7 @@ render/bindata/bindata_mud.s: render/bindata/bindata_mud.cpp.s
 
 # target to generate assembly for a file
 render/bindata/bindata_mud.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_mud.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_mud.cpp.s
 .PHONY : render/bindata/bindata_mud.cpp.s
 
 render/bindata/bindata_normal.o: render/bindata/bindata_normal.cpp.o
@@ -1188,7 +1188,7 @@ render/bindata/bindata_normal.o: render/bindata/bindata_normal.cpp.o
 
 # target to build an object file
 render/bindata/bindata_normal.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_normal.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_normal.cpp.o
 .PHONY : render/bindata/bindata_normal.cpp.o
 
 render/bindata/bindata_normal.i: render/bindata/bindata_normal.cpp.i
@@ -1196,7 +1196,7 @@ render/bindata/bindata_normal.i: render/bindata/bindata_normal.cpp.i
 
 # target to preprocess a source file
 render/bindata/bindata_normal.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_normal.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_normal.cpp.i
 .PHONY : render/bindata/bindata_normal.cpp.i
 
 render/bindata/bindata_normal.s: render/bindata/bindata_normal.cpp.s
@@ -1204,7 +1204,7 @@ render/bindata/bindata_normal.s: render/bindata/bindata_normal.cpp.s
 
 # target to generate assembly for a file
 render/bindata/bindata_normal.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_normal.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_normal.cpp.s
 .PHONY : render/bindata/bindata_normal.cpp.s
 
 render/bindata/bindata_wax.o: render/bindata/bindata_wax.cpp.o
@@ -1212,7 +1212,7 @@ render/bindata/bindata_wax.o: render/bindata/bindata_wax.cpp.o
 
 # target to build an object file
 render/bindata/bindata_wax.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_wax.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_wax.cpp.o
 .PHONY : render/bindata/bindata_wax.cpp.o
 
 render/bindata/bindata_wax.i: render/bindata/bindata_wax.cpp.i
@@ -1220,7 +1220,7 @@ render/bindata/bindata_wax.i: render/bindata/bindata_wax.cpp.i
 
 # target to preprocess a source file
 render/bindata/bindata_wax.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_wax.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_wax.cpp.i
 .PHONY : render/bindata/bindata_wax.cpp.i
 
 render/bindata/bindata_wax.s: render/bindata/bindata_wax.cpp.s
@@ -1228,7 +1228,7 @@ render/bindata/bindata_wax.s: render/bindata/bindata_wax.cpp.s
 
 # target to generate assembly for a file
 render/bindata/bindata_wax.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_wax.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/bindata_wax.cpp.s
 .PHONY : render/bindata/bindata_wax.cpp.s
 
 render/bindata/concrete_seamless.o: render/bindata/concrete_seamless.cpp.o
@@ -1236,7 +1236,7 @@ render/bindata/concrete_seamless.o: render/bindata/concrete_seamless.cpp.o
 
 # target to build an object file
 render/bindata/concrete_seamless.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/concrete_seamless.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/concrete_seamless.cpp.o
 .PHONY : render/bindata/concrete_seamless.cpp.o
 
 render/bindata/concrete_seamless.i: render/bindata/concrete_seamless.cpp.i
@@ -1244,7 +1244,7 @@ render/bindata/concrete_seamless.i: render/bindata/concrete_seamless.cpp.i
 
 # target to preprocess a source file
 render/bindata/concrete_seamless.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/concrete_seamless.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/concrete_seamless.cpp.i
 .PHONY : render/bindata/concrete_seamless.cpp.i
 
 render/bindata/concrete_seamless.s: render/bindata/concrete_seamless.cpp.s
@@ -1252,7 +1252,7 @@ render/bindata/concrete_seamless.s: render/bindata/concrete_seamless.cpp.s
 
 # target to generate assembly for a file
 render/bindata/concrete_seamless.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/concrete_seamless.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/bindata/concrete_seamless.cpp.s
 .PHONY : render/bindata/concrete_seamless.cpp.s
 
 render/color_maps.o: render/color_maps.cpp.o
@@ -1260,7 +1260,7 @@ render/color_maps.o: render/color_maps.cpp.o
 
 # target to build an object file
 render/color_maps.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/color_maps.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/color_maps.cpp.o
 .PHONY : render/color_maps.cpp.o
 
 render/color_maps.i: render/color_maps.cpp.i
@@ -1268,7 +1268,7 @@ render/color_maps.i: render/color_maps.cpp.i
 
 # target to preprocess a source file
 render/color_maps.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/color_maps.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/color_maps.cpp.i
 .PHONY : render/color_maps.cpp.i
 
 render/color_maps.s: render/color_maps.cpp.s
@@ -1276,7 +1276,7 @@ render/color_maps.s: render/color_maps.cpp.s
 
 # target to generate assembly for a file
 render/color_maps.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/color_maps.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/color_maps.cpp.s
 .PHONY : render/color_maps.cpp.s
 
 render/engine.o: render/engine.cpp.o
@@ -1284,7 +1284,7 @@ render/engine.o: render/engine.cpp.o
 
 # target to build an object file
 render/engine.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/engine.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/engine.cpp.o
 .PHONY : render/engine.cpp.o
 
 render/engine.i: render/engine.cpp.i
@@ -1292,7 +1292,7 @@ render/engine.i: render/engine.cpp.i
 
 # target to preprocess a source file
 render/engine.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/engine.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/engine.cpp.i
 .PHONY : render/engine.cpp.i
 
 render/engine.s: render/engine.cpp.s
@@ -1300,7 +1300,7 @@ render/engine.s: render/engine.cpp.s
 
 # target to generate assembly for a file
 render/engine.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/engine.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/engine.cpp.s
 .PHONY : render/engine.cpp.s
 
 render/ground_plane.o: render/ground_plane.cpp.o
@@ -1308,7 +1308,7 @@ render/ground_plane.o: render/ground_plane.cpp.o
 
 # target to build an object file
 render/ground_plane.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/ground_plane.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/ground_plane.cpp.o
 .PHONY : render/ground_plane.cpp.o
 
 render/ground_plane.i: render/ground_plane.cpp.i
@@ -1316,7 +1316,7 @@ render/ground_plane.i: render/ground_plane.cpp.i
 
 # target to preprocess a source file
 render/ground_plane.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/ground_plane.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/ground_plane.cpp.i
 .PHONY : render/ground_plane.cpp.i
 
 render/ground_plane.s: render/ground_plane.cpp.s
@@ -1324,7 +1324,7 @@ render/ground_plane.s: render/ground_plane.cpp.s
 
 # target to generate assembly for a file
 render/ground_plane.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/ground_plane.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/ground_plane.cpp.s
 .PHONY : render/ground_plane.cpp.s
 
 render/initialize_backend.o: render/initialize_backend.cpp.o
@@ -1332,7 +1332,7 @@ render/initialize_backend.o: render/initialize_backend.cpp.o
 
 # target to build an object file
 render/initialize_backend.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/initialize_backend.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/initialize_backend.cpp.o
 .PHONY : render/initialize_backend.cpp.o
 
 render/initialize_backend.i: render/initialize_backend.cpp.i
@@ -1340,7 +1340,7 @@ render/initialize_backend.i: render/initialize_backend.cpp.i
 
 # target to preprocess a source file
 render/initialize_backend.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/initialize_backend.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/initialize_backend.cpp.i
 .PHONY : render/initialize_backend.cpp.i
 
 render/initialize_backend.s: render/initialize_backend.cpp.s
@@ -1348,7 +1348,7 @@ render/initialize_backend.s: render/initialize_backend.cpp.s
 
 # target to generate assembly for a file
 render/initialize_backend.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/initialize_backend.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/initialize_backend.cpp.s
 .PHONY : render/initialize_backend.cpp.s
 
 render/managed_buffer.o: render/managed_buffer.cpp.o
@@ -1356,7 +1356,7 @@ render/managed_buffer.o: render/managed_buffer.cpp.o
 
 # target to build an object file
 render/managed_buffer.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/managed_buffer.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/managed_buffer.cpp.o
 .PHONY : render/managed_buffer.cpp.o
 
 render/managed_buffer.i: render/managed_buffer.cpp.i
@@ -1364,7 +1364,7 @@ render/managed_buffer.i: render/managed_buffer.cpp.i
 
 # target to preprocess a source file
 render/managed_buffer.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/managed_buffer.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/managed_buffer.cpp.i
 .PHONY : render/managed_buffer.cpp.i
 
 render/managed_buffer.s: render/managed_buffer.cpp.s
@@ -1372,7 +1372,7 @@ render/managed_buffer.s: render/managed_buffer.cpp.s
 
 # target to generate assembly for a file
 render/managed_buffer.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/managed_buffer.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/managed_buffer.cpp.s
 .PHONY : render/managed_buffer.cpp.s
 
 render/materials.o: render/materials.cpp.o
@@ -1380,7 +1380,7 @@ render/materials.o: render/materials.cpp.o
 
 # target to build an object file
 render/materials.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/materials.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/materials.cpp.o
 .PHONY : render/materials.cpp.o
 
 render/materials.i: render/materials.cpp.i
@@ -1388,7 +1388,7 @@ render/materials.i: render/materials.cpp.i
 
 # target to preprocess a source file
 render/materials.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/materials.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/materials.cpp.i
 .PHONY : render/materials.cpp.i
 
 render/materials.s: render/materials.cpp.s
@@ -1396,7 +1396,7 @@ render/materials.s: render/materials.cpp.s
 
 # target to generate assembly for a file
 render/materials.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/materials.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/materials.cpp.s
 .PHONY : render/materials.cpp.s
 
 render/mock_opengl/mock_gl_engine.o: render/mock_opengl/mock_gl_engine.cpp.o
@@ -1404,7 +1404,7 @@ render/mock_opengl/mock_gl_engine.o: render/mock_opengl/mock_gl_engine.cpp.o
 
 # target to build an object file
 render/mock_opengl/mock_gl_engine.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/mock_opengl/mock_gl_engine.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/mock_opengl/mock_gl_engine.cpp.o
 .PHONY : render/mock_opengl/mock_gl_engine.cpp.o
 
 render/mock_opengl/mock_gl_engine.i: render/mock_opengl/mock_gl_engine.cpp.i
@@ -1412,7 +1412,7 @@ render/mock_opengl/mock_gl_engine.i: render/mock_opengl/mock_gl_engine.cpp.i
 
 # target to preprocess a source file
 render/mock_opengl/mock_gl_engine.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/mock_opengl/mock_gl_engine.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/mock_opengl/mock_gl_engine.cpp.i
 .PHONY : render/mock_opengl/mock_gl_engine.cpp.i
 
 render/mock_opengl/mock_gl_engine.s: render/mock_opengl/mock_gl_engine.cpp.s
@@ -1420,7 +1420,7 @@ render/mock_opengl/mock_gl_engine.s: render/mock_opengl/mock_gl_engine.cpp.s
 
 # target to generate assembly for a file
 render/mock_opengl/mock_gl_engine.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/mock_opengl/mock_gl_engine.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/mock_opengl/mock_gl_engine.cpp.s
 .PHONY : render/mock_opengl/mock_gl_engine.cpp.s
 
 render/opengl/gl_engine.o: render/opengl/gl_engine.cpp.o
@@ -1428,7 +1428,7 @@ render/opengl/gl_engine.o: render/opengl/gl_engine.cpp.o
 
 # target to build an object file
 render/opengl/gl_engine.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/gl_engine.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/gl_engine.cpp.o
 .PHONY : render/opengl/gl_engine.cpp.o
 
 render/opengl/gl_engine.i: render/opengl/gl_engine.cpp.i
@@ -1436,7 +1436,7 @@ render/opengl/gl_engine.i: render/opengl/gl_engine.cpp.i
 
 # target to preprocess a source file
 render/opengl/gl_engine.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/gl_engine.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/gl_engine.cpp.i
 .PHONY : render/opengl/gl_engine.cpp.i
 
 render/opengl/gl_engine.s: render/opengl/gl_engine.cpp.s
@@ -1444,7 +1444,7 @@ render/opengl/gl_engine.s: render/opengl/gl_engine.cpp.s
 
 # target to generate assembly for a file
 render/opengl/gl_engine.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/gl_engine.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/gl_engine.cpp.s
 .PHONY : render/opengl/gl_engine.cpp.s
 
 render/opengl/shaders/common.o: render/opengl/shaders/common.cpp.o
@@ -1452,7 +1452,7 @@ render/opengl/shaders/common.o: render/opengl/shaders/common.cpp.o
 
 # target to build an object file
 render/opengl/shaders/common.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/common.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/common.cpp.o
 .PHONY : render/opengl/shaders/common.cpp.o
 
 render/opengl/shaders/common.i: render/opengl/shaders/common.cpp.i
@@ -1460,7 +1460,7 @@ render/opengl/shaders/common.i: render/opengl/shaders/common.cpp.i
 
 # target to preprocess a source file
 render/opengl/shaders/common.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/common.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/common.cpp.i
 .PHONY : render/opengl/shaders/common.cpp.i
 
 render/opengl/shaders/common.s: render/opengl/shaders/common.cpp.s
@@ -1468,7 +1468,7 @@ render/opengl/shaders/common.s: render/opengl/shaders/common.cpp.s
 
 # target to generate assembly for a file
 render/opengl/shaders/common.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/common.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/common.cpp.s
 .PHONY : render/opengl/shaders/common.cpp.s
 
 render/opengl/shaders/cylinder_shaders.o: render/opengl/shaders/cylinder_shaders.cpp.o
@@ -1476,7 +1476,7 @@ render/opengl/shaders/cylinder_shaders.o: render/opengl/shaders/cylinder_shaders
 
 # target to build an object file
 render/opengl/shaders/cylinder_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/cylinder_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/cylinder_shaders.cpp.o
 .PHONY : render/opengl/shaders/cylinder_shaders.cpp.o
 
 render/opengl/shaders/cylinder_shaders.i: render/opengl/shaders/cylinder_shaders.cpp.i
@@ -1484,7 +1484,7 @@ render/opengl/shaders/cylinder_shaders.i: render/opengl/shaders/cylinder_shaders
 
 # target to preprocess a source file
 render/opengl/shaders/cylinder_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/cylinder_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/cylinder_shaders.cpp.i
 .PHONY : render/opengl/shaders/cylinder_shaders.cpp.i
 
 render/opengl/shaders/cylinder_shaders.s: render/opengl/shaders/cylinder_shaders.cpp.s
@@ -1492,7 +1492,7 @@ render/opengl/shaders/cylinder_shaders.s: render/opengl/shaders/cylinder_shaders
 
 # target to generate assembly for a file
 render/opengl/shaders/cylinder_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/cylinder_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/cylinder_shaders.cpp.s
 .PHONY : render/opengl/shaders/cylinder_shaders.cpp.s
 
 render/opengl/shaders/gizmo_shaders.o: render/opengl/shaders/gizmo_shaders.cpp.o
@@ -1500,7 +1500,7 @@ render/opengl/shaders/gizmo_shaders.o: render/opengl/shaders/gizmo_shaders.cpp.o
 
 # target to build an object file
 render/opengl/shaders/gizmo_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/gizmo_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/gizmo_shaders.cpp.o
 .PHONY : render/opengl/shaders/gizmo_shaders.cpp.o
 
 render/opengl/shaders/gizmo_shaders.i: render/opengl/shaders/gizmo_shaders.cpp.i
@@ -1508,7 +1508,7 @@ render/opengl/shaders/gizmo_shaders.i: render/opengl/shaders/gizmo_shaders.cpp.i
 
 # target to preprocess a source file
 render/opengl/shaders/gizmo_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/gizmo_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/gizmo_shaders.cpp.i
 .PHONY : render/opengl/shaders/gizmo_shaders.cpp.i
 
 render/opengl/shaders/gizmo_shaders.s: render/opengl/shaders/gizmo_shaders.cpp.s
@@ -1516,7 +1516,7 @@ render/opengl/shaders/gizmo_shaders.s: render/opengl/shaders/gizmo_shaders.cpp.s
 
 # target to generate assembly for a file
 render/opengl/shaders/gizmo_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/gizmo_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/gizmo_shaders.cpp.s
 .PHONY : render/opengl/shaders/gizmo_shaders.cpp.s
 
 render/opengl/shaders/grid_shaders.o: render/opengl/shaders/grid_shaders.cpp.o
@@ -1524,7 +1524,7 @@ render/opengl/shaders/grid_shaders.o: render/opengl/shaders/grid_shaders.cpp.o
 
 # target to build an object file
 render/opengl/shaders/grid_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/grid_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/grid_shaders.cpp.o
 .PHONY : render/opengl/shaders/grid_shaders.cpp.o
 
 render/opengl/shaders/grid_shaders.i: render/opengl/shaders/grid_shaders.cpp.i
@@ -1532,7 +1532,7 @@ render/opengl/shaders/grid_shaders.i: render/opengl/shaders/grid_shaders.cpp.i
 
 # target to preprocess a source file
 render/opengl/shaders/grid_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/grid_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/grid_shaders.cpp.i
 .PHONY : render/opengl/shaders/grid_shaders.cpp.i
 
 render/opengl/shaders/grid_shaders.s: render/opengl/shaders/grid_shaders.cpp.s
@@ -1540,7 +1540,7 @@ render/opengl/shaders/grid_shaders.s: render/opengl/shaders/grid_shaders.cpp.s
 
 # target to generate assembly for a file
 render/opengl/shaders/grid_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/grid_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/grid_shaders.cpp.s
 .PHONY : render/opengl/shaders/grid_shaders.cpp.s
 
 render/opengl/shaders/ground_plane_shaders.o: render/opengl/shaders/ground_plane_shaders.cpp.o
@@ -1548,7 +1548,7 @@ render/opengl/shaders/ground_plane_shaders.o: render/opengl/shaders/ground_plane
 
 # target to build an object file
 render/opengl/shaders/ground_plane_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ground_plane_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ground_plane_shaders.cpp.o
 .PHONY : render/opengl/shaders/ground_plane_shaders.cpp.o
 
 render/opengl/shaders/ground_plane_shaders.i: render/opengl/shaders/ground_plane_shaders.cpp.i
@@ -1556,7 +1556,7 @@ render/opengl/shaders/ground_plane_shaders.i: render/opengl/shaders/ground_plane
 
 # target to preprocess a source file
 render/opengl/shaders/ground_plane_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ground_plane_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ground_plane_shaders.cpp.i
 .PHONY : render/opengl/shaders/ground_plane_shaders.cpp.i
 
 render/opengl/shaders/ground_plane_shaders.s: render/opengl/shaders/ground_plane_shaders.cpp.s
@@ -1564,7 +1564,7 @@ render/opengl/shaders/ground_plane_shaders.s: render/opengl/shaders/ground_plane
 
 # target to generate assembly for a file
 render/opengl/shaders/ground_plane_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ground_plane_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ground_plane_shaders.cpp.s
 .PHONY : render/opengl/shaders/ground_plane_shaders.cpp.s
 
 render/opengl/shaders/histogram_shaders.o: render/opengl/shaders/histogram_shaders.cpp.o
@@ -1572,7 +1572,7 @@ render/opengl/shaders/histogram_shaders.o: render/opengl/shaders/histogram_shade
 
 # target to build an object file
 render/opengl/shaders/histogram_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/histogram_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/histogram_shaders.cpp.o
 .PHONY : render/opengl/shaders/histogram_shaders.cpp.o
 
 render/opengl/shaders/histogram_shaders.i: render/opengl/shaders/histogram_shaders.cpp.i
@@ -1580,7 +1580,7 @@ render/opengl/shaders/histogram_shaders.i: render/opengl/shaders/histogram_shade
 
 # target to preprocess a source file
 render/opengl/shaders/histogram_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/histogram_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/histogram_shaders.cpp.i
 .PHONY : render/opengl/shaders/histogram_shaders.cpp.i
 
 render/opengl/shaders/histogram_shaders.s: render/opengl/shaders/histogram_shaders.cpp.s
@@ -1588,7 +1588,7 @@ render/opengl/shaders/histogram_shaders.s: render/opengl/shaders/histogram_shade
 
 # target to generate assembly for a file
 render/opengl/shaders/histogram_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/histogram_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/histogram_shaders.cpp.s
 .PHONY : render/opengl/shaders/histogram_shaders.cpp.s
 
 render/opengl/shaders/lighting_shaders.o: render/opengl/shaders/lighting_shaders.cpp.o
@@ -1596,7 +1596,7 @@ render/opengl/shaders/lighting_shaders.o: render/opengl/shaders/lighting_shaders
 
 # target to build an object file
 render/opengl/shaders/lighting_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/lighting_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/lighting_shaders.cpp.o
 .PHONY : render/opengl/shaders/lighting_shaders.cpp.o
 
 render/opengl/shaders/lighting_shaders.i: render/opengl/shaders/lighting_shaders.cpp.i
@@ -1604,7 +1604,7 @@ render/opengl/shaders/lighting_shaders.i: render/opengl/shaders/lighting_shaders
 
 # target to preprocess a source file
 render/opengl/shaders/lighting_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/lighting_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/lighting_shaders.cpp.i
 .PHONY : render/opengl/shaders/lighting_shaders.cpp.i
 
 render/opengl/shaders/lighting_shaders.s: render/opengl/shaders/lighting_shaders.cpp.s
@@ -1612,7 +1612,7 @@ render/opengl/shaders/lighting_shaders.s: render/opengl/shaders/lighting_shaders
 
 # target to generate assembly for a file
 render/opengl/shaders/lighting_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/lighting_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/lighting_shaders.cpp.s
 .PHONY : render/opengl/shaders/lighting_shaders.cpp.s
 
 render/opengl/shaders/ribbon_shaders.o: render/opengl/shaders/ribbon_shaders.cpp.o
@@ -1620,7 +1620,7 @@ render/opengl/shaders/ribbon_shaders.o: render/opengl/shaders/ribbon_shaders.cpp
 
 # target to build an object file
 render/opengl/shaders/ribbon_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ribbon_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ribbon_shaders.cpp.o
 .PHONY : render/opengl/shaders/ribbon_shaders.cpp.o
 
 render/opengl/shaders/ribbon_shaders.i: render/opengl/shaders/ribbon_shaders.cpp.i
@@ -1628,7 +1628,7 @@ render/opengl/shaders/ribbon_shaders.i: render/opengl/shaders/ribbon_shaders.cpp
 
 # target to preprocess a source file
 render/opengl/shaders/ribbon_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ribbon_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ribbon_shaders.cpp.i
 .PHONY : render/opengl/shaders/ribbon_shaders.cpp.i
 
 render/opengl/shaders/ribbon_shaders.s: render/opengl/shaders/ribbon_shaders.cpp.s
@@ -1636,7 +1636,7 @@ render/opengl/shaders/ribbon_shaders.s: render/opengl/shaders/ribbon_shaders.cpp
 
 # target to generate assembly for a file
 render/opengl/shaders/ribbon_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ribbon_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/ribbon_shaders.cpp.s
 .PHONY : render/opengl/shaders/ribbon_shaders.cpp.s
 
 render/opengl/shaders/rules.o: render/opengl/shaders/rules.cpp.o
@@ -1644,7 +1644,7 @@ render/opengl/shaders/rules.o: render/opengl/shaders/rules.cpp.o
 
 # target to build an object file
 render/opengl/shaders/rules.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/rules.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/rules.cpp.o
 .PHONY : render/opengl/shaders/rules.cpp.o
 
 render/opengl/shaders/rules.i: render/opengl/shaders/rules.cpp.i
@@ -1652,7 +1652,7 @@ render/opengl/shaders/rules.i: render/opengl/shaders/rules.cpp.i
 
 # target to preprocess a source file
 render/opengl/shaders/rules.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/rules.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/rules.cpp.i
 .PHONY : render/opengl/shaders/rules.cpp.i
 
 render/opengl/shaders/rules.s: render/opengl/shaders/rules.cpp.s
@@ -1660,7 +1660,7 @@ render/opengl/shaders/rules.s: render/opengl/shaders/rules.cpp.s
 
 # target to generate assembly for a file
 render/opengl/shaders/rules.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/rules.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/rules.cpp.s
 .PHONY : render/opengl/shaders/rules.cpp.s
 
 render/opengl/shaders/sphere_shaders.o: render/opengl/shaders/sphere_shaders.cpp.o
@@ -1668,7 +1668,7 @@ render/opengl/shaders/sphere_shaders.o: render/opengl/shaders/sphere_shaders.cpp
 
 # target to build an object file
 render/opengl/shaders/sphere_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/sphere_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/sphere_shaders.cpp.o
 .PHONY : render/opengl/shaders/sphere_shaders.cpp.o
 
 render/opengl/shaders/sphere_shaders.i: render/opengl/shaders/sphere_shaders.cpp.i
@@ -1676,7 +1676,7 @@ render/opengl/shaders/sphere_shaders.i: render/opengl/shaders/sphere_shaders.cpp
 
 # target to preprocess a source file
 render/opengl/shaders/sphere_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/sphere_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/sphere_shaders.cpp.i
 .PHONY : render/opengl/shaders/sphere_shaders.cpp.i
 
 render/opengl/shaders/sphere_shaders.s: render/opengl/shaders/sphere_shaders.cpp.s
@@ -1684,7 +1684,7 @@ render/opengl/shaders/sphere_shaders.s: render/opengl/shaders/sphere_shaders.cpp
 
 # target to generate assembly for a file
 render/opengl/shaders/sphere_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/sphere_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/sphere_shaders.cpp.s
 .PHONY : render/opengl/shaders/sphere_shaders.cpp.s
 
 render/opengl/shaders/surface_mesh_shaders.o: render/opengl/shaders/surface_mesh_shaders.cpp.o
@@ -1692,7 +1692,7 @@ render/opengl/shaders/surface_mesh_shaders.o: render/opengl/shaders/surface_mesh
 
 # target to build an object file
 render/opengl/shaders/surface_mesh_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/surface_mesh_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/surface_mesh_shaders.cpp.o
 .PHONY : render/opengl/shaders/surface_mesh_shaders.cpp.o
 
 render/opengl/shaders/surface_mesh_shaders.i: render/opengl/shaders/surface_mesh_shaders.cpp.i
@@ -1700,7 +1700,7 @@ render/opengl/shaders/surface_mesh_shaders.i: render/opengl/shaders/surface_mesh
 
 # target to preprocess a source file
 render/opengl/shaders/surface_mesh_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/surface_mesh_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/surface_mesh_shaders.cpp.i
 .PHONY : render/opengl/shaders/surface_mesh_shaders.cpp.i
 
 render/opengl/shaders/surface_mesh_shaders.s: render/opengl/shaders/surface_mesh_shaders.cpp.s
@@ -1708,7 +1708,7 @@ render/opengl/shaders/surface_mesh_shaders.s: render/opengl/shaders/surface_mesh
 
 # target to generate assembly for a file
 render/opengl/shaders/surface_mesh_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/surface_mesh_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/surface_mesh_shaders.cpp.s
 .PHONY : render/opengl/shaders/surface_mesh_shaders.cpp.s
 
 render/opengl/shaders/texture_draw_shaders.o: render/opengl/shaders/texture_draw_shaders.cpp.o
@@ -1716,7 +1716,7 @@ render/opengl/shaders/texture_draw_shaders.o: render/opengl/shaders/texture_draw
 
 # target to build an object file
 render/opengl/shaders/texture_draw_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/texture_draw_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/texture_draw_shaders.cpp.o
 .PHONY : render/opengl/shaders/texture_draw_shaders.cpp.o
 
 render/opengl/shaders/texture_draw_shaders.i: render/opengl/shaders/texture_draw_shaders.cpp.i
@@ -1724,7 +1724,7 @@ render/opengl/shaders/texture_draw_shaders.i: render/opengl/shaders/texture_draw
 
 # target to preprocess a source file
 render/opengl/shaders/texture_draw_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/texture_draw_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/texture_draw_shaders.cpp.i
 .PHONY : render/opengl/shaders/texture_draw_shaders.cpp.i
 
 render/opengl/shaders/texture_draw_shaders.s: render/opengl/shaders/texture_draw_shaders.cpp.s
@@ -1732,7 +1732,7 @@ render/opengl/shaders/texture_draw_shaders.s: render/opengl/shaders/texture_draw
 
 # target to generate assembly for a file
 render/opengl/shaders/texture_draw_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/texture_draw_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/texture_draw_shaders.cpp.s
 .PHONY : render/opengl/shaders/texture_draw_shaders.cpp.s
 
 render/opengl/shaders/vector_shaders.o: render/opengl/shaders/vector_shaders.cpp.o
@@ -1740,7 +1740,7 @@ render/opengl/shaders/vector_shaders.o: render/opengl/shaders/vector_shaders.cpp
 
 # target to build an object file
 render/opengl/shaders/vector_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/vector_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/vector_shaders.cpp.o
 .PHONY : render/opengl/shaders/vector_shaders.cpp.o
 
 render/opengl/shaders/vector_shaders.i: render/opengl/shaders/vector_shaders.cpp.i
@@ -1748,7 +1748,7 @@ render/opengl/shaders/vector_shaders.i: render/opengl/shaders/vector_shaders.cpp
 
 # target to preprocess a source file
 render/opengl/shaders/vector_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/vector_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/vector_shaders.cpp.i
 .PHONY : render/opengl/shaders/vector_shaders.cpp.i
 
 render/opengl/shaders/vector_shaders.s: render/opengl/shaders/vector_shaders.cpp.s
@@ -1756,7 +1756,7 @@ render/opengl/shaders/vector_shaders.s: render/opengl/shaders/vector_shaders.cpp
 
 # target to generate assembly for a file
 render/opengl/shaders/vector_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/vector_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/vector_shaders.cpp.s
 .PHONY : render/opengl/shaders/vector_shaders.cpp.s
 
 render/opengl/shaders/volume_mesh_shaders.o: render/opengl/shaders/volume_mesh_shaders.cpp.o
@@ -1764,7 +1764,7 @@ render/opengl/shaders/volume_mesh_shaders.o: render/opengl/shaders/volume_mesh_s
 
 # target to build an object file
 render/opengl/shaders/volume_mesh_shaders.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/volume_mesh_shaders.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/volume_mesh_shaders.cpp.o
 .PHONY : render/opengl/shaders/volume_mesh_shaders.cpp.o
 
 render/opengl/shaders/volume_mesh_shaders.i: render/opengl/shaders/volume_mesh_shaders.cpp.i
@@ -1772,7 +1772,7 @@ render/opengl/shaders/volume_mesh_shaders.i: render/opengl/shaders/volume_mesh_s
 
 # target to preprocess a source file
 render/opengl/shaders/volume_mesh_shaders.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/volume_mesh_shaders.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/volume_mesh_shaders.cpp.i
 .PHONY : render/opengl/shaders/volume_mesh_shaders.cpp.i
 
 render/opengl/shaders/volume_mesh_shaders.s: render/opengl/shaders/volume_mesh_shaders.cpp.s
@@ -1780,7 +1780,7 @@ render/opengl/shaders/volume_mesh_shaders.s: render/opengl/shaders/volume_mesh_s
 
 # target to generate assembly for a file
 render/opengl/shaders/volume_mesh_shaders.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/volume_mesh_shaders.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/opengl/shaders/volume_mesh_shaders.cpp.s
 .PHONY : render/opengl/shaders/volume_mesh_shaders.cpp.s
 
 render/shader_builder.o: render/shader_builder.cpp.o
@@ -1788,7 +1788,7 @@ render/shader_builder.o: render/shader_builder.cpp.o
 
 # target to build an object file
 render/shader_builder.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/shader_builder.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/shader_builder.cpp.o
 .PHONY : render/shader_builder.cpp.o
 
 render/shader_builder.i: render/shader_builder.cpp.i
@@ -1796,7 +1796,7 @@ render/shader_builder.i: render/shader_builder.cpp.i
 
 # target to preprocess a source file
 render/shader_builder.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/shader_builder.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/shader_builder.cpp.i
 .PHONY : render/shader_builder.cpp.i
 
 render/shader_builder.s: render/shader_builder.cpp.s
@@ -1804,7 +1804,7 @@ render/shader_builder.s: render/shader_builder.cpp.s
 
 # target to generate assembly for a file
 render/shader_builder.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/shader_builder.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/shader_builder.cpp.s
 .PHONY : render/shader_builder.cpp.s
 
 render/templated_buffers.o: render/templated_buffers.cpp.o
@@ -1812,7 +1812,7 @@ render/templated_buffers.o: render/templated_buffers.cpp.o
 
 # target to build an object file
 render/templated_buffers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/templated_buffers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/templated_buffers.cpp.o
 .PHONY : render/templated_buffers.cpp.o
 
 render/templated_buffers.i: render/templated_buffers.cpp.i
@@ -1820,7 +1820,7 @@ render/templated_buffers.i: render/templated_buffers.cpp.i
 
 # target to preprocess a source file
 render/templated_buffers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/templated_buffers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/templated_buffers.cpp.i
 .PHONY : render/templated_buffers.cpp.i
 
 render/templated_buffers.s: render/templated_buffers.cpp.s
@@ -1828,7 +1828,7 @@ render/templated_buffers.s: render/templated_buffers.cpp.s
 
 # target to generate assembly for a file
 render/templated_buffers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/templated_buffers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render/templated_buffers.cpp.s
 .PHONY : render/templated_buffers.cpp.s
 
 render_image_quantity_base.o: render_image_quantity_base.cpp.o
@@ -1836,7 +1836,7 @@ render_image_quantity_base.o: render_image_quantity_base.cpp.o
 
 # target to build an object file
 render_image_quantity_base.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render_image_quantity_base.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render_image_quantity_base.cpp.o
 .PHONY : render_image_quantity_base.cpp.o
 
 render_image_quantity_base.i: render_image_quantity_base.cpp.i
@@ -1844,7 +1844,7 @@ render_image_quantity_base.i: render_image_quantity_base.cpp.i
 
 # target to preprocess a source file
 render_image_quantity_base.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render_image_quantity_base.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render_image_quantity_base.cpp.i
 .PHONY : render_image_quantity_base.cpp.i
 
 render_image_quantity_base.s: render_image_quantity_base.cpp.s
@@ -1852,7 +1852,7 @@ render_image_quantity_base.s: render_image_quantity_base.cpp.s
 
 # target to generate assembly for a file
 render_image_quantity_base.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render_image_quantity_base.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/render_image_quantity_base.cpp.s
 .PHONY : render_image_quantity_base.cpp.s
 
 scalar_image_quantity.o: scalar_image_quantity.cpp.o
@@ -1860,7 +1860,7 @@ scalar_image_quantity.o: scalar_image_quantity.cpp.o
 
 # target to build an object file
 scalar_image_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_image_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_image_quantity.cpp.o
 .PHONY : scalar_image_quantity.cpp.o
 
 scalar_image_quantity.i: scalar_image_quantity.cpp.i
@@ -1868,7 +1868,7 @@ scalar_image_quantity.i: scalar_image_quantity.cpp.i
 
 # target to preprocess a source file
 scalar_image_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_image_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_image_quantity.cpp.i
 .PHONY : scalar_image_quantity.cpp.i
 
 scalar_image_quantity.s: scalar_image_quantity.cpp.s
@@ -1876,7 +1876,7 @@ scalar_image_quantity.s: scalar_image_quantity.cpp.s
 
 # target to generate assembly for a file
 scalar_image_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_image_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_image_quantity.cpp.s
 .PHONY : scalar_image_quantity.cpp.s
 
 scalar_render_image_quantity.o: scalar_render_image_quantity.cpp.o
@@ -1884,7 +1884,7 @@ scalar_render_image_quantity.o: scalar_render_image_quantity.cpp.o
 
 # target to build an object file
 scalar_render_image_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_render_image_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_render_image_quantity.cpp.o
 .PHONY : scalar_render_image_quantity.cpp.o
 
 scalar_render_image_quantity.i: scalar_render_image_quantity.cpp.i
@@ -1892,7 +1892,7 @@ scalar_render_image_quantity.i: scalar_render_image_quantity.cpp.i
 
 # target to preprocess a source file
 scalar_render_image_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_render_image_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_render_image_quantity.cpp.i
 .PHONY : scalar_render_image_quantity.cpp.i
 
 scalar_render_image_quantity.s: scalar_render_image_quantity.cpp.s
@@ -1900,7 +1900,7 @@ scalar_render_image_quantity.s: scalar_render_image_quantity.cpp.s
 
 # target to generate assembly for a file
 scalar_render_image_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_render_image_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/scalar_render_image_quantity.cpp.s
 .PHONY : scalar_render_image_quantity.cpp.s
 
 screenshot.o: screenshot.cpp.o
@@ -1908,7 +1908,7 @@ screenshot.o: screenshot.cpp.o
 
 # target to build an object file
 screenshot.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/screenshot.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/screenshot.cpp.o
 .PHONY : screenshot.cpp.o
 
 screenshot.i: screenshot.cpp.i
@@ -1916,7 +1916,7 @@ screenshot.i: screenshot.cpp.i
 
 # target to preprocess a source file
 screenshot.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/screenshot.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/screenshot.cpp.i
 .PHONY : screenshot.cpp.i
 
 screenshot.s: screenshot.cpp.s
@@ -1924,7 +1924,7 @@ screenshot.s: screenshot.cpp.s
 
 # target to generate assembly for a file
 screenshot.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/screenshot.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/screenshot.cpp.s
 .PHONY : screenshot.cpp.s
 
 simple_triangle_mesh.o: simple_triangle_mesh.cpp.o
@@ -1932,7 +1932,7 @@ simple_triangle_mesh.o: simple_triangle_mesh.cpp.o
 
 # target to build an object file
 simple_triangle_mesh.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/simple_triangle_mesh.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/simple_triangle_mesh.cpp.o
 .PHONY : simple_triangle_mesh.cpp.o
 
 simple_triangle_mesh.i: simple_triangle_mesh.cpp.i
@@ -1940,7 +1940,7 @@ simple_triangle_mesh.i: simple_triangle_mesh.cpp.i
 
 # target to preprocess a source file
 simple_triangle_mesh.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/simple_triangle_mesh.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/simple_triangle_mesh.cpp.i
 .PHONY : simple_triangle_mesh.cpp.i
 
 simple_triangle_mesh.s: simple_triangle_mesh.cpp.s
@@ -1948,7 +1948,7 @@ simple_triangle_mesh.s: simple_triangle_mesh.cpp.s
 
 # target to generate assembly for a file
 simple_triangle_mesh.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/simple_triangle_mesh.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/simple_triangle_mesh.cpp.s
 .PHONY : simple_triangle_mesh.cpp.s
 
 slice_plane.o: slice_plane.cpp.o
@@ -1956,7 +1956,7 @@ slice_plane.o: slice_plane.cpp.o
 
 # target to build an object file
 slice_plane.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/slice_plane.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/slice_plane.cpp.o
 .PHONY : slice_plane.cpp.o
 
 slice_plane.i: slice_plane.cpp.i
@@ -1964,7 +1964,7 @@ slice_plane.i: slice_plane.cpp.i
 
 # target to preprocess a source file
 slice_plane.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/slice_plane.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/slice_plane.cpp.i
 .PHONY : slice_plane.cpp.i
 
 slice_plane.s: slice_plane.cpp.s
@@ -1972,7 +1972,7 @@ slice_plane.s: slice_plane.cpp.s
 
 # target to generate assembly for a file
 slice_plane.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/slice_plane.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/slice_plane.cpp.s
 .PHONY : slice_plane.cpp.s
 
 state.o: state.cpp.o
@@ -1980,7 +1980,7 @@ state.o: state.cpp.o
 
 # target to build an object file
 state.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/state.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/state.cpp.o
 .PHONY : state.cpp.o
 
 state.i: state.cpp.i
@@ -1988,7 +1988,7 @@ state.i: state.cpp.i
 
 # target to preprocess a source file
 state.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/state.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/state.cpp.i
 .PHONY : state.cpp.i
 
 state.s: state.cpp.s
@@ -1996,7 +1996,7 @@ state.s: state.cpp.s
 
 # target to generate assembly for a file
 state.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/state.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/state.cpp.s
 .PHONY : state.cpp.s
 
 structure.o: structure.cpp.o
@@ -2004,7 +2004,7 @@ structure.o: structure.cpp.o
 
 # target to build an object file
 structure.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/structure.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/structure.cpp.o
 .PHONY : structure.cpp.o
 
 structure.i: structure.cpp.i
@@ -2012,7 +2012,7 @@ structure.i: structure.cpp.i
 
 # target to preprocess a source file
 structure.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/structure.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/structure.cpp.i
 .PHONY : structure.cpp.i
 
 structure.s: structure.cpp.s
@@ -2020,7 +2020,7 @@ structure.s: structure.cpp.s
 
 # target to generate assembly for a file
 structure.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/structure.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/structure.cpp.s
 .PHONY : structure.cpp.s
 
 surface_color_quantity.o: surface_color_quantity.cpp.o
@@ -2028,7 +2028,7 @@ surface_color_quantity.o: surface_color_quantity.cpp.o
 
 # target to build an object file
 surface_color_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_color_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_color_quantity.cpp.o
 .PHONY : surface_color_quantity.cpp.o
 
 surface_color_quantity.i: surface_color_quantity.cpp.i
@@ -2036,7 +2036,7 @@ surface_color_quantity.i: surface_color_quantity.cpp.i
 
 # target to preprocess a source file
 surface_color_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_color_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_color_quantity.cpp.i
 .PHONY : surface_color_quantity.cpp.i
 
 surface_color_quantity.s: surface_color_quantity.cpp.s
@@ -2044,7 +2044,7 @@ surface_color_quantity.s: surface_color_quantity.cpp.s
 
 # target to generate assembly for a file
 surface_color_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_color_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_color_quantity.cpp.s
 .PHONY : surface_color_quantity.cpp.s
 
 surface_mesh.o: surface_mesh.cpp.o
@@ -2052,7 +2052,7 @@ surface_mesh.o: surface_mesh.cpp.o
 
 # target to build an object file
 surface_mesh.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_mesh.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_mesh.cpp.o
 .PHONY : surface_mesh.cpp.o
 
 surface_mesh.i: surface_mesh.cpp.i
@@ -2060,7 +2060,7 @@ surface_mesh.i: surface_mesh.cpp.i
 
 # target to preprocess a source file
 surface_mesh.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_mesh.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_mesh.cpp.i
 .PHONY : surface_mesh.cpp.i
 
 surface_mesh.s: surface_mesh.cpp.s
@@ -2068,7 +2068,7 @@ surface_mesh.s: surface_mesh.cpp.s
 
 # target to generate assembly for a file
 surface_mesh.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_mesh.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_mesh.cpp.s
 .PHONY : surface_mesh.cpp.s
 
 surface_parameterization_quantity.o: surface_parameterization_quantity.cpp.o
@@ -2076,7 +2076,7 @@ surface_parameterization_quantity.o: surface_parameterization_quantity.cpp.o
 
 # target to build an object file
 surface_parameterization_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_parameterization_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_parameterization_quantity.cpp.o
 .PHONY : surface_parameterization_quantity.cpp.o
 
 surface_parameterization_quantity.i: surface_parameterization_quantity.cpp.i
@@ -2084,7 +2084,7 @@ surface_parameterization_quantity.i: surface_parameterization_quantity.cpp.i
 
 # target to preprocess a source file
 surface_parameterization_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_parameterization_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_parameterization_quantity.cpp.i
 .PHONY : surface_parameterization_quantity.cpp.i
 
 surface_parameterization_quantity.s: surface_parameterization_quantity.cpp.s
@@ -2092,7 +2092,7 @@ surface_parameterization_quantity.s: surface_parameterization_quantity.cpp.s
 
 # target to generate assembly for a file
 surface_parameterization_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_parameterization_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_parameterization_quantity.cpp.s
 .PHONY : surface_parameterization_quantity.cpp.s
 
 surface_scalar_quantity.o: surface_scalar_quantity.cpp.o
@@ -2100,7 +2100,7 @@ surface_scalar_quantity.o: surface_scalar_quantity.cpp.o
 
 # target to build an object file
 surface_scalar_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_scalar_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_scalar_quantity.cpp.o
 .PHONY : surface_scalar_quantity.cpp.o
 
 surface_scalar_quantity.i: surface_scalar_quantity.cpp.i
@@ -2108,7 +2108,7 @@ surface_scalar_quantity.i: surface_scalar_quantity.cpp.i
 
 # target to preprocess a source file
 surface_scalar_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_scalar_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_scalar_quantity.cpp.i
 .PHONY : surface_scalar_quantity.cpp.i
 
 surface_scalar_quantity.s: surface_scalar_quantity.cpp.s
@@ -2116,7 +2116,7 @@ surface_scalar_quantity.s: surface_scalar_quantity.cpp.s
 
 # target to generate assembly for a file
 surface_scalar_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_scalar_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_scalar_quantity.cpp.s
 .PHONY : surface_scalar_quantity.cpp.s
 
 surface_vector_quantity.o: surface_vector_quantity.cpp.o
@@ -2124,7 +2124,7 @@ surface_vector_quantity.o: surface_vector_quantity.cpp.o
 
 # target to build an object file
 surface_vector_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_vector_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_vector_quantity.cpp.o
 .PHONY : surface_vector_quantity.cpp.o
 
 surface_vector_quantity.i: surface_vector_quantity.cpp.i
@@ -2132,7 +2132,7 @@ surface_vector_quantity.i: surface_vector_quantity.cpp.i
 
 # target to preprocess a source file
 surface_vector_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_vector_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_vector_quantity.cpp.i
 .PHONY : surface_vector_quantity.cpp.i
 
 surface_vector_quantity.s: surface_vector_quantity.cpp.s
@@ -2140,7 +2140,7 @@ surface_vector_quantity.s: surface_vector_quantity.cpp.s
 
 # target to generate assembly for a file
 surface_vector_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_vector_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/surface_vector_quantity.cpp.s
 .PHONY : surface_vector_quantity.cpp.s
 
 transformation_gizmo.o: transformation_gizmo.cpp.o
@@ -2148,7 +2148,7 @@ transformation_gizmo.o: transformation_gizmo.cpp.o
 
 # target to build an object file
 transformation_gizmo.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/transformation_gizmo.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/transformation_gizmo.cpp.o
 .PHONY : transformation_gizmo.cpp.o
 
 transformation_gizmo.i: transformation_gizmo.cpp.i
@@ -2156,7 +2156,7 @@ transformation_gizmo.i: transformation_gizmo.cpp.i
 
 # target to preprocess a source file
 transformation_gizmo.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/transformation_gizmo.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/transformation_gizmo.cpp.i
 .PHONY : transformation_gizmo.cpp.i
 
 transformation_gizmo.s: transformation_gizmo.cpp.s
@@ -2164,7 +2164,7 @@ transformation_gizmo.s: transformation_gizmo.cpp.s
 
 # target to generate assembly for a file
 transformation_gizmo.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/transformation_gizmo.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/transformation_gizmo.cpp.s
 .PHONY : transformation_gizmo.cpp.s
 
 utilities.o: utilities.cpp.o
@@ -2172,7 +2172,7 @@ utilities.o: utilities.cpp.o
 
 # target to build an object file
 utilities.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/utilities.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/utilities.cpp.o
 .PHONY : utilities.cpp.o
 
 utilities.i: utilities.cpp.i
@@ -2180,7 +2180,7 @@ utilities.i: utilities.cpp.i
 
 # target to preprocess a source file
 utilities.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/utilities.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/utilities.cpp.i
 .PHONY : utilities.cpp.i
 
 utilities.s: utilities.cpp.s
@@ -2188,7 +2188,7 @@ utilities.s: utilities.cpp.s
 
 # target to generate assembly for a file
 utilities.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/utilities.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/utilities.cpp.s
 .PHONY : utilities.cpp.s
 
 view.o: view.cpp.o
@@ -2196,7 +2196,7 @@ view.o: view.cpp.o
 
 # target to build an object file
 view.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/view.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/view.cpp.o
 .PHONY : view.cpp.o
 
 view.i: view.cpp.i
@@ -2204,7 +2204,7 @@ view.i: view.cpp.i
 
 # target to preprocess a source file
 view.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/view.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/view.cpp.i
 .PHONY : view.cpp.i
 
 view.s: view.cpp.s
@@ -2212,7 +2212,7 @@ view.s: view.cpp.s
 
 # target to generate assembly for a file
 view.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/view.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/view.cpp.s
 .PHONY : view.cpp.s
 
 volume_grid.o: volume_grid.cpp.o
@@ -2220,7 +2220,7 @@ volume_grid.o: volume_grid.cpp.o
 
 # target to build an object file
 volume_grid.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid.cpp.o
 .PHONY : volume_grid.cpp.o
 
 volume_grid.i: volume_grid.cpp.i
@@ -2228,7 +2228,7 @@ volume_grid.i: volume_grid.cpp.i
 
 # target to preprocess a source file
 volume_grid.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid.cpp.i
 .PHONY : volume_grid.cpp.i
 
 volume_grid.s: volume_grid.cpp.s
@@ -2236,7 +2236,7 @@ volume_grid.s: volume_grid.cpp.s
 
 # target to generate assembly for a file
 volume_grid.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid.cpp.s
 .PHONY : volume_grid.cpp.s
 
 volume_grid_scalar_quantity.o: volume_grid_scalar_quantity.cpp.o
@@ -2244,7 +2244,7 @@ volume_grid_scalar_quantity.o: volume_grid_scalar_quantity.cpp.o
 
 # target to build an object file
 volume_grid_scalar_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid_scalar_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid_scalar_quantity.cpp.o
 .PHONY : volume_grid_scalar_quantity.cpp.o
 
 volume_grid_scalar_quantity.i: volume_grid_scalar_quantity.cpp.i
@@ -2252,7 +2252,7 @@ volume_grid_scalar_quantity.i: volume_grid_scalar_quantity.cpp.i
 
 # target to preprocess a source file
 volume_grid_scalar_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid_scalar_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid_scalar_quantity.cpp.i
 .PHONY : volume_grid_scalar_quantity.cpp.i
 
 volume_grid_scalar_quantity.s: volume_grid_scalar_quantity.cpp.s
@@ -2260,7 +2260,7 @@ volume_grid_scalar_quantity.s: volume_grid_scalar_quantity.cpp.s
 
 # target to generate assembly for a file
 volume_grid_scalar_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid_scalar_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_grid_scalar_quantity.cpp.s
 .PHONY : volume_grid_scalar_quantity.cpp.s
 
 volume_mesh.o: volume_mesh.cpp.o
@@ -2268,7 +2268,7 @@ volume_mesh.o: volume_mesh.cpp.o
 
 # target to build an object file
 volume_mesh.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh.cpp.o
 .PHONY : volume_mesh.cpp.o
 
 volume_mesh.i: volume_mesh.cpp.i
@@ -2276,7 +2276,7 @@ volume_mesh.i: volume_mesh.cpp.i
 
 # target to preprocess a source file
 volume_mesh.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh.cpp.i
 .PHONY : volume_mesh.cpp.i
 
 volume_mesh.s: volume_mesh.cpp.s
@@ -2284,7 +2284,7 @@ volume_mesh.s: volume_mesh.cpp.s
 
 # target to generate assembly for a file
 volume_mesh.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh.cpp.s
 .PHONY : volume_mesh.cpp.s
 
 volume_mesh_color_quantity.o: volume_mesh_color_quantity.cpp.o
@@ -2292,7 +2292,7 @@ volume_mesh_color_quantity.o: volume_mesh_color_quantity.cpp.o
 
 # target to build an object file
 volume_mesh_color_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_color_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_color_quantity.cpp.o
 .PHONY : volume_mesh_color_quantity.cpp.o
 
 volume_mesh_color_quantity.i: volume_mesh_color_quantity.cpp.i
@@ -2300,7 +2300,7 @@ volume_mesh_color_quantity.i: volume_mesh_color_quantity.cpp.i
 
 # target to preprocess a source file
 volume_mesh_color_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_color_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_color_quantity.cpp.i
 .PHONY : volume_mesh_color_quantity.cpp.i
 
 volume_mesh_color_quantity.s: volume_mesh_color_quantity.cpp.s
@@ -2308,7 +2308,7 @@ volume_mesh_color_quantity.s: volume_mesh_color_quantity.cpp.s
 
 # target to generate assembly for a file
 volume_mesh_color_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_color_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_color_quantity.cpp.s
 .PHONY : volume_mesh_color_quantity.cpp.s
 
 volume_mesh_scalar_quantity.o: volume_mesh_scalar_quantity.cpp.o
@@ -2316,7 +2316,7 @@ volume_mesh_scalar_quantity.o: volume_mesh_scalar_quantity.cpp.o
 
 # target to build an object file
 volume_mesh_scalar_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_scalar_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_scalar_quantity.cpp.o
 .PHONY : volume_mesh_scalar_quantity.cpp.o
 
 volume_mesh_scalar_quantity.i: volume_mesh_scalar_quantity.cpp.i
@@ -2324,7 +2324,7 @@ volume_mesh_scalar_quantity.i: volume_mesh_scalar_quantity.cpp.i
 
 # target to preprocess a source file
 volume_mesh_scalar_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_scalar_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_scalar_quantity.cpp.i
 .PHONY : volume_mesh_scalar_quantity.cpp.i
 
 volume_mesh_scalar_quantity.s: volume_mesh_scalar_quantity.cpp.s
@@ -2332,7 +2332,7 @@ volume_mesh_scalar_quantity.s: volume_mesh_scalar_quantity.cpp.s
 
 # target to generate assembly for a file
 volume_mesh_scalar_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_scalar_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_scalar_quantity.cpp.s
 .PHONY : volume_mesh_scalar_quantity.cpp.s
 
 volume_mesh_vector_quantity.o: volume_mesh_vector_quantity.cpp.o
@@ -2340,7 +2340,7 @@ volume_mesh_vector_quantity.o: volume_mesh_vector_quantity.cpp.o
 
 # target to build an object file
 volume_mesh_vector_quantity.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_vector_quantity.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_vector_quantity.cpp.o
 .PHONY : volume_mesh_vector_quantity.cpp.o
 
 volume_mesh_vector_quantity.i: volume_mesh_vector_quantity.cpp.i
@@ -2348,7 +2348,7 @@ volume_mesh_vector_quantity.i: volume_mesh_vector_quantity.cpp.i
 
 # target to preprocess a source file
 volume_mesh_vector_quantity.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_vector_quantity.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_vector_quantity.cpp.i
 .PHONY : volume_mesh_vector_quantity.cpp.i
 
 volume_mesh_vector_quantity.s: volume_mesh_vector_quantity.cpp.s
@@ -2356,7 +2356,7 @@ volume_mesh_vector_quantity.s: volume_mesh_vector_quantity.cpp.s
 
 # target to generate assembly for a file
 volume_mesh_vector_quantity.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_vector_quantity.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/volume_mesh_vector_quantity.cpp.s
 .PHONY : volume_mesh_vector_quantity.cpp.s
 
 weak_handle.o: weak_handle.cpp.o
@@ -2364,7 +2364,7 @@ weak_handle.o: weak_handle.cpp.o
 
 # target to build an object file
 weak_handle.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/weak_handle.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/weak_handle.cpp.o
 .PHONY : weak_handle.cpp.o
 
 weak_handle.i: weak_handle.cpp.i
@@ -2372,7 +2372,7 @@ weak_handle.i: weak_handle.cpp.i
 
 # target to preprocess a source file
 weak_handle.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/weak_handle.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/weak_handle.cpp.i
 .PHONY : weak_handle.cpp.i
 
 weak_handle.s: weak_handle.cpp.s
@@ -2380,7 +2380,7 @@ weak_handle.s: weak_handle.cpp.s
 
 # target to generate assembly for a file
 weak_handle.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/weak_handle.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/weak_handle.cpp.s
 .PHONY : weak_handle.cpp.s
 
 widget.o: widget.cpp.o
@@ -2388,7 +2388,7 @@ widget.o: widget.cpp.o
 
 # target to build an object file
 widget.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/widget.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/widget.cpp.o
 .PHONY : widget.cpp.o
 
 widget.i: widget.cpp.i
@@ -2396,7 +2396,7 @@ widget.i: widget.cpp.i
 
 # target to preprocess a source file
 widget.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/widget.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/widget.cpp.i
 .PHONY : widget.cpp.i
 
 widget.s: widget.cpp.s
@@ -2404,7 +2404,7 @@ widget.s: widget.cpp.s
 
 # target to generate assembly for a file
 widget.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/widget.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/src/CMakeFiles/polyscope.dir/build.make deps/polyscope/src/CMakeFiles/polyscope.dir/widget.cpp.s
 .PHONY : widget.cpp.s
 
 # Help Target
@@ -2710,6 +2710,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

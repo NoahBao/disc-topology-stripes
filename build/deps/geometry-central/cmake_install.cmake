@@ -1,4 +1,4 @@
-# Install script for directory: /Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/geometry-central
+# Install script for directory: /Users/feng/Documents/disc-topology-stripes/deps/geometry-central
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -34,28 +34,28 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/deps/cmake_install.cmake")
+  include("/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/deps/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src/cmake_install.cmake")
+  include("/Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/lib/libgeometry-central.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/feng/Documents/disc-topology-stripes/build/lib/libgeometry-central.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeometry-central.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeometry-central.a")
-    execute_process(COMMAND "/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeometry-central.a")
+    execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeometry-central.a")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/include/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.ipp$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/feng/Documents/disc-topology-stripes/include/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.ipp$")
 endif()
 

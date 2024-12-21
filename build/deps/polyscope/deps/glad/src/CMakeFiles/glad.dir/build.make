@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template"
+CMAKE_SOURCE_DIR = /Users/feng/Documents/disc-topology-stripes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build"
+CMAKE_BINARY_DIR = /Users/feng/Documents/disc-topology-stripes/build
 
 # Include any dependencies generated for this target.
 include deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/depend.make
@@ -70,18 +70,18 @@ include deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/progress.make
 include deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/flags.make
 
 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o: deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/flags.make
-deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o: /Users/noahbarnes/Documents/Documents\ -\ Noah’s\ MacBook\ Air/BU/2024\ Fall/CS582/Final\ Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glad/src/glad.c
+deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o: /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glad/src/glad.c
 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o: deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src" && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o -MF CMakeFiles/glad.dir/glad.c.o.d -o CMakeFiles/glad.dir/glad.c.o -c "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glad/src/glad.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o"
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o -MF CMakeFiles/glad.dir/glad.c.o.d -o CMakeFiles/glad.dir/glad.c.o -c /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glad/src/glad.c
 
 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glad.dir/glad.c.i"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src" && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glad/src/glad.c" > CMakeFiles/glad.dir/glad.c.i
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glad/src/glad.c > CMakeFiles/glad.dir/glad.c.i
 
 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glad.dir/glad.c.s"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src" && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glad/src/glad.c" -o CMakeFiles/glad.dir/glad.c.s
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glad/src/glad.c -o CMakeFiles/glad.dir/glad.c.s
 
 # Object files for target glad
 glad_OBJECTS = \
@@ -93,19 +93,19 @@ glad_EXTERNAL_OBJECTS =
 lib/libglad.a: deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o
 lib/libglad.a: deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build.make
 lib/libglad.a: deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../../../../../lib/libglad.a"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src" && $(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean_target.cmake
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glad.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../../../../../lib/libglad.a"
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src && $(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean_target.cmake
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glad.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build: lib/libglad.a
 .PHONY : deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/build
 
 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/clean:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src" && $(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean.cmake
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src && $(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean.cmake
 .PHONY : deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/clean
 
 deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/depend:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glad/src" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/feng/Documents/disc-topology-stripes /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glad/src /Users/feng/Documents/disc-topology-stripes/build /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/depend
 

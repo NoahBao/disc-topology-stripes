@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template"
+CMAKE_SOURCE_DIR = /Users/feng/Documents/disc-topology-stripes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build"
+CMAKE_BINARY_DIR = /Users/feng/Documents/disc-topology-stripes/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/compiler_dep
 include deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glfw/src" && /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -P "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glfw/CMake/GenerateMappings.cmake" mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glfw/src && /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -P /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 update_mappings: deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings
 update_mappings: deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/build.make
@@ -79,10 +79,10 @@ deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappin
 .PHONY : deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/build
 
 deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src" && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glfw/src" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/feng/Documents/disc-topology-stripes /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glfw/src /Users/feng/Documents/disc-topology-stripes/build /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : deps/polyscope/deps/glfw/src/CMakeFiles/update_mappings.dir/depend
 

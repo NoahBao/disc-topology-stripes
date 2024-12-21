@@ -1,1 +1,1 @@
-/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/geometry-central/deps/nanoflann/include/nanoflann.hpp
+/Users/feng/Documents/disc-topology-stripes/deps/geometry-central/deps/nanoflann/include/nanoflann.hpp

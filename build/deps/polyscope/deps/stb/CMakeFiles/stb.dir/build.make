@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template"
+CMAKE_SOURCE_DIR = /Users/feng/Documents/disc-topology-stripes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build"
+CMAKE_BINARY_DIR = /Users/feng/Documents/disc-topology-stripes/build
 
 # Include any dependencies generated for this target.
 include deps/polyscope/deps/stb/CMakeFiles/stb.dir/depend.make
@@ -70,18 +70,18 @@ include deps/polyscope/deps/stb/CMakeFiles/stb.dir/progress.make
 include deps/polyscope/deps/stb/CMakeFiles/stb.dir/flags.make
 
 deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o: deps/polyscope/deps/stb/CMakeFiles/stb.dir/flags.make
-deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o: /Users/noahbarnes/Documents/Documents\ -\ Noah’s\ MacBook\ Air/BU/2024\ Fall/CS582/Final\ Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/stb/stb_impl.cpp
+deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o: /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/stb/stb_impl.cpp
 deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o: deps/polyscope/deps/stb/CMakeFiles/stb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb" && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o -MF CMakeFiles/stb.dir/stb_impl.cpp.o.d -o CMakeFiles/stb.dir/stb_impl.cpp.o -c "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/stb/stb_impl.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o"
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o -MF CMakeFiles/stb.dir/stb_impl.cpp.o.d -o CMakeFiles/stb.dir/stb_impl.cpp.o -c /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/stb/stb_impl.cpp
 
 deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stb.dir/stb_impl.cpp.i"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb" && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/stb/stb_impl.cpp" > CMakeFiles/stb.dir/stb_impl.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/stb/stb_impl.cpp > CMakeFiles/stb.dir/stb_impl.cpp.i
 
 deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stb.dir/stb_impl.cpp.s"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb" && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/stb/stb_impl.cpp" -o CMakeFiles/stb.dir/stb_impl.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/stb/stb_impl.cpp -o CMakeFiles/stb.dir/stb_impl.cpp.s
 
 # Object files for target stb
 stb_OBJECTS = \
@@ -93,19 +93,19 @@ stb_EXTERNAL_OBJECTS =
 lib/libstb.a: deps/polyscope/deps/stb/CMakeFiles/stb.dir/stb_impl.cpp.o
 lib/libstb.a: deps/polyscope/deps/stb/CMakeFiles/stb.dir/build.make
 lib/libstb.a: deps/polyscope/deps/stb/CMakeFiles/stb.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../../lib/libstb.a"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb" && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean_target.cmake
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stb.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/feng/Documents/disc-topology-stripes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../../lib/libstb.a"
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean_target.cmake
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stb.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 deps/polyscope/deps/stb/CMakeFiles/stb.dir/build: lib/libstb.a
 .PHONY : deps/polyscope/deps/stb/CMakeFiles/stb.dir/build
 
 deps/polyscope/deps/stb/CMakeFiles/stb.dir/clean:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb" && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean.cmake
+	cd /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean.cmake
 .PHONY : deps/polyscope/deps/stb/CMakeFiles/stb.dir/clean
 
 deps/polyscope/deps/stb/CMakeFiles/stb.dir/depend:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/stb" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/stb/CMakeFiles/stb.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/feng/Documents/disc-topology-stripes /Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/stb /Users/feng/Documents/disc-topology-stripes/build /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/stb/CMakeFiles/stb.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : deps/polyscope/deps/stb/CMakeFiles/stb.dir/depend
 

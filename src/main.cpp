@@ -55,60 +55,91 @@ std::vector<std::vector<Vector3>> boundaryPoints = {{}, {}};
 VertexData<double> hFunction;
 FaceData<Vector3> faceGradient;
 VertexData<Vector3> vertexGradient;
-VertexData<Vector2> tangentVectors;
+VertexData<Vector2> courseTangentVectors;
 VertexData<Vector2> waleTangentVectors;
+
+
+float waleFrequency = 20.0f;
+float courseFrequency = 20.0f;
+
+
+bool waleStripesExists = false;
+bool courseStripesExists = false;
+
 
 // ===========================================================
 
 // generates stripes using Geometry Central's stripe methods
-void generateStripes()
+void generateWaleStripes()
 {
+  // remove existing  wales curve
+    if (waleStripesExists) {
+        polyscope::removePointCloud("Wale Curve Points");
+        polyscope::removeCurveNetwork("Wale Curve Edges");
+        waleStripesExists = false;
+    }
+
   // Generate a guiding field
-  // TODO: use our own guide field based on the user's start and end boundaries
-  VertexData<Vector2> guideField =
+  VertexData<Vector2> waleGuideField =
       geometrycentral::surface::computeSmoothestVertexDirectionField(*geometry, 2);
 
   // use tangent vectors instead of smoothest direction field
-  guideField = tangentVectors;
+  waleGuideField = waleTangentVectors;
 
-  // Compute the stripe pattern
-  double constantFreq = 30.;
-  VertexData<double> frequencies(*mesh, constantFreq);
+  // Compute the stripe couse pattern
+  // double constantFreq = 40; // for square
+  // double constantFreq = 30.; // for c shape
+  // double constantFreq = 10.; // for s shape
+  // double constantFreq = 3.0; // for trapozoid
+  // double constantFreq = 20; // for trapozoid
+  VertexData<double> frequencies(*mesh, waleFrequency);
   CornerData<double> periodicFunc;
   FaceData<int> zeroIndices;
   FaceData<int> branchIndices;
   std::tie(periodicFunc, zeroIndices, branchIndices) =
-      computeStripePattern(*geometry, frequencies, guideField);
+      computeStripePattern(*geometry, frequencies, waleGuideField);
 
   // Extract isolines
   std::vector<Vector3> isolineVerts;
   std::vector<std::array<size_t, 2>> isolineEdges;
   std::tie(isolineVerts, isolineEdges) = extractPolylinesFromStripePattern(
-      *geometry, periodicFunc, zeroIndices, branchIndices, guideField, false);
-  polyscope::registerPointCloud("Curve points", isolineVerts);
-  polyscope::registerCurveNetwork("Curve edges", isolineVerts, isolineEdges);
+      *geometry, periodicFunc, zeroIndices, branchIndices, waleGuideField, false);
+  polyscope::registerPointCloud("Wale Curve points", isolineVerts);
+  polyscope::registerCurveNetwork("Wale Curve edges", isolineVerts, isolineEdges);
 }
-void generateWalesStripes()
+void generateCourseStripes()
 {
-    VertexData<Vector2> waleGuideField = waleTangentVectors;
+    if (waleStripesExists) {
+        polyscope::removePointCloud("Course Curve Points");
+        polyscope::removeCurveNetwork("Course Curve Edges");
+        courseStripesExists = false;
+    }
 
-    // Compute stripe pattern based on the wales guide field
-    double constantFreq = 10.;
-    VertexData<double> frequencies(*mesh, constantFreq);
+    VertexData<Vector2> courseGuideField = courseTangentVectors;
+
+    // Compute stripe pattern based on the courses guide field
+    // double constantFreq = 40; // for square
+    // double constantFreq = 20.;   // for c shape
+    // double constantFreq = 5.; // for s shape
+    // double constantFreq = 3.0; // for trapezoid shape
+    // double constantFreq = 20;
+    VertexData<double> frequencies(*mesh, courseFrequency);
     CornerData<double> periodicFunc;
     FaceData<int> zeroIndices;
     FaceData<int> branchIndices;
     std::tie(periodicFunc, zeroIndices, branchIndices) =
-        computeStripePattern(*geometry, frequencies, waleGuideField);
+        computeStripePattern(*geometry, frequencies, courseGuideField);
 
     // Extract isolines
     std::vector<Vector3> isolineVerts;
     std::vector<std::array<size_t, 2>> isolineEdges;
     std::tie(isolineVerts, isolineEdges) = extractPolylinesFromStripePattern(
-      *geometry, periodicFunc, zeroIndices, branchIndices, waleGuideField, false);
+      *geometry, periodicFunc, zeroIndices, branchIndices, courseGuideField, false);
 
-    polyscope::registerPointCloud("Wales Curve Points", isolineVerts);
-    polyscope::registerCurveNetwork("Wales Curve Edges", isolineVerts, isolineEdges);
+    polyscope::registerPointCloud("Course Curve Points", isolineVerts);
+    polyscope::registerCurveNetwork("Course Curve Edges", isolineVerts, isolineEdges);
+
+    courseStripesExists=true;
 }
 
 // select a particular boundary (start or end)
@@ -117,7 +148,8 @@ void selectBoundary(int boundaryIndex)
   // initialize variables
   geometry->requireVertexPositions();
   glm::vec3 pointCloudColor = boundaryIndex == 0 ? glm::vec3({1., 0.1, 1.}) : glm::vec3({1., 1., 0.1});
-  std::string pointCloudName = "Start points (h=" + std::to_string(boundaryIndex) + ")";
+  std::string startOrEnd = boundaryIndex == 0 ? "Start" : "End";
+  std::string pointCloudName = startOrEnd + " points (h=" + std::to_string(boundaryIndex) + ")";
   auto pc = polyscope::registerPointCloud(pointCloudName, boundaryPoints[boundaryIndex]);
   polyscope::warning("Pick two endpoints first, then choose a point to define the \"insideness\" of your selection.");
 
@@ -146,6 +178,8 @@ void selectBoundary(int boundaryIndex)
     pc = polyscope::registerPointCloud(pointCloudName, boundaryPoints[boundaryIndex]);
     pc->setPointColor(pointCloudColor);
   }
+
+  waleStripesExists = true;
 }
 
 // selects all boundary vertices that are between endpoints 1 and 2 ("in between" defined by inner point)
@@ -178,7 +212,7 @@ void selectBoundaryPoints(int endPointIndex1, int endPointIndex2, int innerPoint
     for (Halfedge he : v_i.incomingHalfedges())
     {
       Vertex v_j = he.tailVertex();
-      if (v_j.isBoundary() && !isVertexVisited[v_j.getIndex()])
+      if (v_j.isBoundary() && !isVertexVisited[v_j.getIndex()] && he.edge().isBoundary())
       {
         isVertexVisited[v_j.getIndex()] = true;
         vertices.push(v_j.getIndex());
@@ -336,7 +370,7 @@ void constructVertexGradient()
 void constructTangentVectors()
 {
   geometry->requireVertexNormals();
-  tangentVectors = VertexData<Vector2>(*mesh);
+  courseTangentVectors = VertexData<Vector2>(*mesh);
   waleTangentVectors = VertexData<Vector2>(*mesh);
   int numProcessed = 0;
   for (Vertex v : mesh->vertices())
@@ -350,13 +384,13 @@ void constructTangentVectors()
     }
     Vector3 heVec = geometry->vertexPositions[he.tipVertex()] - geometry->vertexPositions[he.tailVertex()];
     Vector2 u = projectOntoTangentPlane(vertexGradient[v], normalVec, heVec);
-    double angleA = std::atan2(u.y, u.x) + M_PI / 2.0;
-    std::complex<double> complexDirectionField(std::complex<double>(cos(2.0 * angleA), sin(2.0 * angleA)));
-    tangentVectors[v] = Vector2::fromComplex(complexDirectionField).normalize();
+    double angleW = std::atan2(u.y, u.x) + M_PI / 2.0;
+    std::complex<double> waleComplexDirectionField(std::complex<double>(cos(2.0 * angleW), sin(2.0 * angleW)));
+    waleTangentVectors[v] = Vector2::fromComplex(waleComplexDirectionField).normalize();
 
-    double angleW = angleA + M_PI / 2.0; 
-    std::complex<double> complexWaleField(std::cos(2.0 * angleW), std::sin(2.0 * angleW));
-    waleTangentVectors[v] = Vector2::fromComplex(complexWaleField).normalize();
+    double angleC = angleW + M_PI / 2.0; 
+    std::complex<double> courseComplexDirectionField(std::cos(2.0 * angleC), std::sin(2.0 * angleC));
+    courseTangentVectors[v] = Vector2::fromComplex(courseComplexDirectionField).normalize();
 
     numProcessed++;
   }
@@ -406,7 +440,7 @@ void myCallback()
       hFunctionDisplay->setEnabled(true);
     }
   }
-
+    ImGui::Separator();
   if (ImGui::Button("Construct Gradient"))
   {
     constructFaceGradient();
@@ -419,14 +453,26 @@ void myCallback()
   {
     constructTangentVectors();
   }
+      ImGui::Separator();
+    bool freqChanged = false;
 
+    freqChanged |= ImGui::SliderFloat("Wale Frequency", &waleFrequency, 0.0001f, 100.0f, "%.1f", 1.0f);
+    freqChanged |= ImGui::SliderFloat("Course Frequency", &courseFrequency, 0.0001f, 100.0f, "%.1f", 1.0f);
+
+    if (freqChanged)
+    {
+        generateWaleStripes();
+        generateCourseStripes();
+    }
+
+
+  if (ImGui::Button("Generate Wale Curves"))
+  {
+    generateWaleStripes();
+  }
   if (ImGui::Button("Generate Course Curves"))
   {
-    generateStripes();
-  }
-  if (ImGui::Button("Generate Wales Curves"))
-  {
-      generateWalesStripes();
+      generateCourseStripes();
   }
 }
 

@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template"
+CMAKE_SOURCE_DIR = /Users/feng/Documents/disc-topology-stripes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build"
+CMAKE_BINARY_DIR = /Users/feng/Documents/disc-topology-stripes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/polyscope/deps/imgui//CMakeFiles/progress.marks"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" 0
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/feng/Documents/disc-topology-stripes/build/CMakeFiles /Users/feng/Documents/disc-topology-stripes/build/deps/polyscope/deps/imgui//CMakeFiles/progress.marks
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/feng/Documents/disc-topology-stripes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/clean
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/preinstall
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/preinstall
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/rule:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/rule
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/rule
 .PHONY : deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ imgui: deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/rule
 
 # fast build rule for target.
 imgui/fast:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
 
 imgui/backends/imgui_impl_glfw.o: imgui/backends/imgui_impl_glfw.cpp.o
@@ -180,7 +180,7 @@ imgui/backends/imgui_impl_glfw.o: imgui/backends/imgui_impl_glfw.cpp.o
 
 # target to build an object file
 imgui/backends/imgui_impl_glfw.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o
 .PHONY : imgui/backends/imgui_impl_glfw.cpp.o
 
 imgui/backends/imgui_impl_glfw.i: imgui/backends/imgui_impl_glfw.cpp.i
@@ -188,7 +188,7 @@ imgui/backends/imgui_impl_glfw.i: imgui/backends/imgui_impl_glfw.cpp.i
 
 # target to preprocess a source file
 imgui/backends/imgui_impl_glfw.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.i
 .PHONY : imgui/backends/imgui_impl_glfw.cpp.i
 
 imgui/backends/imgui_impl_glfw.s: imgui/backends/imgui_impl_glfw.cpp.s
@@ -196,7 +196,7 @@ imgui/backends/imgui_impl_glfw.s: imgui/backends/imgui_impl_glfw.cpp.s
 
 # target to generate assembly for a file
 imgui/backends/imgui_impl_glfw.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.s
 .PHONY : imgui/backends/imgui_impl_glfw.cpp.s
 
 imgui/backends/imgui_impl_opengl3.o: imgui/backends/imgui_impl_opengl3.cpp.o
@@ -204,7 +204,7 @@ imgui/backends/imgui_impl_opengl3.o: imgui/backends/imgui_impl_opengl3.cpp.o
 
 # target to build an object file
 imgui/backends/imgui_impl_opengl3.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o
 .PHONY : imgui/backends/imgui_impl_opengl3.cpp.o
 
 imgui/backends/imgui_impl_opengl3.i: imgui/backends/imgui_impl_opengl3.cpp.i
@@ -212,7 +212,7 @@ imgui/backends/imgui_impl_opengl3.i: imgui/backends/imgui_impl_opengl3.cpp.i
 
 # target to preprocess a source file
 imgui/backends/imgui_impl_opengl3.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.i
 .PHONY : imgui/backends/imgui_impl_opengl3.cpp.i
 
 imgui/backends/imgui_impl_opengl3.s: imgui/backends/imgui_impl_opengl3.cpp.s
@@ -220,7 +220,7 @@ imgui/backends/imgui_impl_opengl3.s: imgui/backends/imgui_impl_opengl3.cpp.s
 
 # target to generate assembly for a file
 imgui/backends/imgui_impl_opengl3.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.s
 .PHONY : imgui/backends/imgui_impl_opengl3.cpp.s
 
 imgui/imgui.o: imgui/imgui.cpp.o
@@ -228,7 +228,7 @@ imgui/imgui.o: imgui/imgui.cpp.o
 
 # target to build an object file
 imgui/imgui.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui.cpp.o
 .PHONY : imgui/imgui.cpp.o
 
 imgui/imgui.i: imgui/imgui.cpp.i
@@ -236,7 +236,7 @@ imgui/imgui.i: imgui/imgui.cpp.i
 
 # target to preprocess a source file
 imgui/imgui.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui.cpp.i
 .PHONY : imgui/imgui.cpp.i
 
 imgui/imgui.s: imgui/imgui.cpp.s
@@ -244,7 +244,7 @@ imgui/imgui.s: imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui.cpp.s
 .PHONY : imgui/imgui.cpp.s
 
 imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
@@ -252,7 +252,7 @@ imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
 
 # target to build an object file
 imgui/imgui_demo.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
 .PHONY : imgui/imgui_demo.cpp.o
 
 imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
@@ -260,7 +260,7 @@ imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_demo.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i
 .PHONY : imgui/imgui_demo.cpp.i
 
 imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
@@ -268,7 +268,7 @@ imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_demo.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s
 .PHONY : imgui/imgui_demo.cpp.s
 
 imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
@@ -276,7 +276,7 @@ imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
 
 # target to build an object file
 imgui/imgui_draw.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
 .PHONY : imgui/imgui_draw.cpp.o
 
 imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
@@ -284,7 +284,7 @@ imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_draw.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i
 .PHONY : imgui/imgui_draw.cpp.i
 
 imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
@@ -292,7 +292,7 @@ imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_draw.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s
 .PHONY : imgui/imgui_draw.cpp.s
 
 imgui/imgui_tables.o: imgui/imgui_tables.cpp.o
@@ -300,7 +300,7 @@ imgui/imgui_tables.o: imgui/imgui_tables.cpp.o
 
 # target to build an object file
 imgui/imgui_tables.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
 .PHONY : imgui/imgui_tables.cpp.o
 
 imgui/imgui_tables.i: imgui/imgui_tables.cpp.i
@@ -308,7 +308,7 @@ imgui/imgui_tables.i: imgui/imgui_tables.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_tables.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i
 .PHONY : imgui/imgui_tables.cpp.i
 
 imgui/imgui_tables.s: imgui/imgui_tables.cpp.s
@@ -316,7 +316,7 @@ imgui/imgui_tables.s: imgui/imgui_tables.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_tables.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s
 .PHONY : imgui/imgui_tables.cpp.s
 
 imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
@@ -324,7 +324,7 @@ imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 imgui/imgui_widgets.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
 .PHONY : imgui/imgui_widgets.cpp.o
 
 imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
@@ -332,7 +332,7 @@ imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_widgets.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i
 .PHONY : imgui/imgui_widgets.cpp.i
 
 imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
@@ -340,7 +340,7 @@ imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_widgets.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/build.make deps/polyscope/deps/imgui/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
 .PHONY : imgui/imgui_widgets.cpp.s
 
 # Help Target
@@ -388,6 +388,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

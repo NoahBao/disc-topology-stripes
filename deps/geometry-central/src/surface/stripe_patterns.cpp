@@ -510,7 +510,7 @@ void connectIsolinesOnSingularities(EmbeddedGeometryInterface& geometry, const C
 } // namespace
 
 std::tuple<std::vector<Vector3>, std::vector<std::array<size_t, 2>>>
-extractPolylinesFromStripePattern(EmbeddedGeometryInterface& geometry, const CornerData<double>& values,
+çextractPolylinesFromStripePattern(EmbeddedGeometryInterface& geometry, const CornerData<double>& values,
                                   const FaceData<int>& stripeIndices, const FaceData<int>& fieldIndices,
                                   const VertexData<Vector2>& directionField, bool connectOnSingularities) {
   SurfaceMesh& mesh = geometry.mesh;

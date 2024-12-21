@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/deps/polyscope/deps/glad/src/glad.c" "deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o" "gcc" "deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o.d"
+  "/Users/feng/Documents/disc-topology-stripes/deps/polyscope/deps/glad/src/glad.c" "deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o" "gcc" "deps/polyscope/deps/glad/src/CMakeFiles/glad.dir/glad.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

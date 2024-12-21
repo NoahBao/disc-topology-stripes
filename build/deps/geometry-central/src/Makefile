@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template"
+CMAKE_SOURCE_DIR = /Users/feng/Documents/disc-topology-stripes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build"
+CMAKE_BINARY_DIR = /Users/feng/Documents/disc-topology-stripes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/deps/geometry-central/src//CMakeFiles/progress.marks"
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build/CMakeFiles" 0
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/feng/Documents/disc-topology-stripes/build/CMakeFiles /Users/feng/Documents/disc-topology-stripes/build/deps/geometry-central/src//CMakeFiles/progress.marks
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/feng/Documents/disc-topology-stripes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/clean
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/preinstall
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/preinstall
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 deps/geometry-central/src/CMakeFiles/geometry-central.dir/rule:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/CMakeFiles/geometry-central.dir/rule
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/geometry-central/src/CMakeFiles/geometry-central.dir/rule
 .PHONY : deps/geometry-central/src/CMakeFiles/geometry-central.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ geometry-central: deps/geometry-central/src/CMakeFiles/geometry-central.dir/rule
 
 # fast build rule for target.
 geometry-central/fast:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/build
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/build
 .PHONY : geometry-central/fast
 
 numerical/eigenproblem_solvers.o: numerical/eigenproblem_solvers.cpp.o
@@ -180,7 +180,7 @@ numerical/eigenproblem_solvers.o: numerical/eigenproblem_solvers.cpp.o
 
 # target to build an object file
 numerical/eigenproblem_solvers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/eigenproblem_solvers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/eigenproblem_solvers.cpp.o
 .PHONY : numerical/eigenproblem_solvers.cpp.o
 
 numerical/eigenproblem_solvers.i: numerical/eigenproblem_solvers.cpp.i
@@ -188,7 +188,7 @@ numerical/eigenproblem_solvers.i: numerical/eigenproblem_solvers.cpp.i
 
 # target to preprocess a source file
 numerical/eigenproblem_solvers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/eigenproblem_solvers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/eigenproblem_solvers.cpp.i
 .PHONY : numerical/eigenproblem_solvers.cpp.i
 
 numerical/eigenproblem_solvers.s: numerical/eigenproblem_solvers.cpp.s
@@ -196,7 +196,7 @@ numerical/eigenproblem_solvers.s: numerical/eigenproblem_solvers.cpp.s
 
 # target to generate assembly for a file
 numerical/eigenproblem_solvers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/eigenproblem_solvers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/eigenproblem_solvers.cpp.s
 .PHONY : numerical/eigenproblem_solvers.cpp.s
 
 numerical/linear_algebra_utilities.o: numerical/linear_algebra_utilities.cpp.o
@@ -204,7 +204,7 @@ numerical/linear_algebra_utilities.o: numerical/linear_algebra_utilities.cpp.o
 
 # target to build an object file
 numerical/linear_algebra_utilities.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_algebra_utilities.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_algebra_utilities.cpp.o
 .PHONY : numerical/linear_algebra_utilities.cpp.o
 
 numerical/linear_algebra_utilities.i: numerical/linear_algebra_utilities.cpp.i
@@ -212,7 +212,7 @@ numerical/linear_algebra_utilities.i: numerical/linear_algebra_utilities.cpp.i
 
 # target to preprocess a source file
 numerical/linear_algebra_utilities.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_algebra_utilities.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_algebra_utilities.cpp.i
 .PHONY : numerical/linear_algebra_utilities.cpp.i
 
 numerical/linear_algebra_utilities.s: numerical/linear_algebra_utilities.cpp.s
@@ -220,7 +220,7 @@ numerical/linear_algebra_utilities.s: numerical/linear_algebra_utilities.cpp.s
 
 # target to generate assembly for a file
 numerical/linear_algebra_utilities.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_algebra_utilities.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_algebra_utilities.cpp.s
 .PHONY : numerical/linear_algebra_utilities.cpp.s
 
 numerical/linear_solvers.o: numerical/linear_solvers.cpp.o
@@ -228,7 +228,7 @@ numerical/linear_solvers.o: numerical/linear_solvers.cpp.o
 
 # target to build an object file
 numerical/linear_solvers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_solvers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_solvers.cpp.o
 .PHONY : numerical/linear_solvers.cpp.o
 
 numerical/linear_solvers.i: numerical/linear_solvers.cpp.i
@@ -236,7 +236,7 @@ numerical/linear_solvers.i: numerical/linear_solvers.cpp.i
 
 # target to preprocess a source file
 numerical/linear_solvers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_solvers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_solvers.cpp.i
 .PHONY : numerical/linear_solvers.cpp.i
 
 numerical/linear_solvers.s: numerical/linear_solvers.cpp.s
@@ -244,7 +244,7 @@ numerical/linear_solvers.s: numerical/linear_solvers.cpp.s
 
 # target to generate assembly for a file
 numerical/linear_solvers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_solvers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/linear_solvers.cpp.s
 .PHONY : numerical/linear_solvers.cpp.s
 
 numerical/positive_definite_solvers.o: numerical/positive_definite_solvers.cpp.o
@@ -252,7 +252,7 @@ numerical/positive_definite_solvers.o: numerical/positive_definite_solvers.cpp.o
 
 # target to build an object file
 numerical/positive_definite_solvers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/positive_definite_solvers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/positive_definite_solvers.cpp.o
 .PHONY : numerical/positive_definite_solvers.cpp.o
 
 numerical/positive_definite_solvers.i: numerical/positive_definite_solvers.cpp.i
@@ -260,7 +260,7 @@ numerical/positive_definite_solvers.i: numerical/positive_definite_solvers.cpp.i
 
 # target to preprocess a source file
 numerical/positive_definite_solvers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/positive_definite_solvers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/positive_definite_solvers.cpp.i
 .PHONY : numerical/positive_definite_solvers.cpp.i
 
 numerical/positive_definite_solvers.s: numerical/positive_definite_solvers.cpp.s
@@ -268,7 +268,7 @@ numerical/positive_definite_solvers.s: numerical/positive_definite_solvers.cpp.s
 
 # target to generate assembly for a file
 numerical/positive_definite_solvers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/positive_definite_solvers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/positive_definite_solvers.cpp.s
 .PHONY : numerical/positive_definite_solvers.cpp.s
 
 numerical/qr_solvers.o: numerical/qr_solvers.cpp.o
@@ -276,7 +276,7 @@ numerical/qr_solvers.o: numerical/qr_solvers.cpp.o
 
 # target to build an object file
 numerical/qr_solvers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/qr_solvers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/qr_solvers.cpp.o
 .PHONY : numerical/qr_solvers.cpp.o
 
 numerical/qr_solvers.i: numerical/qr_solvers.cpp.i
@@ -284,7 +284,7 @@ numerical/qr_solvers.i: numerical/qr_solvers.cpp.i
 
 # target to preprocess a source file
 numerical/qr_solvers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/qr_solvers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/qr_solvers.cpp.i
 .PHONY : numerical/qr_solvers.cpp.i
 
 numerical/qr_solvers.s: numerical/qr_solvers.cpp.s
@@ -292,7 +292,7 @@ numerical/qr_solvers.s: numerical/qr_solvers.cpp.s
 
 # target to generate assembly for a file
 numerical/qr_solvers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/qr_solvers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/qr_solvers.cpp.s
 .PHONY : numerical/qr_solvers.cpp.s
 
 numerical/square_solvers.o: numerical/square_solvers.cpp.o
@@ -300,7 +300,7 @@ numerical/square_solvers.o: numerical/square_solvers.cpp.o
 
 # target to build an object file
 numerical/square_solvers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/square_solvers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/square_solvers.cpp.o
 .PHONY : numerical/square_solvers.cpp.o
 
 numerical/square_solvers.i: numerical/square_solvers.cpp.i
@@ -308,7 +308,7 @@ numerical/square_solvers.i: numerical/square_solvers.cpp.i
 
 # target to preprocess a source file
 numerical/square_solvers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/square_solvers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/square_solvers.cpp.i
 .PHONY : numerical/square_solvers.cpp.i
 
 numerical/square_solvers.s: numerical/square_solvers.cpp.s
@@ -316,7 +316,7 @@ numerical/square_solvers.s: numerical/square_solvers.cpp.s
 
 # target to generate assembly for a file
 numerical/square_solvers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/square_solvers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/square_solvers.cpp.s
 .PHONY : numerical/square_solvers.cpp.s
 
 numerical/suitesparse_utilities.o: numerical/suitesparse_utilities.cpp.o
@@ -324,7 +324,7 @@ numerical/suitesparse_utilities.o: numerical/suitesparse_utilities.cpp.o
 
 # target to build an object file
 numerical/suitesparse_utilities.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/suitesparse_utilities.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/suitesparse_utilities.cpp.o
 .PHONY : numerical/suitesparse_utilities.cpp.o
 
 numerical/suitesparse_utilities.i: numerical/suitesparse_utilities.cpp.i
@@ -332,7 +332,7 @@ numerical/suitesparse_utilities.i: numerical/suitesparse_utilities.cpp.i
 
 # target to preprocess a source file
 numerical/suitesparse_utilities.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/suitesparse_utilities.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/suitesparse_utilities.cpp.i
 .PHONY : numerical/suitesparse_utilities.cpp.i
 
 numerical/suitesparse_utilities.s: numerical/suitesparse_utilities.cpp.s
@@ -340,7 +340,7 @@ numerical/suitesparse_utilities.s: numerical/suitesparse_utilities.cpp.s
 
 # target to generate assembly for a file
 numerical/suitesparse_utilities.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/suitesparse_utilities.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/numerical/suitesparse_utilities.cpp.s
 .PHONY : numerical/suitesparse_utilities.cpp.s
 
 pointcloud/local_triangulation.o: pointcloud/local_triangulation.cpp.o
@@ -348,7 +348,7 @@ pointcloud/local_triangulation.o: pointcloud/local_triangulation.cpp.o
 
 # target to build an object file
 pointcloud/local_triangulation.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/local_triangulation.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/local_triangulation.cpp.o
 .PHONY : pointcloud/local_triangulation.cpp.o
 
 pointcloud/local_triangulation.i: pointcloud/local_triangulation.cpp.i
@@ -356,7 +356,7 @@ pointcloud/local_triangulation.i: pointcloud/local_triangulation.cpp.i
 
 # target to preprocess a source file
 pointcloud/local_triangulation.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/local_triangulation.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/local_triangulation.cpp.i
 .PHONY : pointcloud/local_triangulation.cpp.i
 
 pointcloud/local_triangulation.s: pointcloud/local_triangulation.cpp.s
@@ -364,7 +364,7 @@ pointcloud/local_triangulation.s: pointcloud/local_triangulation.cpp.s
 
 # target to generate assembly for a file
 pointcloud/local_triangulation.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/local_triangulation.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/local_triangulation.cpp.s
 .PHONY : pointcloud/local_triangulation.cpp.s
 
 pointcloud/neighborhoods.o: pointcloud/neighborhoods.cpp.o
@@ -372,7 +372,7 @@ pointcloud/neighborhoods.o: pointcloud/neighborhoods.cpp.o
 
 # target to build an object file
 pointcloud/neighborhoods.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/neighborhoods.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/neighborhoods.cpp.o
 .PHONY : pointcloud/neighborhoods.cpp.o
 
 pointcloud/neighborhoods.i: pointcloud/neighborhoods.cpp.i
@@ -380,7 +380,7 @@ pointcloud/neighborhoods.i: pointcloud/neighborhoods.cpp.i
 
 # target to preprocess a source file
 pointcloud/neighborhoods.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/neighborhoods.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/neighborhoods.cpp.i
 .PHONY : pointcloud/neighborhoods.cpp.i
 
 pointcloud/neighborhoods.s: pointcloud/neighborhoods.cpp.s
@@ -388,7 +388,7 @@ pointcloud/neighborhoods.s: pointcloud/neighborhoods.cpp.s
 
 # target to generate assembly for a file
 pointcloud/neighborhoods.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/neighborhoods.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/neighborhoods.cpp.s
 .PHONY : pointcloud/neighborhoods.cpp.s
 
 pointcloud/point_cloud.o: pointcloud/point_cloud.cpp.o
@@ -396,7 +396,7 @@ pointcloud/point_cloud.o: pointcloud/point_cloud.cpp.o
 
 # target to build an object file
 pointcloud/point_cloud.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud.cpp.o
 .PHONY : pointcloud/point_cloud.cpp.o
 
 pointcloud/point_cloud.i: pointcloud/point_cloud.cpp.i
@@ -404,7 +404,7 @@ pointcloud/point_cloud.i: pointcloud/point_cloud.cpp.i
 
 # target to preprocess a source file
 pointcloud/point_cloud.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud.cpp.i
 .PHONY : pointcloud/point_cloud.cpp.i
 
 pointcloud/point_cloud.s: pointcloud/point_cloud.cpp.s
@@ -412,7 +412,7 @@ pointcloud/point_cloud.s: pointcloud/point_cloud.cpp.s
 
 # target to generate assembly for a file
 pointcloud/point_cloud.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud.cpp.s
 .PHONY : pointcloud/point_cloud.cpp.s
 
 pointcloud/point_cloud_heat_solver.o: pointcloud/point_cloud_heat_solver.cpp.o
@@ -420,7 +420,7 @@ pointcloud/point_cloud_heat_solver.o: pointcloud/point_cloud_heat_solver.cpp.o
 
 # target to build an object file
 pointcloud/point_cloud_heat_solver.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_heat_solver.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_heat_solver.cpp.o
 .PHONY : pointcloud/point_cloud_heat_solver.cpp.o
 
 pointcloud/point_cloud_heat_solver.i: pointcloud/point_cloud_heat_solver.cpp.i
@@ -428,7 +428,7 @@ pointcloud/point_cloud_heat_solver.i: pointcloud/point_cloud_heat_solver.cpp.i
 
 # target to preprocess a source file
 pointcloud/point_cloud_heat_solver.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_heat_solver.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_heat_solver.cpp.i
 .PHONY : pointcloud/point_cloud_heat_solver.cpp.i
 
 pointcloud/point_cloud_heat_solver.s: pointcloud/point_cloud_heat_solver.cpp.s
@@ -436,7 +436,7 @@ pointcloud/point_cloud_heat_solver.s: pointcloud/point_cloud_heat_solver.cpp.s
 
 # target to generate assembly for a file
 pointcloud/point_cloud_heat_solver.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_heat_solver.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_heat_solver.cpp.s
 .PHONY : pointcloud/point_cloud_heat_solver.cpp.s
 
 pointcloud/point_cloud_io.o: pointcloud/point_cloud_io.cpp.o
@@ -444,7 +444,7 @@ pointcloud/point_cloud_io.o: pointcloud/point_cloud_io.cpp.o
 
 # target to build an object file
 pointcloud/point_cloud_io.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_io.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_io.cpp.o
 .PHONY : pointcloud/point_cloud_io.cpp.o
 
 pointcloud/point_cloud_io.i: pointcloud/point_cloud_io.cpp.i
@@ -452,7 +452,7 @@ pointcloud/point_cloud_io.i: pointcloud/point_cloud_io.cpp.i
 
 # target to preprocess a source file
 pointcloud/point_cloud_io.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_io.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_io.cpp.i
 .PHONY : pointcloud/point_cloud_io.cpp.i
 
 pointcloud/point_cloud_io.s: pointcloud/point_cloud_io.cpp.s
@@ -460,7 +460,7 @@ pointcloud/point_cloud_io.s: pointcloud/point_cloud_io.cpp.s
 
 # target to generate assembly for a file
 pointcloud/point_cloud_io.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_io.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_cloud_io.cpp.s
 .PHONY : pointcloud/point_cloud_io.cpp.s
 
 pointcloud/point_position_frame_geometry.o: pointcloud/point_position_frame_geometry.cpp.o
@@ -468,7 +468,7 @@ pointcloud/point_position_frame_geometry.o: pointcloud/point_position_frame_geom
 
 # target to build an object file
 pointcloud/point_position_frame_geometry.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_frame_geometry.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_frame_geometry.cpp.o
 .PHONY : pointcloud/point_position_frame_geometry.cpp.o
 
 pointcloud/point_position_frame_geometry.i: pointcloud/point_position_frame_geometry.cpp.i
@@ -476,7 +476,7 @@ pointcloud/point_position_frame_geometry.i: pointcloud/point_position_frame_geom
 
 # target to preprocess a source file
 pointcloud/point_position_frame_geometry.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_frame_geometry.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_frame_geometry.cpp.i
 .PHONY : pointcloud/point_position_frame_geometry.cpp.i
 
 pointcloud/point_position_frame_geometry.s: pointcloud/point_position_frame_geometry.cpp.s
@@ -484,7 +484,7 @@ pointcloud/point_position_frame_geometry.s: pointcloud/point_position_frame_geom
 
 # target to generate assembly for a file
 pointcloud/point_position_frame_geometry.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_frame_geometry.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_frame_geometry.cpp.s
 .PHONY : pointcloud/point_position_frame_geometry.cpp.s
 
 pointcloud/point_position_geometry.o: pointcloud/point_position_geometry.cpp.o
@@ -492,7 +492,7 @@ pointcloud/point_position_geometry.o: pointcloud/point_position_geometry.cpp.o
 
 # target to build an object file
 pointcloud/point_position_geometry.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_geometry.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_geometry.cpp.o
 .PHONY : pointcloud/point_position_geometry.cpp.o
 
 pointcloud/point_position_geometry.i: pointcloud/point_position_geometry.cpp.i
@@ -500,7 +500,7 @@ pointcloud/point_position_geometry.i: pointcloud/point_position_geometry.cpp.i
 
 # target to preprocess a source file
 pointcloud/point_position_geometry.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_geometry.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_geometry.cpp.i
 .PHONY : pointcloud/point_position_geometry.cpp.i
 
 pointcloud/point_position_geometry.s: pointcloud/point_position_geometry.cpp.s
@@ -508,7 +508,7 @@ pointcloud/point_position_geometry.s: pointcloud/point_position_geometry.cpp.s
 
 # target to generate assembly for a file
 pointcloud/point_position_geometry.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_geometry.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_geometry.cpp.s
 .PHONY : pointcloud/point_position_geometry.cpp.s
 
 pointcloud/point_position_normal_geometry.o: pointcloud/point_position_normal_geometry.cpp.o
@@ -516,7 +516,7 @@ pointcloud/point_position_normal_geometry.o: pointcloud/point_position_normal_ge
 
 # target to build an object file
 pointcloud/point_position_normal_geometry.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_normal_geometry.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_normal_geometry.cpp.o
 .PHONY : pointcloud/point_position_normal_geometry.cpp.o
 
 pointcloud/point_position_normal_geometry.i: pointcloud/point_position_normal_geometry.cpp.i
@@ -524,7 +524,7 @@ pointcloud/point_position_normal_geometry.i: pointcloud/point_position_normal_ge
 
 # target to preprocess a source file
 pointcloud/point_position_normal_geometry.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_normal_geometry.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_normal_geometry.cpp.i
 .PHONY : pointcloud/point_position_normal_geometry.cpp.i
 
 pointcloud/point_position_normal_geometry.s: pointcloud/point_position_normal_geometry.cpp.s
@@ -532,7 +532,7 @@ pointcloud/point_position_normal_geometry.s: pointcloud/point_position_normal_ge
 
 # target to generate assembly for a file
 pointcloud/point_position_normal_geometry.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_normal_geometry.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/point_position_normal_geometry.cpp.s
 .PHONY : pointcloud/point_position_normal_geometry.cpp.s
 
 pointcloud/sample_cloud.o: pointcloud/sample_cloud.cpp.o
@@ -540,7 +540,7 @@ pointcloud/sample_cloud.o: pointcloud/sample_cloud.cpp.o
 
 # target to build an object file
 pointcloud/sample_cloud.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/sample_cloud.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/sample_cloud.cpp.o
 .PHONY : pointcloud/sample_cloud.cpp.o
 
 pointcloud/sample_cloud.i: pointcloud/sample_cloud.cpp.i
@@ -548,7 +548,7 @@ pointcloud/sample_cloud.i: pointcloud/sample_cloud.cpp.i
 
 # target to preprocess a source file
 pointcloud/sample_cloud.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/sample_cloud.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/sample_cloud.cpp.i
 .PHONY : pointcloud/sample_cloud.cpp.i
 
 pointcloud/sample_cloud.s: pointcloud/sample_cloud.cpp.s
@@ -556,7 +556,7 @@ pointcloud/sample_cloud.s: pointcloud/sample_cloud.cpp.s
 
 # target to generate assembly for a file
 pointcloud/sample_cloud.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/sample_cloud.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/pointcloud/sample_cloud.cpp.s
 .PHONY : pointcloud/sample_cloud.cpp.s
 
 surface/base_geometry_interface.o: surface/base_geometry_interface.cpp.o
@@ -564,7 +564,7 @@ surface/base_geometry_interface.o: surface/base_geometry_interface.cpp.o
 
 # target to build an object file
 surface/base_geometry_interface.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/base_geometry_interface.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/base_geometry_interface.cpp.o
 .PHONY : surface/base_geometry_interface.cpp.o
 
 surface/base_geometry_interface.i: surface/base_geometry_interface.cpp.i
@@ -572,7 +572,7 @@ surface/base_geometry_interface.i: surface/base_geometry_interface.cpp.i
 
 # target to preprocess a source file
 surface/base_geometry_interface.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/base_geometry_interface.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/base_geometry_interface.cpp.i
 .PHONY : surface/base_geometry_interface.cpp.i
 
 surface/base_geometry_interface.s: surface/base_geometry_interface.cpp.s
@@ -580,7 +580,7 @@ surface/base_geometry_interface.s: surface/base_geometry_interface.cpp.s
 
 # target to generate assembly for a file
 surface/base_geometry_interface.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/base_geometry_interface.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/base_geometry_interface.cpp.s
 .PHONY : surface/base_geometry_interface.cpp.s
 
 surface/boundary_first_flattening.o: surface/boundary_first_flattening.cpp.o
@@ -588,7 +588,7 @@ surface/boundary_first_flattening.o: surface/boundary_first_flattening.cpp.o
 
 # target to build an object file
 surface/boundary_first_flattening.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/boundary_first_flattening.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/boundary_first_flattening.cpp.o
 .PHONY : surface/boundary_first_flattening.cpp.o
 
 surface/boundary_first_flattening.i: surface/boundary_first_flattening.cpp.i
@@ -596,7 +596,7 @@ surface/boundary_first_flattening.i: surface/boundary_first_flattening.cpp.i
 
 # target to preprocess a source file
 surface/boundary_first_flattening.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/boundary_first_flattening.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/boundary_first_flattening.cpp.i
 .PHONY : surface/boundary_first_flattening.cpp.i
 
 surface/boundary_first_flattening.s: surface/boundary_first_flattening.cpp.s
@@ -604,7 +604,7 @@ surface/boundary_first_flattening.s: surface/boundary_first_flattening.cpp.s
 
 # target to generate assembly for a file
 surface/boundary_first_flattening.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/boundary_first_flattening.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/boundary_first_flattening.cpp.s
 .PHONY : surface/boundary_first_flattening.cpp.s
 
 surface/common_subdivision.o: surface/common_subdivision.cpp.o
@@ -612,7 +612,7 @@ surface/common_subdivision.o: surface/common_subdivision.cpp.o
 
 # target to build an object file
 surface/common_subdivision.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/common_subdivision.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/common_subdivision.cpp.o
 .PHONY : surface/common_subdivision.cpp.o
 
 surface/common_subdivision.i: surface/common_subdivision.cpp.i
@@ -620,7 +620,7 @@ surface/common_subdivision.i: surface/common_subdivision.cpp.i
 
 # target to preprocess a source file
 surface/common_subdivision.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/common_subdivision.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/common_subdivision.cpp.i
 .PHONY : surface/common_subdivision.cpp.i
 
 surface/common_subdivision.s: surface/common_subdivision.cpp.s
@@ -628,7 +628,7 @@ surface/common_subdivision.s: surface/common_subdivision.cpp.s
 
 # target to generate assembly for a file
 surface/common_subdivision.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/common_subdivision.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/common_subdivision.cpp.s
 .PHONY : surface/common_subdivision.cpp.s
 
 surface/direction_fields.o: surface/direction_fields.cpp.o
@@ -636,7 +636,7 @@ surface/direction_fields.o: surface/direction_fields.cpp.o
 
 # target to build an object file
 surface/direction_fields.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/direction_fields.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/direction_fields.cpp.o
 .PHONY : surface/direction_fields.cpp.o
 
 surface/direction_fields.i: surface/direction_fields.cpp.i
@@ -644,7 +644,7 @@ surface/direction_fields.i: surface/direction_fields.cpp.i
 
 # target to preprocess a source file
 surface/direction_fields.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/direction_fields.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/direction_fields.cpp.i
 .PHONY : surface/direction_fields.cpp.i
 
 surface/direction_fields.s: surface/direction_fields.cpp.s
@@ -652,7 +652,7 @@ surface/direction_fields.s: surface/direction_fields.cpp.s
 
 # target to generate assembly for a file
 surface/direction_fields.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/direction_fields.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/direction_fields.cpp.s
 .PHONY : surface/direction_fields.cpp.s
 
 surface/edge_length_geometry.o: surface/edge_length_geometry.cpp.o
@@ -660,7 +660,7 @@ surface/edge_length_geometry.o: surface/edge_length_geometry.cpp.o
 
 # target to build an object file
 surface/edge_length_geometry.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/edge_length_geometry.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/edge_length_geometry.cpp.o
 .PHONY : surface/edge_length_geometry.cpp.o
 
 surface/edge_length_geometry.i: surface/edge_length_geometry.cpp.i
@@ -668,7 +668,7 @@ surface/edge_length_geometry.i: surface/edge_length_geometry.cpp.i
 
 # target to preprocess a source file
 surface/edge_length_geometry.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/edge_length_geometry.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/edge_length_geometry.cpp.i
 .PHONY : surface/edge_length_geometry.cpp.i
 
 surface/edge_length_geometry.s: surface/edge_length_geometry.cpp.s
@@ -676,7 +676,7 @@ surface/edge_length_geometry.s: surface/edge_length_geometry.cpp.s
 
 # target to generate assembly for a file
 surface/edge_length_geometry.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/edge_length_geometry.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/edge_length_geometry.cpp.s
 .PHONY : surface/edge_length_geometry.cpp.s
 
 surface/embedded_geometry_interface.o: surface/embedded_geometry_interface.cpp.o
@@ -684,7 +684,7 @@ surface/embedded_geometry_interface.o: surface/embedded_geometry_interface.cpp.o
 
 # target to build an object file
 surface/embedded_geometry_interface.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/embedded_geometry_interface.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/embedded_geometry_interface.cpp.o
 .PHONY : surface/embedded_geometry_interface.cpp.o
 
 surface/embedded_geometry_interface.i: surface/embedded_geometry_interface.cpp.i
@@ -692,7 +692,7 @@ surface/embedded_geometry_interface.i: surface/embedded_geometry_interface.cpp.i
 
 # target to preprocess a source file
 surface/embedded_geometry_interface.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/embedded_geometry_interface.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/embedded_geometry_interface.cpp.i
 .PHONY : surface/embedded_geometry_interface.cpp.i
 
 surface/embedded_geometry_interface.s: surface/embedded_geometry_interface.cpp.s
@@ -700,7 +700,7 @@ surface/embedded_geometry_interface.s: surface/embedded_geometry_interface.cpp.s
 
 # target to generate assembly for a file
 surface/embedded_geometry_interface.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/embedded_geometry_interface.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/embedded_geometry_interface.cpp.s
 .PHONY : surface/embedded_geometry_interface.cpp.s
 
 surface/exact_geodesic_helpers.o: surface/exact_geodesic_helpers.cpp.o
@@ -708,7 +708,7 @@ surface/exact_geodesic_helpers.o: surface/exact_geodesic_helpers.cpp.o
 
 # target to build an object file
 surface/exact_geodesic_helpers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesic_helpers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesic_helpers.cpp.o
 .PHONY : surface/exact_geodesic_helpers.cpp.o
 
 surface/exact_geodesic_helpers.i: surface/exact_geodesic_helpers.cpp.i
@@ -716,7 +716,7 @@ surface/exact_geodesic_helpers.i: surface/exact_geodesic_helpers.cpp.i
 
 # target to preprocess a source file
 surface/exact_geodesic_helpers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesic_helpers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesic_helpers.cpp.i
 .PHONY : surface/exact_geodesic_helpers.cpp.i
 
 surface/exact_geodesic_helpers.s: surface/exact_geodesic_helpers.cpp.s
@@ -724,7 +724,7 @@ surface/exact_geodesic_helpers.s: surface/exact_geodesic_helpers.cpp.s
 
 # target to generate assembly for a file
 surface/exact_geodesic_helpers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesic_helpers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesic_helpers.cpp.s
 .PHONY : surface/exact_geodesic_helpers.cpp.s
 
 surface/exact_geodesics.o: surface/exact_geodesics.cpp.o
@@ -732,7 +732,7 @@ surface/exact_geodesics.o: surface/exact_geodesics.cpp.o
 
 # target to build an object file
 surface/exact_geodesics.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesics.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesics.cpp.o
 .PHONY : surface/exact_geodesics.cpp.o
 
 surface/exact_geodesics.i: surface/exact_geodesics.cpp.i
@@ -740,7 +740,7 @@ surface/exact_geodesics.i: surface/exact_geodesics.cpp.i
 
 # target to preprocess a source file
 surface/exact_geodesics.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesics.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesics.cpp.i
 .PHONY : surface/exact_geodesics.cpp.i
 
 surface/exact_geodesics.s: surface/exact_geodesics.cpp.s
@@ -748,7 +748,7 @@ surface/exact_geodesics.s: surface/exact_geodesics.cpp.s
 
 # target to generate assembly for a file
 surface/exact_geodesics.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesics.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_geodesics.cpp.s
 .PHONY : surface/exact_geodesics.cpp.s
 
 surface/exact_polyhedral_geodesics.o: surface/exact_polyhedral_geodesics.cpp.o
@@ -756,7 +756,7 @@ surface/exact_polyhedral_geodesics.o: surface/exact_polyhedral_geodesics.cpp.o
 
 # target to build an object file
 surface/exact_polyhedral_geodesics.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_polyhedral_geodesics.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_polyhedral_geodesics.cpp.o
 .PHONY : surface/exact_polyhedral_geodesics.cpp.o
 
 surface/exact_polyhedral_geodesics.i: surface/exact_polyhedral_geodesics.cpp.i
@@ -764,7 +764,7 @@ surface/exact_polyhedral_geodesics.i: surface/exact_polyhedral_geodesics.cpp.i
 
 # target to preprocess a source file
 surface/exact_polyhedral_geodesics.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_polyhedral_geodesics.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_polyhedral_geodesics.cpp.i
 .PHONY : surface/exact_polyhedral_geodesics.cpp.i
 
 surface/exact_polyhedral_geodesics.s: surface/exact_polyhedral_geodesics.cpp.s
@@ -772,7 +772,7 @@ surface/exact_polyhedral_geodesics.s: surface/exact_polyhedral_geodesics.cpp.s
 
 # target to generate assembly for a file
 surface/exact_polyhedral_geodesics.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_polyhedral_geodesics.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/exact_polyhedral_geodesics.cpp.s
 .PHONY : surface/exact_polyhedral_geodesics.cpp.s
 
 surface/extrinsic_geometry_interface.o: surface/extrinsic_geometry_interface.cpp.o
@@ -780,7 +780,7 @@ surface/extrinsic_geometry_interface.o: surface/extrinsic_geometry_interface.cpp
 
 # target to build an object file
 surface/extrinsic_geometry_interface.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/extrinsic_geometry_interface.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/extrinsic_geometry_interface.cpp.o
 .PHONY : surface/extrinsic_geometry_interface.cpp.o
 
 surface/extrinsic_geometry_interface.i: surface/extrinsic_geometry_interface.cpp.i
@@ -788,7 +788,7 @@ surface/extrinsic_geometry_interface.i: surface/extrinsic_geometry_interface.cpp
 
 # target to preprocess a source file
 surface/extrinsic_geometry_interface.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/extrinsic_geometry_interface.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/extrinsic_geometry_interface.cpp.i
 .PHONY : surface/extrinsic_geometry_interface.cpp.i
 
 surface/extrinsic_geometry_interface.s: surface/extrinsic_geometry_interface.cpp.s
@@ -796,7 +796,7 @@ surface/extrinsic_geometry_interface.s: surface/extrinsic_geometry_interface.cpp
 
 # target to generate assembly for a file
 surface/extrinsic_geometry_interface.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/extrinsic_geometry_interface.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/extrinsic_geometry_interface.cpp.s
 .PHONY : surface/extrinsic_geometry_interface.cpp.s
 
 surface/fast_marching_method.o: surface/fast_marching_method.cpp.o
@@ -804,7 +804,7 @@ surface/fast_marching_method.o: surface/fast_marching_method.cpp.o
 
 # target to build an object file
 surface/fast_marching_method.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/fast_marching_method.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/fast_marching_method.cpp.o
 .PHONY : surface/fast_marching_method.cpp.o
 
 surface/fast_marching_method.i: surface/fast_marching_method.cpp.i
@@ -812,7 +812,7 @@ surface/fast_marching_method.i: surface/fast_marching_method.cpp.i
 
 # target to preprocess a source file
 surface/fast_marching_method.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/fast_marching_method.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/fast_marching_method.cpp.i
 .PHONY : surface/fast_marching_method.cpp.i
 
 surface/fast_marching_method.s: surface/fast_marching_method.cpp.s
@@ -820,7 +820,7 @@ surface/fast_marching_method.s: surface/fast_marching_method.cpp.s
 
 # target to generate assembly for a file
 surface/fast_marching_method.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/fast_marching_method.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/fast_marching_method.cpp.s
 .PHONY : surface/fast_marching_method.cpp.s
 
 surface/flip_geodesics.o: surface/flip_geodesics.cpp.o
@@ -828,7 +828,7 @@ surface/flip_geodesics.o: surface/flip_geodesics.cpp.o
 
 # target to build an object file
 surface/flip_geodesics.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/flip_geodesics.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/flip_geodesics.cpp.o
 .PHONY : surface/flip_geodesics.cpp.o
 
 surface/flip_geodesics.i: surface/flip_geodesics.cpp.i
@@ -836,7 +836,7 @@ surface/flip_geodesics.i: surface/flip_geodesics.cpp.i
 
 # target to preprocess a source file
 surface/flip_geodesics.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/flip_geodesics.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/flip_geodesics.cpp.i
 .PHONY : surface/flip_geodesics.cpp.i
 
 surface/flip_geodesics.s: surface/flip_geodesics.cpp.s
@@ -844,7 +844,7 @@ surface/flip_geodesics.s: surface/flip_geodesics.cpp.s
 
 # target to generate assembly for a file
 surface/flip_geodesics.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/flip_geodesics.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/flip_geodesics.cpp.s
 .PHONY : surface/flip_geodesics.cpp.s
 
 surface/geodesic_centroidal_voronoi_tessellation.o: surface/geodesic_centroidal_voronoi_tessellation.cpp.o
@@ -852,7 +852,7 @@ surface/geodesic_centroidal_voronoi_tessellation.o: surface/geodesic_centroidal_
 
 # target to build an object file
 surface/geodesic_centroidal_voronoi_tessellation.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/geodesic_centroidal_voronoi_tessellation.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/geodesic_centroidal_voronoi_tessellation.cpp.o
 .PHONY : surface/geodesic_centroidal_voronoi_tessellation.cpp.o
 
 surface/geodesic_centroidal_voronoi_tessellation.i: surface/geodesic_centroidal_voronoi_tessellation.cpp.i
@@ -860,7 +860,7 @@ surface/geodesic_centroidal_voronoi_tessellation.i: surface/geodesic_centroidal_
 
 # target to preprocess a source file
 surface/geodesic_centroidal_voronoi_tessellation.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/geodesic_centroidal_voronoi_tessellation.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/geodesic_centroidal_voronoi_tessellation.cpp.i
 .PHONY : surface/geodesic_centroidal_voronoi_tessellation.cpp.i
 
 surface/geodesic_centroidal_voronoi_tessellation.s: surface/geodesic_centroidal_voronoi_tessellation.cpp.s
@@ -868,7 +868,7 @@ surface/geodesic_centroidal_voronoi_tessellation.s: surface/geodesic_centroidal_
 
 # target to generate assembly for a file
 surface/geodesic_centroidal_voronoi_tessellation.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/geodesic_centroidal_voronoi_tessellation.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/geodesic_centroidal_voronoi_tessellation.cpp.s
 .PHONY : surface/geodesic_centroidal_voronoi_tessellation.cpp.s
 
 surface/halfedge_factories.o: surface/halfedge_factories.cpp.o
@@ -876,7 +876,7 @@ surface/halfedge_factories.o: surface/halfedge_factories.cpp.o
 
 # target to build an object file
 surface/halfedge_factories.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/halfedge_factories.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/halfedge_factories.cpp.o
 .PHONY : surface/halfedge_factories.cpp.o
 
 surface/halfedge_factories.i: surface/halfedge_factories.cpp.i
@@ -884,7 +884,7 @@ surface/halfedge_factories.i: surface/halfedge_factories.cpp.i
 
 # target to preprocess a source file
 surface/halfedge_factories.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/halfedge_factories.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/halfedge_factories.cpp.i
 .PHONY : surface/halfedge_factories.cpp.i
 
 surface/halfedge_factories.s: surface/halfedge_factories.cpp.s
@@ -892,7 +892,7 @@ surface/halfedge_factories.s: surface/halfedge_factories.cpp.s
 
 # target to generate assembly for a file
 surface/halfedge_factories.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/halfedge_factories.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/halfedge_factories.cpp.s
 .PHONY : surface/halfedge_factories.cpp.s
 
 surface/heat_method_distance.o: surface/heat_method_distance.cpp.o
@@ -900,7 +900,7 @@ surface/heat_method_distance.o: surface/heat_method_distance.cpp.o
 
 # target to build an object file
 surface/heat_method_distance.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/heat_method_distance.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/heat_method_distance.cpp.o
 .PHONY : surface/heat_method_distance.cpp.o
 
 surface/heat_method_distance.i: surface/heat_method_distance.cpp.i
@@ -908,7 +908,7 @@ surface/heat_method_distance.i: surface/heat_method_distance.cpp.i
 
 # target to preprocess a source file
 surface/heat_method_distance.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/heat_method_distance.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/heat_method_distance.cpp.i
 .PHONY : surface/heat_method_distance.cpp.i
 
 surface/heat_method_distance.s: surface/heat_method_distance.cpp.s
@@ -916,7 +916,7 @@ surface/heat_method_distance.s: surface/heat_method_distance.cpp.s
 
 # target to generate assembly for a file
 surface/heat_method_distance.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/heat_method_distance.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/heat_method_distance.cpp.s
 .PHONY : surface/heat_method_distance.cpp.s
 
 surface/integer_coordinates_intrinsic_triangulation.o: surface/integer_coordinates_intrinsic_triangulation.cpp.o
@@ -924,7 +924,7 @@ surface/integer_coordinates_intrinsic_triangulation.o: surface/integer_coordinat
 
 # target to build an object file
 surface/integer_coordinates_intrinsic_triangulation.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/integer_coordinates_intrinsic_triangulation.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/integer_coordinates_intrinsic_triangulation.cpp.o
 .PHONY : surface/integer_coordinates_intrinsic_triangulation.cpp.o
 
 surface/integer_coordinates_intrinsic_triangulation.i: surface/integer_coordinates_intrinsic_triangulation.cpp.i
@@ -932,7 +932,7 @@ surface/integer_coordinates_intrinsic_triangulation.i: surface/integer_coordinat
 
 # target to preprocess a source file
 surface/integer_coordinates_intrinsic_triangulation.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/integer_coordinates_intrinsic_triangulation.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/integer_coordinates_intrinsic_triangulation.cpp.i
 .PHONY : surface/integer_coordinates_intrinsic_triangulation.cpp.i
 
 surface/integer_coordinates_intrinsic_triangulation.s: surface/integer_coordinates_intrinsic_triangulation.cpp.s
@@ -940,7 +940,7 @@ surface/integer_coordinates_intrinsic_triangulation.s: surface/integer_coordinat
 
 # target to generate assembly for a file
 surface/integer_coordinates_intrinsic_triangulation.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/integer_coordinates_intrinsic_triangulation.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/integer_coordinates_intrinsic_triangulation.cpp.s
 .PHONY : surface/integer_coordinates_intrinsic_triangulation.cpp.s
 
 surface/intersection.o: surface/intersection.cpp.o
@@ -948,7 +948,7 @@ surface/intersection.o: surface/intersection.cpp.o
 
 # target to build an object file
 surface/intersection.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intersection.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intersection.cpp.o
 .PHONY : surface/intersection.cpp.o
 
 surface/intersection.i: surface/intersection.cpp.i
@@ -956,7 +956,7 @@ surface/intersection.i: surface/intersection.cpp.i
 
 # target to preprocess a source file
 surface/intersection.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intersection.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intersection.cpp.i
 .PHONY : surface/intersection.cpp.i
 
 surface/intersection.s: surface/intersection.cpp.s
@@ -964,7 +964,7 @@ surface/intersection.s: surface/intersection.cpp.s
 
 # target to generate assembly for a file
 surface/intersection.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intersection.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intersection.cpp.s
 .PHONY : surface/intersection.cpp.s
 
 surface/intrinsic_geometry_interface.o: surface/intrinsic_geometry_interface.cpp.o
@@ -972,7 +972,7 @@ surface/intrinsic_geometry_interface.o: surface/intrinsic_geometry_interface.cpp
 
 # target to build an object file
 surface/intrinsic_geometry_interface.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_geometry_interface.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_geometry_interface.cpp.o
 .PHONY : surface/intrinsic_geometry_interface.cpp.o
 
 surface/intrinsic_geometry_interface.i: surface/intrinsic_geometry_interface.cpp.i
@@ -980,7 +980,7 @@ surface/intrinsic_geometry_interface.i: surface/intrinsic_geometry_interface.cpp
 
 # target to preprocess a source file
 surface/intrinsic_geometry_interface.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_geometry_interface.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_geometry_interface.cpp.i
 .PHONY : surface/intrinsic_geometry_interface.cpp.i
 
 surface/intrinsic_geometry_interface.s: surface/intrinsic_geometry_interface.cpp.s
@@ -988,7 +988,7 @@ surface/intrinsic_geometry_interface.s: surface/intrinsic_geometry_interface.cpp
 
 # target to generate assembly for a file
 surface/intrinsic_geometry_interface.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_geometry_interface.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_geometry_interface.cpp.s
 .PHONY : surface/intrinsic_geometry_interface.cpp.s
 
 surface/intrinsic_mollification.o: surface/intrinsic_mollification.cpp.o
@@ -996,7 +996,7 @@ surface/intrinsic_mollification.o: surface/intrinsic_mollification.cpp.o
 
 # target to build an object file
 surface/intrinsic_mollification.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_mollification.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_mollification.cpp.o
 .PHONY : surface/intrinsic_mollification.cpp.o
 
 surface/intrinsic_mollification.i: surface/intrinsic_mollification.cpp.i
@@ -1004,7 +1004,7 @@ surface/intrinsic_mollification.i: surface/intrinsic_mollification.cpp.i
 
 # target to preprocess a source file
 surface/intrinsic_mollification.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_mollification.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_mollification.cpp.i
 .PHONY : surface/intrinsic_mollification.cpp.i
 
 surface/intrinsic_mollification.s: surface/intrinsic_mollification.cpp.s
@@ -1012,7 +1012,7 @@ surface/intrinsic_mollification.s: surface/intrinsic_mollification.cpp.s
 
 # target to generate assembly for a file
 surface/intrinsic_mollification.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_mollification.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_mollification.cpp.s
 .PHONY : surface/intrinsic_mollification.cpp.s
 
 surface/intrinsic_triangulation.o: surface/intrinsic_triangulation.cpp.o
@@ -1020,7 +1020,7 @@ surface/intrinsic_triangulation.o: surface/intrinsic_triangulation.cpp.o
 
 # target to build an object file
 surface/intrinsic_triangulation.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_triangulation.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_triangulation.cpp.o
 .PHONY : surface/intrinsic_triangulation.cpp.o
 
 surface/intrinsic_triangulation.i: surface/intrinsic_triangulation.cpp.i
@@ -1028,7 +1028,7 @@ surface/intrinsic_triangulation.i: surface/intrinsic_triangulation.cpp.i
 
 # target to preprocess a source file
 surface/intrinsic_triangulation.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_triangulation.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_triangulation.cpp.i
 .PHONY : surface/intrinsic_triangulation.cpp.i
 
 surface/intrinsic_triangulation.s: surface/intrinsic_triangulation.cpp.s
@@ -1036,7 +1036,7 @@ surface/intrinsic_triangulation.s: surface/intrinsic_triangulation.cpp.s
 
 # target to generate assembly for a file
 surface/intrinsic_triangulation.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_triangulation.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/intrinsic_triangulation.cpp.s
 .PHONY : surface/intrinsic_triangulation.cpp.s
 
 surface/manifold_surface_mesh.o: surface/manifold_surface_mesh.cpp.o
@@ -1044,7 +1044,7 @@ surface/manifold_surface_mesh.o: surface/manifold_surface_mesh.cpp.o
 
 # target to build an object file
 surface/manifold_surface_mesh.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/manifold_surface_mesh.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/manifold_surface_mesh.cpp.o
 .PHONY : surface/manifold_surface_mesh.cpp.o
 
 surface/manifold_surface_mesh.i: surface/manifold_surface_mesh.cpp.i
@@ -1052,7 +1052,7 @@ surface/manifold_surface_mesh.i: surface/manifold_surface_mesh.cpp.i
 
 # target to preprocess a source file
 surface/manifold_surface_mesh.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/manifold_surface_mesh.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/manifold_surface_mesh.cpp.i
 .PHONY : surface/manifold_surface_mesh.cpp.i
 
 surface/manifold_surface_mesh.s: surface/manifold_surface_mesh.cpp.s
@@ -1060,7 +1060,7 @@ surface/manifold_surface_mesh.s: surface/manifold_surface_mesh.cpp.s
 
 # target to generate assembly for a file
 surface/manifold_surface_mesh.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/manifold_surface_mesh.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/manifold_surface_mesh.cpp.s
 .PHONY : surface/manifold_surface_mesh.cpp.s
 
 surface/mesh_graph_algorithms.o: surface/mesh_graph_algorithms.cpp.o
@@ -1068,7 +1068,7 @@ surface/mesh_graph_algorithms.o: surface/mesh_graph_algorithms.cpp.o
 
 # target to build an object file
 surface/mesh_graph_algorithms.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mesh_graph_algorithms.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mesh_graph_algorithms.cpp.o
 .PHONY : surface/mesh_graph_algorithms.cpp.o
 
 surface/mesh_graph_algorithms.i: surface/mesh_graph_algorithms.cpp.i
@@ -1076,7 +1076,7 @@ surface/mesh_graph_algorithms.i: surface/mesh_graph_algorithms.cpp.i
 
 # target to preprocess a source file
 surface/mesh_graph_algorithms.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mesh_graph_algorithms.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mesh_graph_algorithms.cpp.i
 .PHONY : surface/mesh_graph_algorithms.cpp.i
 
 surface/mesh_graph_algorithms.s: surface/mesh_graph_algorithms.cpp.s
@@ -1084,7 +1084,7 @@ surface/mesh_graph_algorithms.s: surface/mesh_graph_algorithms.cpp.s
 
 # target to generate assembly for a file
 surface/mesh_graph_algorithms.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mesh_graph_algorithms.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mesh_graph_algorithms.cpp.s
 .PHONY : surface/mesh_graph_algorithms.cpp.s
 
 surface/meshio.o: surface/meshio.cpp.o
@@ -1092,7 +1092,7 @@ surface/meshio.o: surface/meshio.cpp.o
 
 # target to build an object file
 surface/meshio.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/meshio.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/meshio.cpp.o
 .PHONY : surface/meshio.cpp.o
 
 surface/meshio.i: surface/meshio.cpp.i
@@ -1100,7 +1100,7 @@ surface/meshio.i: surface/meshio.cpp.i
 
 # target to preprocess a source file
 surface/meshio.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/meshio.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/meshio.cpp.i
 .PHONY : surface/meshio.cpp.i
 
 surface/meshio.s: surface/meshio.cpp.s
@@ -1108,7 +1108,7 @@ surface/meshio.s: surface/meshio.cpp.s
 
 # target to generate assembly for a file
 surface/meshio.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/meshio.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/meshio.cpp.s
 .PHONY : surface/meshio.cpp.s
 
 surface/mutation_manager.o: surface/mutation_manager.cpp.o
@@ -1116,7 +1116,7 @@ surface/mutation_manager.o: surface/mutation_manager.cpp.o
 
 # target to build an object file
 surface/mutation_manager.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mutation_manager.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mutation_manager.cpp.o
 .PHONY : surface/mutation_manager.cpp.o
 
 surface/mutation_manager.i: surface/mutation_manager.cpp.i
@@ -1124,7 +1124,7 @@ surface/mutation_manager.i: surface/mutation_manager.cpp.i
 
 # target to preprocess a source file
 surface/mutation_manager.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mutation_manager.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mutation_manager.cpp.i
 .PHONY : surface/mutation_manager.cpp.i
 
 surface/mutation_manager.s: surface/mutation_manager.cpp.s
@@ -1132,7 +1132,7 @@ surface/mutation_manager.s: surface/mutation_manager.cpp.s
 
 # target to generate assembly for a file
 surface/mutation_manager.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mutation_manager.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/mutation_manager.cpp.s
 .PHONY : surface/mutation_manager.cpp.s
 
 surface/normal_coordinates.o: surface/normal_coordinates.cpp.o
@@ -1140,7 +1140,7 @@ surface/normal_coordinates.o: surface/normal_coordinates.cpp.o
 
 # target to build an object file
 surface/normal_coordinates.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/normal_coordinates.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/normal_coordinates.cpp.o
 .PHONY : surface/normal_coordinates.cpp.o
 
 surface/normal_coordinates.i: surface/normal_coordinates.cpp.i
@@ -1148,7 +1148,7 @@ surface/normal_coordinates.i: surface/normal_coordinates.cpp.i
 
 # target to preprocess a source file
 surface/normal_coordinates.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/normal_coordinates.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/normal_coordinates.cpp.i
 .PHONY : surface/normal_coordinates.cpp.i
 
 surface/normal_coordinates.s: surface/normal_coordinates.cpp.s
@@ -1156,7 +1156,7 @@ surface/normal_coordinates.s: surface/normal_coordinates.cpp.s
 
 # target to generate assembly for a file
 surface/normal_coordinates.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/normal_coordinates.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/normal_coordinates.cpp.s
 .PHONY : surface/normal_coordinates.cpp.s
 
 surface/parameterize.o: surface/parameterize.cpp.o
@@ -1164,7 +1164,7 @@ surface/parameterize.o: surface/parameterize.cpp.o
 
 # target to build an object file
 surface/parameterize.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/parameterize.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/parameterize.cpp.o
 .PHONY : surface/parameterize.cpp.o
 
 surface/parameterize.i: surface/parameterize.cpp.i
@@ -1172,7 +1172,7 @@ surface/parameterize.i: surface/parameterize.cpp.i
 
 # target to preprocess a source file
 surface/parameterize.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/parameterize.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/parameterize.cpp.i
 .PHONY : surface/parameterize.cpp.i
 
 surface/parameterize.s: surface/parameterize.cpp.s
@@ -1180,7 +1180,7 @@ surface/parameterize.s: surface/parameterize.cpp.s
 
 # target to generate assembly for a file
 surface/parameterize.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/parameterize.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/parameterize.cpp.s
 .PHONY : surface/parameterize.cpp.s
 
 surface/poisson_disk_sampler.o: surface/poisson_disk_sampler.cpp.o
@@ -1188,7 +1188,7 @@ surface/poisson_disk_sampler.o: surface/poisson_disk_sampler.cpp.o
 
 # target to build an object file
 surface/poisson_disk_sampler.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/poisson_disk_sampler.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/poisson_disk_sampler.cpp.o
 .PHONY : surface/poisson_disk_sampler.cpp.o
 
 surface/poisson_disk_sampler.i: surface/poisson_disk_sampler.cpp.i
@@ -1196,7 +1196,7 @@ surface/poisson_disk_sampler.i: surface/poisson_disk_sampler.cpp.i
 
 # target to preprocess a source file
 surface/poisson_disk_sampler.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/poisson_disk_sampler.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/poisson_disk_sampler.cpp.i
 .PHONY : surface/poisson_disk_sampler.cpp.i
 
 surface/poisson_disk_sampler.s: surface/poisson_disk_sampler.cpp.s
@@ -1204,7 +1204,7 @@ surface/poisson_disk_sampler.s: surface/poisson_disk_sampler.cpp.s
 
 # target to generate assembly for a file
 surface/poisson_disk_sampler.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/poisson_disk_sampler.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/poisson_disk_sampler.cpp.s
 .PHONY : surface/poisson_disk_sampler.cpp.s
 
 surface/quadric_error_simplification.o: surface/quadric_error_simplification.cpp.o
@@ -1212,7 +1212,7 @@ surface/quadric_error_simplification.o: surface/quadric_error_simplification.cpp
 
 # target to build an object file
 surface/quadric_error_simplification.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/quadric_error_simplification.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/quadric_error_simplification.cpp.o
 .PHONY : surface/quadric_error_simplification.cpp.o
 
 surface/quadric_error_simplification.i: surface/quadric_error_simplification.cpp.i
@@ -1220,7 +1220,7 @@ surface/quadric_error_simplification.i: surface/quadric_error_simplification.cpp
 
 # target to preprocess a source file
 surface/quadric_error_simplification.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/quadric_error_simplification.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/quadric_error_simplification.cpp.i
 .PHONY : surface/quadric_error_simplification.cpp.i
 
 surface/quadric_error_simplification.s: surface/quadric_error_simplification.cpp.s
@@ -1228,7 +1228,7 @@ surface/quadric_error_simplification.s: surface/quadric_error_simplification.cpp
 
 # target to generate assembly for a file
 surface/quadric_error_simplification.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/quadric_error_simplification.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/quadric_error_simplification.cpp.s
 .PHONY : surface/quadric_error_simplification.cpp.s
 
 surface/remeshing.o: surface/remeshing.cpp.o
@@ -1236,7 +1236,7 @@ surface/remeshing.o: surface/remeshing.cpp.o
 
 # target to build an object file
 surface/remeshing.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/remeshing.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/remeshing.cpp.o
 .PHONY : surface/remeshing.cpp.o
 
 surface/remeshing.i: surface/remeshing.cpp.i
@@ -1244,7 +1244,7 @@ surface/remeshing.i: surface/remeshing.cpp.i
 
 # target to preprocess a source file
 surface/remeshing.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/remeshing.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/remeshing.cpp.i
 .PHONY : surface/remeshing.cpp.i
 
 surface/remeshing.s: surface/remeshing.cpp.s
@@ -1252,7 +1252,7 @@ surface/remeshing.s: surface/remeshing.cpp.s
 
 # target to generate assembly for a file
 surface/remeshing.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/remeshing.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/remeshing.cpp.s
 .PHONY : surface/remeshing.cpp.s
 
 surface/rich_surface_mesh_data.o: surface/rich_surface_mesh_data.cpp.o
@@ -1260,7 +1260,7 @@ surface/rich_surface_mesh_data.o: surface/rich_surface_mesh_data.cpp.o
 
 # target to build an object file
 surface/rich_surface_mesh_data.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/rich_surface_mesh_data.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/rich_surface_mesh_data.cpp.o
 .PHONY : surface/rich_surface_mesh_data.cpp.o
 
 surface/rich_surface_mesh_data.i: surface/rich_surface_mesh_data.cpp.i
@@ -1268,7 +1268,7 @@ surface/rich_surface_mesh_data.i: surface/rich_surface_mesh_data.cpp.i
 
 # target to preprocess a source file
 surface/rich_surface_mesh_data.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/rich_surface_mesh_data.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/rich_surface_mesh_data.cpp.i
 .PHONY : surface/rich_surface_mesh_data.cpp.i
 
 surface/rich_surface_mesh_data.s: surface/rich_surface_mesh_data.cpp.s
@@ -1276,7 +1276,7 @@ surface/rich_surface_mesh_data.s: surface/rich_surface_mesh_data.cpp.s
 
 # target to generate assembly for a file
 surface/rich_surface_mesh_data.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/rich_surface_mesh_data.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/rich_surface_mesh_data.cpp.s
 .PHONY : surface/rich_surface_mesh_data.cpp.s
 
 surface/signpost_intrinsic_triangulation.o: surface/signpost_intrinsic_triangulation.cpp.o
@@ -1284,7 +1284,7 @@ surface/signpost_intrinsic_triangulation.o: surface/signpost_intrinsic_triangula
 
 # target to build an object file
 surface/signpost_intrinsic_triangulation.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/signpost_intrinsic_triangulation.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/signpost_intrinsic_triangulation.cpp.o
 .PHONY : surface/signpost_intrinsic_triangulation.cpp.o
 
 surface/signpost_intrinsic_triangulation.i: surface/signpost_intrinsic_triangulation.cpp.i
@@ -1292,7 +1292,7 @@ surface/signpost_intrinsic_triangulation.i: surface/signpost_intrinsic_triangula
 
 # target to preprocess a source file
 surface/signpost_intrinsic_triangulation.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/signpost_intrinsic_triangulation.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/signpost_intrinsic_triangulation.cpp.i
 .PHONY : surface/signpost_intrinsic_triangulation.cpp.i
 
 surface/signpost_intrinsic_triangulation.s: surface/signpost_intrinsic_triangulation.cpp.s
@@ -1300,7 +1300,7 @@ surface/signpost_intrinsic_triangulation.s: surface/signpost_intrinsic_triangula
 
 # target to generate assembly for a file
 surface/signpost_intrinsic_triangulation.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/signpost_intrinsic_triangulation.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/signpost_intrinsic_triangulation.cpp.s
 .PHONY : surface/signpost_intrinsic_triangulation.cpp.s
 
 surface/simple_idt.o: surface/simple_idt.cpp.o
@@ -1308,7 +1308,7 @@ surface/simple_idt.o: surface/simple_idt.cpp.o
 
 # target to build an object file
 surface/simple_idt.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_idt.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_idt.cpp.o
 .PHONY : surface/simple_idt.cpp.o
 
 surface/simple_idt.i: surface/simple_idt.cpp.i
@@ -1316,7 +1316,7 @@ surface/simple_idt.i: surface/simple_idt.cpp.i
 
 # target to preprocess a source file
 surface/simple_idt.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_idt.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_idt.cpp.i
 .PHONY : surface/simple_idt.cpp.i
 
 surface/simple_idt.s: surface/simple_idt.cpp.s
@@ -1324,7 +1324,7 @@ surface/simple_idt.s: surface/simple_idt.cpp.s
 
 # target to generate assembly for a file
 surface/simple_idt.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_idt.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_idt.cpp.s
 .PHONY : surface/simple_idt.cpp.s
 
 surface/simple_polygon_mesh.o: surface/simple_polygon_mesh.cpp.o
@@ -1332,7 +1332,7 @@ surface/simple_polygon_mesh.o: surface/simple_polygon_mesh.cpp.o
 
 # target to build an object file
 surface/simple_polygon_mesh.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_polygon_mesh.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_polygon_mesh.cpp.o
 .PHONY : surface/simple_polygon_mesh.cpp.o
 
 surface/simple_polygon_mesh.i: surface/simple_polygon_mesh.cpp.i
@@ -1340,7 +1340,7 @@ surface/simple_polygon_mesh.i: surface/simple_polygon_mesh.cpp.i
 
 # target to preprocess a source file
 surface/simple_polygon_mesh.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_polygon_mesh.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_polygon_mesh.cpp.i
 .PHONY : surface/simple_polygon_mesh.cpp.i
 
 surface/simple_polygon_mesh.s: surface/simple_polygon_mesh.cpp.s
@@ -1348,7 +1348,7 @@ surface/simple_polygon_mesh.s: surface/simple_polygon_mesh.cpp.s
 
 # target to generate assembly for a file
 surface/simple_polygon_mesh.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_polygon_mesh.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/simple_polygon_mesh.cpp.s
 .PHONY : surface/simple_polygon_mesh.cpp.s
 
 surface/stripe_patterns.o: surface/stripe_patterns.cpp.o
@@ -1356,7 +1356,7 @@ surface/stripe_patterns.o: surface/stripe_patterns.cpp.o
 
 # target to build an object file
 surface/stripe_patterns.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/stripe_patterns.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/stripe_patterns.cpp.o
 .PHONY : surface/stripe_patterns.cpp.o
 
 surface/stripe_patterns.i: surface/stripe_patterns.cpp.i
@@ -1364,7 +1364,7 @@ surface/stripe_patterns.i: surface/stripe_patterns.cpp.i
 
 # target to preprocess a source file
 surface/stripe_patterns.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/stripe_patterns.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/stripe_patterns.cpp.i
 .PHONY : surface/stripe_patterns.cpp.i
 
 surface/stripe_patterns.s: surface/stripe_patterns.cpp.s
@@ -1372,7 +1372,7 @@ surface/stripe_patterns.s: surface/stripe_patterns.cpp.s
 
 # target to generate assembly for a file
 surface/stripe_patterns.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/stripe_patterns.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/stripe_patterns.cpp.s
 .PHONY : surface/stripe_patterns.cpp.s
 
 surface/subdivide.o: surface/subdivide.cpp.o
@@ -1380,7 +1380,7 @@ surface/subdivide.o: surface/subdivide.cpp.o
 
 # target to build an object file
 surface/subdivide.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/subdivide.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/subdivide.cpp.o
 .PHONY : surface/subdivide.cpp.o
 
 surface/subdivide.i: surface/subdivide.cpp.i
@@ -1388,7 +1388,7 @@ surface/subdivide.i: surface/subdivide.cpp.i
 
 # target to preprocess a source file
 surface/subdivide.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/subdivide.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/subdivide.cpp.i
 .PHONY : surface/subdivide.cpp.i
 
 surface/subdivide.s: surface/subdivide.cpp.s
@@ -1396,7 +1396,7 @@ surface/subdivide.s: surface/subdivide.cpp.s
 
 # target to generate assembly for a file
 surface/subdivide.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/subdivide.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/subdivide.cpp.s
 .PHONY : surface/subdivide.cpp.s
 
 surface/surface_centers.o: surface/surface_centers.cpp.o
@@ -1404,7 +1404,7 @@ surface/surface_centers.o: surface/surface_centers.cpp.o
 
 # target to build an object file
 surface/surface_centers.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_centers.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_centers.cpp.o
 .PHONY : surface/surface_centers.cpp.o
 
 surface/surface_centers.i: surface/surface_centers.cpp.i
@@ -1412,7 +1412,7 @@ surface/surface_centers.i: surface/surface_centers.cpp.i
 
 # target to preprocess a source file
 surface/surface_centers.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_centers.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_centers.cpp.i
 .PHONY : surface/surface_centers.cpp.i
 
 surface/surface_centers.s: surface/surface_centers.cpp.s
@@ -1420,7 +1420,7 @@ surface/surface_centers.s: surface/surface_centers.cpp.s
 
 # target to generate assembly for a file
 surface/surface_centers.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_centers.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_centers.cpp.s
 .PHONY : surface/surface_centers.cpp.s
 
 surface/surface_mesh.o: surface/surface_mesh.cpp.o
@@ -1428,7 +1428,7 @@ surface/surface_mesh.o: surface/surface_mesh.cpp.o
 
 # target to build an object file
 surface/surface_mesh.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh.cpp.o
 .PHONY : surface/surface_mesh.cpp.o
 
 surface/surface_mesh.i: surface/surface_mesh.cpp.i
@@ -1436,7 +1436,7 @@ surface/surface_mesh.i: surface/surface_mesh.cpp.i
 
 # target to preprocess a source file
 surface/surface_mesh.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh.cpp.i
 .PHONY : surface/surface_mesh.cpp.i
 
 surface/surface_mesh.s: surface/surface_mesh.cpp.s
@@ -1444,7 +1444,7 @@ surface/surface_mesh.s: surface/surface_mesh.cpp.s
 
 # target to generate assembly for a file
 surface/surface_mesh.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh.cpp.s
 .PHONY : surface/surface_mesh.cpp.s
 
 surface/surface_mesh_factories.o: surface/surface_mesh_factories.cpp.o
@@ -1452,7 +1452,7 @@ surface/surface_mesh_factories.o: surface/surface_mesh_factories.cpp.o
 
 # target to build an object file
 surface/surface_mesh_factories.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh_factories.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh_factories.cpp.o
 .PHONY : surface/surface_mesh_factories.cpp.o
 
 surface/surface_mesh_factories.i: surface/surface_mesh_factories.cpp.i
@@ -1460,7 +1460,7 @@ surface/surface_mesh_factories.i: surface/surface_mesh_factories.cpp.i
 
 # target to preprocess a source file
 surface/surface_mesh_factories.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh_factories.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh_factories.cpp.i
 .PHONY : surface/surface_mesh_factories.cpp.i
 
 surface/surface_mesh_factories.s: surface/surface_mesh_factories.cpp.s
@@ -1468,7 +1468,7 @@ surface/surface_mesh_factories.s: surface/surface_mesh_factories.cpp.s
 
 # target to generate assembly for a file
 surface/surface_mesh_factories.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh_factories.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_mesh_factories.cpp.s
 .PHONY : surface/surface_mesh_factories.cpp.s
 
 surface/surface_point.o: surface/surface_point.cpp.o
@@ -1476,7 +1476,7 @@ surface/surface_point.o: surface/surface_point.cpp.o
 
 # target to build an object file
 surface/surface_point.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_point.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_point.cpp.o
 .PHONY : surface/surface_point.cpp.o
 
 surface/surface_point.i: surface/surface_point.cpp.i
@@ -1484,7 +1484,7 @@ surface/surface_point.i: surface/surface_point.cpp.i
 
 # target to preprocess a source file
 surface/surface_point.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_point.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_point.cpp.i
 .PHONY : surface/surface_point.cpp.i
 
 surface/surface_point.s: surface/surface_point.cpp.s
@@ -1492,7 +1492,7 @@ surface/surface_point.s: surface/surface_point.cpp.s
 
 # target to generate assembly for a file
 surface/surface_point.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_point.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surface_point.cpp.s
 .PHONY : surface/surface_point.cpp.s
 
 surface/surgery.o: surface/surgery.cpp.o
@@ -1500,7 +1500,7 @@ surface/surgery.o: surface/surgery.cpp.o
 
 # target to build an object file
 surface/surgery.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surgery.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surgery.cpp.o
 .PHONY : surface/surgery.cpp.o
 
 surface/surgery.i: surface/surgery.cpp.i
@@ -1508,7 +1508,7 @@ surface/surgery.i: surface/surgery.cpp.i
 
 # target to preprocess a source file
 surface/surgery.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surgery.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surgery.cpp.i
 .PHONY : surface/surgery.cpp.i
 
 surface/surgery.s: surface/surgery.cpp.s
@@ -1516,7 +1516,7 @@ surface/surgery.s: surface/surgery.cpp.s
 
 # target to generate assembly for a file
 surface/surgery.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surgery.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/surgery.cpp.s
 .PHONY : surface/surgery.cpp.s
 
 surface/trace_geodesic.o: surface/trace_geodesic.cpp.o
@@ -1524,7 +1524,7 @@ surface/trace_geodesic.o: surface/trace_geodesic.cpp.o
 
 # target to build an object file
 surface/trace_geodesic.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/trace_geodesic.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/trace_geodesic.cpp.o
 .PHONY : surface/trace_geodesic.cpp.o
 
 surface/trace_geodesic.i: surface/trace_geodesic.cpp.i
@@ -1532,7 +1532,7 @@ surface/trace_geodesic.i: surface/trace_geodesic.cpp.i
 
 # target to preprocess a source file
 surface/trace_geodesic.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/trace_geodesic.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/trace_geodesic.cpp.i
 .PHONY : surface/trace_geodesic.cpp.i
 
 surface/trace_geodesic.s: surface/trace_geodesic.cpp.s
@@ -1540,7 +1540,7 @@ surface/trace_geodesic.s: surface/trace_geodesic.cpp.s
 
 # target to generate assembly for a file
 surface/trace_geodesic.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/trace_geodesic.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/trace_geodesic.cpp.s
 .PHONY : surface/trace_geodesic.cpp.s
 
 surface/transfer_functions.o: surface/transfer_functions.cpp.o
@@ -1548,7 +1548,7 @@ surface/transfer_functions.o: surface/transfer_functions.cpp.o
 
 # target to build an object file
 surface/transfer_functions.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/transfer_functions.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/transfer_functions.cpp.o
 .PHONY : surface/transfer_functions.cpp.o
 
 surface/transfer_functions.i: surface/transfer_functions.cpp.i
@@ -1556,7 +1556,7 @@ surface/transfer_functions.i: surface/transfer_functions.cpp.i
 
 # target to preprocess a source file
 surface/transfer_functions.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/transfer_functions.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/transfer_functions.cpp.i
 .PHONY : surface/transfer_functions.cpp.i
 
 surface/transfer_functions.s: surface/transfer_functions.cpp.s
@@ -1564,7 +1564,7 @@ surface/transfer_functions.s: surface/transfer_functions.cpp.s
 
 # target to generate assembly for a file
 surface/transfer_functions.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/transfer_functions.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/transfer_functions.cpp.s
 .PHONY : surface/transfer_functions.cpp.s
 
 surface/tufted_laplacian.o: surface/tufted_laplacian.cpp.o
@@ -1572,7 +1572,7 @@ surface/tufted_laplacian.o: surface/tufted_laplacian.cpp.o
 
 # target to build an object file
 surface/tufted_laplacian.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/tufted_laplacian.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/tufted_laplacian.cpp.o
 .PHONY : surface/tufted_laplacian.cpp.o
 
 surface/tufted_laplacian.i: surface/tufted_laplacian.cpp.i
@@ -1580,7 +1580,7 @@ surface/tufted_laplacian.i: surface/tufted_laplacian.cpp.i
 
 # target to preprocess a source file
 surface/tufted_laplacian.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/tufted_laplacian.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/tufted_laplacian.cpp.i
 .PHONY : surface/tufted_laplacian.cpp.i
 
 surface/tufted_laplacian.s: surface/tufted_laplacian.cpp.s
@@ -1588,7 +1588,7 @@ surface/tufted_laplacian.s: surface/tufted_laplacian.cpp.s
 
 # target to generate assembly for a file
 surface/tufted_laplacian.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/tufted_laplacian.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/tufted_laplacian.cpp.s
 .PHONY : surface/tufted_laplacian.cpp.s
 
 surface/uniformize.o: surface/uniformize.cpp.o
@@ -1596,7 +1596,7 @@ surface/uniformize.o: surface/uniformize.cpp.o
 
 # target to build an object file
 surface/uniformize.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/uniformize.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/uniformize.cpp.o
 .PHONY : surface/uniformize.cpp.o
 
 surface/uniformize.i: surface/uniformize.cpp.i
@@ -1604,7 +1604,7 @@ surface/uniformize.i: surface/uniformize.cpp.i
 
 # target to preprocess a source file
 surface/uniformize.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/uniformize.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/uniformize.cpp.i
 .PHONY : surface/uniformize.cpp.i
 
 surface/uniformize.s: surface/uniformize.cpp.s
@@ -1612,7 +1612,7 @@ surface/uniformize.s: surface/uniformize.cpp.s
 
 # target to generate assembly for a file
 surface/uniformize.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/uniformize.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/uniformize.cpp.s
 .PHONY : surface/uniformize.cpp.s
 
 surface/vector_heat_method.o: surface/vector_heat_method.cpp.o
@@ -1620,7 +1620,7 @@ surface/vector_heat_method.o: surface/vector_heat_method.cpp.o
 
 # target to build an object file
 surface/vector_heat_method.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vector_heat_method.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vector_heat_method.cpp.o
 .PHONY : surface/vector_heat_method.cpp.o
 
 surface/vector_heat_method.i: surface/vector_heat_method.cpp.i
@@ -1628,7 +1628,7 @@ surface/vector_heat_method.i: surface/vector_heat_method.cpp.i
 
 # target to preprocess a source file
 surface/vector_heat_method.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vector_heat_method.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vector_heat_method.cpp.i
 .PHONY : surface/vector_heat_method.cpp.i
 
 surface/vector_heat_method.s: surface/vector_heat_method.cpp.s
@@ -1636,7 +1636,7 @@ surface/vector_heat_method.s: surface/vector_heat_method.cpp.s
 
 # target to generate assembly for a file
 surface/vector_heat_method.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vector_heat_method.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vector_heat_method.cpp.s
 .PHONY : surface/vector_heat_method.cpp.s
 
 surface/vertex_position_geometry.o: surface/vertex_position_geometry.cpp.o
@@ -1644,7 +1644,7 @@ surface/vertex_position_geometry.o: surface/vertex_position_geometry.cpp.o
 
 # target to build an object file
 surface/vertex_position_geometry.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vertex_position_geometry.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vertex_position_geometry.cpp.o
 .PHONY : surface/vertex_position_geometry.cpp.o
 
 surface/vertex_position_geometry.i: surface/vertex_position_geometry.cpp.i
@@ -1652,7 +1652,7 @@ surface/vertex_position_geometry.i: surface/vertex_position_geometry.cpp.i
 
 # target to preprocess a source file
 surface/vertex_position_geometry.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vertex_position_geometry.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vertex_position_geometry.cpp.i
 .PHONY : surface/vertex_position_geometry.cpp.i
 
 surface/vertex_position_geometry.s: surface/vertex_position_geometry.cpp.s
@@ -1660,7 +1660,7 @@ surface/vertex_position_geometry.s: surface/vertex_position_geometry.cpp.s
 
 # target to generate assembly for a file
 surface/vertex_position_geometry.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vertex_position_geometry.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/surface/vertex_position_geometry.cpp.s
 .PHONY : surface/vertex_position_geometry.cpp.s
 
 utilities/disjoint_sets.o: utilities/disjoint_sets.cpp.o
@@ -1668,7 +1668,7 @@ utilities/disjoint_sets.o: utilities/disjoint_sets.cpp.o
 
 # target to build an object file
 utilities/disjoint_sets.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/disjoint_sets.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/disjoint_sets.cpp.o
 .PHONY : utilities/disjoint_sets.cpp.o
 
 utilities/disjoint_sets.i: utilities/disjoint_sets.cpp.i
@@ -1676,7 +1676,7 @@ utilities/disjoint_sets.i: utilities/disjoint_sets.cpp.i
 
 # target to preprocess a source file
 utilities/disjoint_sets.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/disjoint_sets.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/disjoint_sets.cpp.i
 .PHONY : utilities/disjoint_sets.cpp.i
 
 utilities/disjoint_sets.s: utilities/disjoint_sets.cpp.s
@@ -1684,7 +1684,7 @@ utilities/disjoint_sets.s: utilities/disjoint_sets.cpp.s
 
 # target to generate assembly for a file
 utilities/disjoint_sets.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/disjoint_sets.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/disjoint_sets.cpp.s
 .PHONY : utilities/disjoint_sets.cpp.s
 
 utilities/elementary_geometry.o: utilities/elementary_geometry.cpp.o
@@ -1692,7 +1692,7 @@ utilities/elementary_geometry.o: utilities/elementary_geometry.cpp.o
 
 # target to build an object file
 utilities/elementary_geometry.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/elementary_geometry.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/elementary_geometry.cpp.o
 .PHONY : utilities/elementary_geometry.cpp.o
 
 utilities/elementary_geometry.i: utilities/elementary_geometry.cpp.i
@@ -1700,7 +1700,7 @@ utilities/elementary_geometry.i: utilities/elementary_geometry.cpp.i
 
 # target to preprocess a source file
 utilities/elementary_geometry.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/elementary_geometry.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/elementary_geometry.cpp.i
 .PHONY : utilities/elementary_geometry.cpp.i
 
 utilities/elementary_geometry.s: utilities/elementary_geometry.cpp.s
@@ -1708,7 +1708,7 @@ utilities/elementary_geometry.s: utilities/elementary_geometry.cpp.s
 
 # target to generate assembly for a file
 utilities/elementary_geometry.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/elementary_geometry.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/elementary_geometry.cpp.s
 .PHONY : utilities/elementary_geometry.cpp.s
 
 utilities/knn.o: utilities/knn.cpp.o
@@ -1716,7 +1716,7 @@ utilities/knn.o: utilities/knn.cpp.o
 
 # target to build an object file
 utilities/knn.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/knn.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/knn.cpp.o
 .PHONY : utilities/knn.cpp.o
 
 utilities/knn.i: utilities/knn.cpp.i
@@ -1724,7 +1724,7 @@ utilities/knn.i: utilities/knn.cpp.i
 
 # target to preprocess a source file
 utilities/knn.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/knn.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/knn.cpp.i
 .PHONY : utilities/knn.cpp.i
 
 utilities/knn.s: utilities/knn.cpp.s
@@ -1732,7 +1732,7 @@ utilities/knn.s: utilities/knn.cpp.s
 
 # target to generate assembly for a file
 utilities/knn.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/knn.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/knn.cpp.s
 .PHONY : utilities/knn.cpp.s
 
 utilities/quaternion.o: utilities/quaternion.cpp.o
@@ -1740,7 +1740,7 @@ utilities/quaternion.o: utilities/quaternion.cpp.o
 
 # target to build an object file
 utilities/quaternion.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/quaternion.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/quaternion.cpp.o
 .PHONY : utilities/quaternion.cpp.o
 
 utilities/quaternion.i: utilities/quaternion.cpp.i
@@ -1748,7 +1748,7 @@ utilities/quaternion.i: utilities/quaternion.cpp.i
 
 # target to preprocess a source file
 utilities/quaternion.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/quaternion.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/quaternion.cpp.i
 .PHONY : utilities/quaternion.cpp.i
 
 utilities/quaternion.s: utilities/quaternion.cpp.s
@@ -1756,7 +1756,7 @@ utilities/quaternion.s: utilities/quaternion.cpp.s
 
 # target to generate assembly for a file
 utilities/quaternion.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/quaternion.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/quaternion.cpp.s
 .PHONY : utilities/quaternion.cpp.s
 
 utilities/tri_tri_intersect.o: utilities/tri_tri_intersect.cpp.o
@@ -1764,7 +1764,7 @@ utilities/tri_tri_intersect.o: utilities/tri_tri_intersect.cpp.o
 
 # target to build an object file
 utilities/tri_tri_intersect.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/tri_tri_intersect.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/tri_tri_intersect.cpp.o
 .PHONY : utilities/tri_tri_intersect.cpp.o
 
 utilities/tri_tri_intersect.i: utilities/tri_tri_intersect.cpp.i
@@ -1772,7 +1772,7 @@ utilities/tri_tri_intersect.i: utilities/tri_tri_intersect.cpp.i
 
 # target to preprocess a source file
 utilities/tri_tri_intersect.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/tri_tri_intersect.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/tri_tri_intersect.cpp.i
 .PHONY : utilities/tri_tri_intersect.cpp.i
 
 utilities/tri_tri_intersect.s: utilities/tri_tri_intersect.cpp.s
@@ -1780,7 +1780,7 @@ utilities/tri_tri_intersect.s: utilities/tri_tri_intersect.cpp.s
 
 # target to generate assembly for a file
 utilities/tri_tri_intersect.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/tri_tri_intersect.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/tri_tri_intersect.cpp.s
 .PHONY : utilities/tri_tri_intersect.cpp.s
 
 utilities/utilities.o: utilities/utilities.cpp.o
@@ -1788,7 +1788,7 @@ utilities/utilities.o: utilities/utilities.cpp.o
 
 # target to build an object file
 utilities/utilities.cpp.o:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/utilities.cpp.o
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/utilities.cpp.o
 .PHONY : utilities/utilities.cpp.o
 
 utilities/utilities.i: utilities/utilities.cpp.i
@@ -1796,7 +1796,7 @@ utilities/utilities.i: utilities/utilities.cpp.i
 
 # target to preprocess a source file
 utilities/utilities.cpp.i:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/utilities.cpp.i
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/utilities.cpp.i
 .PHONY : utilities/utilities.cpp.i
 
 utilities/utilities.s: utilities/utilities.cpp.s
@@ -1804,7 +1804,7 @@ utilities/utilities.s: utilities/utilities.cpp.s
 
 # target to generate assembly for a file
 utilities/utilities.cpp.s:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/utilities.cpp.s
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(MAKE) $(MAKESILENT) -f deps/geometry-central/src/CMakeFiles/geometry-central.dir/build.make deps/geometry-central/src/CMakeFiles/geometry-central.dir/utilities/utilities.cpp.s
 .PHONY : utilities/utilities.cpp.s
 
 # Help Target
@@ -2035,6 +2035,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/noahbarnes/Documents/Documents - Noah’s MacBook Air/BU/2024 Fall/CS582/Final Project/StripesApp/gc-polyscope-project-template/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/feng/Documents/disc-topology-stripes/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
