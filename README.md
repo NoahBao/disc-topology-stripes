@@ -1,22 +1,31 @@
-# disc-topology-stripes
-An algorithm to determine stripe patterns for stitching across meshes with disc topology.
+# Disk Topology Stripes App
 
+App for generating stripe patterns for knitting disc topologies. Created by Michelle Yilin Feng and Noah Barnes for CS582 using the Polyscope, Geometry Central, and Eigen libraries. Major thanks to the implementation of Knoppel et al.'s stripe pattern generator from Geometry Central.
 
- This project aims to facilitate the generation of knit structures specifically for digital meshes with disc topology. Namely, our app lets
-users specify regions of their mesh as their desired start and end points during knitting. Using Geometry Central’s implementation of the approach in Kn¨oppel et al. [2015] to stripe patterns, we create and display two orthogonal stripe patterns that act as the course and wale directions to be followed by the user while knitting. The generated structures can be knitted entirely with short rows (otheriwse known as “partial rows”) with no use of increases or decreases unless necessary
+# Compiling
 
-To start the app, run:
+Run `cmake` in the root directory of the app. Then, in the `build` directory, run `make -j10` to compile the app.
 
-gc\_project <path\_to\_mesh\_file>
+# Running
 
+To open the app, run `./build/bin/gc_project <mesh_file_path>` from the app's root directory, where `<mesh_file_path>` is the path to the mesh you'd like to work with.
 
+# Usage
 
-in your terminal, where gc\_project is the default name of the compiled executable and <path\_to\_mesh\_file> is the file path to the mesh you'd like to work with.
+## Selecting Boundaries
 
-With the app open, the first step is to select two strips of points for your start and end courses as mentioned previously. To do this, click on ``Pick start boundary (h=0)`` and ``Pick end boundary (h=1).`` From there, select two boundary vertices on your mesh to define the endpoints of your strip, then select one last vertex on what you want to be the ``inside'' of your strip. Without this last selection, it would be ambiguous if you want one strip of points or its complement
+With your mesh opened in the app, click on "Pick start boundary (h=0)" to select a strip of boundary points to act as your starting boundary (same thing for "Pick end boundary (h=1)"). Once you've done this, select two boundary vertices that you would like as the endpoints of your strip of points. Selecting a vertex requires you to right-click on the vertex in the 3D display. Once you've selected your two endpoints, you must choose one last point to define the "insideness" of your strip. Without this point, it would be ambiguous what strip you want as everything is on a single boundary. For example, if you select opposite corners of a square, it would be ambiguous whether you wanted to select one pair of edges of the square or the other pair.
 
+## Selecting Frequencies
 
+Use the available sliders to pick a frequency you'd like for your stripes. Choose these before running "Generate Wale Curves" and "Generate Course Curves."
 
-After this, the ``Generate H Function,`` ``Construct Gradient,`` ``Construct Tangent,`` ``Generate Wale Curves,`` and ``Generate Course Curves`` buttons can all be run in succession.
+## Generating Stripes
 
-You can use the two sliders to adjust the frequency of course and wale stripes for your mesh. At any time, you can click ``Clear boundaries'' to clear your selections for the start and end courses and start over.
+Once you've picked your boundaries and frequencies, you may run "Generate H Function," "Construct gradient," "Construct Tangent," "Generate Wale Curves," and "Generate Course Curves" in succession.
+
+If you'd like to adjust the frequency of stripes, change the sliders, then click "Generate Wale/Course Curves" again.
+
+## Resetting
+
+At any time, you can click "Clear boundary points" to reset your boundary selections and start over.

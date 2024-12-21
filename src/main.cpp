@@ -16,7 +16,6 @@
 #include "args/args.hxx"
 #include "imgui.h"
 
-
 // #include "include/main.h"
 
 using namespace geometrycentral;
@@ -47,7 +46,7 @@ Vector2 projectOntoTangentPlane(Vector3 vec, Vector3 norm, Vector3 he);
 
 // =============GLOBAL VARIABLES=============
 
-// boundaryVertices[i] = list of vertices for boundary i
+// boundaryVertices[i] = list of vertices for boundary i, where boundary 0 is start (h=0) and boundary 1 is end (h=1)
 // analogous for boundaryPoints
 std::vector<std::vector<int>> boundaryVertices = {{}, {}};
 std::vector<std::vector<Vector3>> boundaryPoints = {{}, {}};
@@ -58,33 +57,27 @@ VertexData<Vector3> vertexGradient;
 VertexData<Vector2> courseTangentVectors;
 VertexData<Vector2> waleTangentVectors;
 
-
 float waleFrequency = 20.0f;
 float courseFrequency = 20.0f;
-
 
 bool waleStripesExists = false;
 bool courseStripesExists = false;
 
-
 // ===========================================================
 
-// generates stripes using Geometry Central's stripe methods
+// generates wale stripes using Geometry Central's stripe methods
 void generateWaleStripes()
 {
-  // remove existing  wales curve
-    if (waleStripesExists) {
-        polyscope::removePointCloud("Wale Curve Points");
-        polyscope::removeCurveNetwork("Wale Curve Edges");
-        waleStripesExists = false;
-    }
+  // remove existing wales curve
+  if (waleStripesExists)
+  {
+    polyscope::removePointCloud("Wale Curve Points");
+    polyscope::removeCurveNetwork("Wale Curve Edges");
+    waleStripesExists = false;
+  }
 
   // Generate a guiding field
-  VertexData<Vector2> waleGuideField =
-      geometrycentral::surface::computeSmoothestVertexDirectionField(*geometry, 2);
-
-  // use tangent vectors instead of smoothest direction field
-  waleGuideField = waleTangentVectors;
+  VertexData<Vector2> waleGuideField = waleTangentVectors;
 
   // Compute the stripe couse pattern
   // double constantFreq = 40; // for square
@@ -104,45 +97,53 @@ void generateWaleStripes()
   std::vector<std::array<size_t, 2>> isolineEdges;
   std::tie(isolineVerts, isolineEdges) = extractPolylinesFromStripePattern(
       *geometry, periodicFunc, zeroIndices, branchIndices, waleGuideField, false);
+
+  // display stripes
   polyscope::registerPointCloud("Wale Curve points", isolineVerts);
   polyscope::registerCurveNetwork("Wale Curve edges", isolineVerts, isolineEdges);
+  waleStripesExists = true;
 }
+
+// generates course stripes using Geometry Central's stripe methods
 void generateCourseStripes()
 {
-    if (waleStripesExists) {
-        polyscope::removePointCloud("Course Curve Points");
-        polyscope::removeCurveNetwork("Course Curve Edges");
-        courseStripesExists = false;
-    }
+  // remove existing courses curve
+  if (courseStripesExists)
+  {
+    polyscope::removePointCloud("Course Curve Points");
+    polyscope::removeCurveNetwork("Course Curve Edges");
+    courseStripesExists = false;
+  }
 
-    VertexData<Vector2> courseGuideField = courseTangentVectors;
+  VertexData<Vector2> courseGuideField = courseTangentVectors;
 
-    // Compute stripe pattern based on the courses guide field
-    // double constantFreq = 40; // for square
-    // double constantFreq = 20.;   // for c shape
-    // double constantFreq = 5.; // for s shape
-    // double constantFreq = 3.0; // for trapezoid shape
-    // double constantFreq = 20;
-    VertexData<double> frequencies(*mesh, courseFrequency);
-    CornerData<double> periodicFunc;
-    FaceData<int> zeroIndices;
-    FaceData<int> branchIndices;
-    std::tie(periodicFunc, zeroIndices, branchIndices) =
-        computeStripePattern(*geometry, frequencies, courseGuideField);
+  // Compute stripe pattern based on the courses guide field
+  // double constantFreq = 40; // for square
+  // double constantFreq = 20.;   // for c shape
+  // double constantFreq = 5.; // for s shape
+  // double constantFreq = 3.0; // for trapezoid shape
+  // double constantFreq = 20;
+  VertexData<double> frequencies(*mesh, courseFrequency);
+  CornerData<double> periodicFunc;
+  FaceData<int> zeroIndices;
+  FaceData<int> branchIndices;
+  std::tie(periodicFunc, zeroIndices, branchIndices) =
+      computeStripePattern(*geometry, frequencies, courseGuideField);
 
-    // Extract isolines
-    std::vector<Vector3> isolineVerts;
-    std::vector<std::array<size_t, 2>> isolineEdges;
-    std::tie(isolineVerts, isolineEdges) = extractPolylinesFromStripePattern(
+  // Extract isolines
+  std::vector<Vector3> isolineVerts;
+  std::vector<std::array<size_t, 2>> isolineEdges;
+  std::tie(isolineVerts, isolineEdges) = extractPolylinesFromStripePattern(
       *geometry, periodicFunc, zeroIndices, branchIndices, courseGuideField, false);
 
-    polyscope::registerPointCloud("Course Curve Points", isolineVerts);
-    polyscope::registerCurveNetwork("Course Curve Edges", isolineVerts, isolineEdges);
+  // display stripes
+  polyscope::registerPointCloud("Course Curve Points", isolineVerts);
+  polyscope::registerCurveNetwork("Course Curve Edges", isolineVerts, isolineEdges);
 
-    courseStripesExists=true;
+  courseStripesExists = true;
 }
 
-// select a particular boundary (start or end)
+// select a particular strip of vertices as the start or end boundary
 void selectBoundary(int boundaryIndex)
 {
   // initialize variables
@@ -178,8 +179,6 @@ void selectBoundary(int boundaryIndex)
     pc = polyscope::registerPointCloud(pointCloudName, boundaryPoints[boundaryIndex]);
     pc->setPointColor(pointCloudColor);
   }
-
-  waleStripesExists = true;
 }
 
 // selects all boundary vertices that are between endpoints 1 and 2 ("in between" defined by inner point)
@@ -212,6 +211,7 @@ void selectBoundaryPoints(int endPointIndex1, int endPointIndex2, int innerPoint
     for (Halfedge he : v_i.incomingHalfedges())
     {
       Vertex v_j = he.tailVertex();
+      // only explore through boundary edges and to vertices that are unvisited boundary vertices
       if (v_j.isBoundary() && !isVertexVisited[v_j.getIndex()] && he.edge().isBoundary())
       {
         isVertexVisited[v_j.getIndex()] = true;
@@ -248,7 +248,7 @@ void constructHFunction(std::vector<int> &startVertices, std::vector<int> &endVe
     {
       Vertex v_j = edge.tailVertex();
       int j = v_j.getIndex();
-      // cotan weight : uniform
+      // cotan weight : uniform weight
       double weight = useCotanWeights ? geometry->edgeCotanWeights[edge.edge()] : 1;
       weight_sum -= weight;
       // for all i != j
@@ -336,8 +336,11 @@ void constructFaceGradient()
       Vertex tip = he.tipVertex();
       Vertex tail = he.tailVertex();
       Vertex other = he.next().tipVertex();
+      // get vector representation of halfedge
       Vector3 edgeVector = geometry->vertexPositions[tip] - geometry->vertexPositions[tail];
+      // get vector orthogonal to halfedge
       Vector3 edgePerpVector = cross(faceNormal, edgeVector);
+      // which difference in function values are we calculating in the discrete gradient equation?
       double functionDiff = hesProcessed == 0 ? hFunction[other] - hFunction[tip] : hFunction[other] - hFunction[tail];
       gradientVector += functionDiff * edgePerpVector / (2. * faceArea);
       hesProcessed++;
@@ -372,30 +375,31 @@ void constructTangentVectors()
   geometry->requireVertexNormals();
   courseTangentVectors = VertexData<Vector2>(*mesh);
   waleTangentVectors = VertexData<Vector2>(*mesh);
-  int numProcessed = 0;
   for (Vertex v : mesh->vertices())
   {
     Vector3 normalVec = geometry->vertexNormals[v];
+    // get arbitrary outgoing halfedge
     Halfedge he;
     for (Halfedge he_placeholder : v.outgoingHalfedges())
     {
       he = he_placeholder;
       break;
     }
+    // get tangent vector for wale curves
     Vector3 heVec = geometry->vertexPositions[he.tipVertex()] - geometry->vertexPositions[he.tailVertex()];
     Vector2 u = projectOntoTangentPlane(vertexGradient[v], normalVec, heVec);
     double angleW = std::atan2(u.y, u.x) + M_PI / 2.0;
     std::complex<double> waleComplexDirectionField(std::complex<double>(cos(2.0 * angleW), sin(2.0 * angleW)));
     waleTangentVectors[v] = Vector2::fromComplex(waleComplexDirectionField).normalize();
 
-    double angleC = angleW + M_PI / 2.0; 
+    // get tangent vector for course curves (have to rotate by 90 degrees)
+    double angleC = angleW + M_PI / 2.0;
     std::complex<double> courseComplexDirectionField(std::cos(2.0 * angleC), std::sin(2.0 * angleC));
     courseTangentVectors[v] = Vector2::fromComplex(courseComplexDirectionField).normalize();
-
-    numProcessed++;
   }
 }
 
+// get two vectors that form a basis for a plane tangent to the surface at a particular vertex
 Vector2 projectOntoTangentPlane(Vector3 vec, Vector3 normal, Vector3 he)
 {
   Vector3 eY = cross(normal, he).normalize();
@@ -440,7 +444,7 @@ void myCallback()
       hFunctionDisplay->setEnabled(true);
     }
   }
-    ImGui::Separator();
+  ImGui::Separator();
   if (ImGui::Button("Construct Gradient"))
   {
     constructFaceGradient();
@@ -453,18 +457,17 @@ void myCallback()
   {
     constructTangentVectors();
   }
-      ImGui::Separator();
-    bool freqChanged = false;
+  ImGui::Separator();
+  bool freqChanged = false;
 
-    freqChanged |= ImGui::SliderFloat("Wale Frequency", &waleFrequency, 0.0001f, 100.0f, "%.1f", 1.0f);
-    freqChanged |= ImGui::SliderFloat("Course Frequency", &courseFrequency, 0.0001f, 100.0f, "%.1f", 1.0f);
+  freqChanged |= ImGui::SliderFloat("Wale Frequency", &waleFrequency, 0.0001f, 100.0f, "%.1f", 1.0f);
+  freqChanged |= ImGui::SliderFloat("Course Frequency", &courseFrequency, 0.0001f, 100.0f, "%.1f", 1.0f);
 
-    if (freqChanged)
-    {
-        generateWaleStripes();
-        generateCourseStripes();
-    }
-
+  if (freqChanged)
+  {
+    generateWaleStripes();
+    generateCourseStripes();
+  }
 
   if (ImGui::Button("Generate Wale Curves"))
   {
@@ -472,7 +475,7 @@ void myCallback()
   }
   if (ImGui::Button("Generate Course Curves"))
   {
-      generateCourseStripes();
+    generateCourseStripes();
   }
 }
 
