@@ -1,6 +1,10 @@
 # disc-topology-stripes
 An algorithm to determine stripe patterns for stitching across meshes with disc topology.
 
+
+ This project aims to facilitate the generation of knit structures specifically for digital meshes with disc topology. Namely, our app lets
+users specify regions of their mesh as their desired start and end points during knitting. Using Geometry Central’s implementation of the approach in Kn¨oppel et al. [2015] to stripe patterns, we create and display two orthogonal stripe patterns that act as the course and wale directions to be followed by the user while knitting. The generated structures can be knitted entirely with short rows (otheriwse known as “partial rows”) with no use of increases or decreases unless necessary
+
 To start the app, run:
 
 gc\_project <path\_to\_mesh\_file>
